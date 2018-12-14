@@ -29,14 +29,25 @@
               <div class="col-md-3">
                 <label>Perfil: </label>
                 <select class="form-control" name="perfil" required autofocus>
-                  <option value="evangelista">Evangelista</option>
-                  <option value="evangelista">Missionário(a)</option>
-                  <option value="pastor">Pastor</option>
-                  <option value="presbítero">Presbítero</option>
+                  <optgroup value="pastor" label="Pastor">
+                    <option value="pr_presidente">Pastor Presidente</option>
+                    <option value="pr_dir_cong">Pastor Dirigente Congregacional</option>
+                    <option value="pr_evanglista">Pastor Evangelista</option>
+                    <option value="pr_mission">Pastor Missionário(a)</option>
+                  </optgroup>
+
+                  <option>Missionário(a)</option>
+                  <option value="presbítero" selected>Presbítero</option>
                   <option value="diacono">Diácono</option>
-                  <option value="auxiliar">Auxiliar</option>
-                  <option value="auxiliar">Secretário(a)</option>
-                  <option value="auxiliar">Tesoureiro(a)</option>
+
+                  <optgroup value="cooperador" label="Cooperador(a) / Auxiliar">
+                    <option value="coop_port">Porteiro(a)</option>
+                    <option value="coop_secret">Secretário(a)</option>
+                    <option value="coop_teso">Tesoureiro(a)</option>
+                    <option value="coop_teso">Função(a)</option>
+                    <option value="coop_teso">função(a)</option>
+                  </optgroup>
+
                 </select>
                 </div>
                 <div class="col-md-2">
