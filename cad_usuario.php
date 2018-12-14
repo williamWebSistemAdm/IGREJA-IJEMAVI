@@ -12,7 +12,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
-    <title>Cadastro de Usuário</title>
+    <title>Cadastro de Obreiros(as)</title>
 </head>
 
 <body>
@@ -22,18 +22,18 @@
 
 	<div>
     <div id="fundoTransparente">
-        <h3>Cadastro Usuario</h3>
-          <div class="container">
-           <form method="post" action="cad_usuario.php">
+      <div class="container">
+        <h3>Cadastro de Obreiros(as)</h3><br>
+          <form method="post" action="cad_usuario.php">
             <div class="row">
               <div class="col-md-3">
-                <label>Perfil: </label>
+                <label>Perfil/Cargo: </label>
                 <select class="form-control" name="perfil" required autofocus>
                   <optgroup value="pastor" label="Pastor">
                     <option value="pr_presidente">Pastor Presidente</option>
                     <option value="pr_dir_cong">Pastor Dirigente Congregacional</option>
                     <option value="pr_evanglista">Pastor Evangelista</option>
-                    <option value="pr_mission">Pastor Missionário(a)</option>
+                    <option value="pr_mission">Pastor Missionário</option>
                   </optgroup>
 
                   <option>Missionário(a)</option>
@@ -49,38 +49,90 @@
                   </optgroup>
 
                 </select>
-                </div>
-                <div class="col-md-2">
-                  <label>CPF:</label>
-                  <input class="form-control" type="text" name="cpf" required>
-                </div>
-                  <div class="col-md-6">
-                    <label>Nome:</label>
-                    <input class="form-control" type="text" name="nome" required>
-                  </div>
-                </div>
-
-                 <div class="row">
-                  <div class="col-md-5 mb-3">
-                    <label>E-mail:</label>
-                    <input class="form-control" class="usuario" type="text" name="email" size="35" maxlength="100"  required>
-                  </div>
- <!--                  <div class="col-md-4 mb-3">
-                  <label>Telefone:</label><br>
-                  <input class="form-control" type="text" name="telefone"><br><br>
-                </div> -->
-
-                <div class="col-md-3 mb-3">
-                  <label>Senha:</label>
-                  <input class="form-control" type="password" name="senha" required>
-                </div>
-                <div class="col-md-3 mb-3">
-                  <label>Confirmação de senha:</label>
-                  <input class="form-control" type="password" name="confsenha" required>
-                </div>
               </div>
+              <div class="col-md-6">
+                <label>Nome:</label>
+                <input class="form-control" type="text" name="nome" required>
+              </div>
+              <div class="col-md-3">
+                <label>CPF:</label>
+                <input class="form-control" type="text" name="cpf" required>
+              </div>
+            </div>
 
-<!--                 <div class="row">
+           <div class="row">
+              <div class="col-md-5 mb-3">
+                <label>E-mail:</label>
+                <input class="form-control" type="text" name="email" size="35" maxlength="100"  required>
+              </div>
+              <div class="col-md-2">
+                <label>Data Nascimento:</label>
+                <input class="form-control" type="date" name="data" required>
+              </div>
+              <div class="col-md-1">
+                <label>sexo:</label>
+                <input class="form-control" type="text" name="endereco" required>
+              </div>
+              <div class="col-md-2">
+                <label>Telefone Fixo:</label>
+                <input class="form-control" type="tel" name="telefone">
+              </div>
+              <div class="col-md-2">
+                <label>Celular:</label>
+                <input class="form-control" type="text" name="telefone">
+              </div>
+            </div>
+
+            <div class="row">
+              <h4>Endereço</h4>
+              <div class="col-md-2">
+                <label>CEP:</label>
+                <input class="form-control" label="Rua" type="text" name="cpf" required>
+              </div>
+              <div class="col-md-2">
+                <label>Estado:</label>
+                <input class="form-control" label="Rua" type="text" name="cpf" required>
+              </div>
+              <div class="col-md-2">
+                <label>Cidade:</label>
+                <input class="form-control" label="Rua" type="text" name="cpf" required>
+              </div>
+              <div class="col-md-3">
+                <label>Bairro:</label>
+                <input class="form-control" label="Rua" type="text" name="cpf" required>
+              </div>
+              <div class="col-md-3">
+                <label>Rua:</label>
+                <input class="form-control" label="Rua" type="text" name="cpf" required>
+              </div>
+              <div class="col-md-1">
+                <label>Número:</label>
+                <input class="form-control" label="Rua" type="text" name="cpf" required>
+              </div>
+              <div class="col-md-5">
+                <label>Complemento:</label>
+                <input class="form-control" label="Rua" type="text" name="cpf" required>
+              </div>
+            </div>
+            <div class="row">
+              <h4>Escolha a Senha de Usuário</h4>
+              <div class="col-md-3">
+                <label>Senha:</label>
+                <input class="form-control" type="password" name="senha" required>
+              </div>
+              <div class="col-md-3">
+                <label>Confirmação de senha:</label>
+                <input class="form-control" type="password" name="confsenha" required>
+              </div>
+            </div><br>
+            <div class="row">
+            <button class="btn btn-default" type="submit">Cadastrar</button>
+          </div>
+        </div>
+      </div>
+
+
+<!--           <div class="row">
                 <div class="col-md-3 mb-3">
                   <label>Selecione a Unidade:</label><br>
                   <select class="form-control" name="nomeUnidade" size=1>
@@ -90,14 +142,10 @@
                   </select>
                 </div>
                 </div> -->
-                <button class="btn btn-default" type="submit">Cadastrar</button>
 
-                </form>
-                </div>
-            </div>
-          </div>
+        </form>
         </div>
-     </div>
+
 
 <!--
       <div id="alerta">
@@ -111,8 +159,6 @@
           // include 'verificarUnidades.inc.php';
         ?>
 
-      </div>
-    </div>
 
 
 

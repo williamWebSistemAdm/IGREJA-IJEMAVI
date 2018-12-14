@@ -4,48 +4,56 @@
     // SESSION_START();
 
 
-	$perfil = $_POST['perfil'];
-	$matricula = $_POST['matricula'];
-	$nome = $_POST['nome'];
-	$email = $_POST['email'];
-	// $telefone = $_POST['telefone'];
-	$senha = $_POST['senha'];
-	$confsenha = $_POST['confsenha'];
+  $perfil_cargo = $_POST['perfil_cargo'];
+  $nome_obr = $_POST['nome_obr'];
+	$cpf_obr = $_POST['cpf_obr'];
+	$datacad_obr = $_POST['datacad_obr'];
+	$email_obr = $_POST['email_obr'];
+	$endereco = $_POST['endereco'];
+	$nascimento_obr = $_POST['nascimento_obr'];
+	$sexo_obr = $_POST['sexo_obr'];
+  $telefone_obr = $_POST['telefone_obr'];
+  $senha_obr = $_POST['senha_obr'];
+	//$confsenha = $_POST['confsenha'];
 
   //variável global
   $_SESSION['confsenha'] = $confsenha;
 
-	// $nomeUnidade = $_POST['nomeUnidade'];
 
-    	// $senha = md5($senha*10);
-
-    // if($unidade == 'Selecione a unidade')
-    // die("A unidade não foi escolhida!");
-
-// PROTEÇÃO CONTRA ATAQUE SQL INJECTION  COM addslashes()
-  // foreach ($_POST as $indice => $value) {
-  //   $_POST[$indice] = addslashes($_POST[$indice]);
-  // };
-
-	// $sql1 = "INSERT INTO usuarios (perfil, nome) VALUES ('$perfil', '$nome')";
-	// $salvar1 = mysqli_query($conexao, $sql1);
 
     //Confirmação de senha
-  $sql66 = "SELECT * FROM usuarios";
-    $result66 = $conexao->query($sql66);
+  $sql_obr = "SELECT * FROM obreiros";
+    $result_obr = $conexao->query($sql_obr);
   if($senha == $_SESSION['confsenha'])
     {
-      $sql1 = "INSERT INTO usuarios ( perfil,matricula,nome,email,senha) VALUES ('$perfil', '$matricula','$nome','$email','$senha')";
-      $salvar1 = mysqli_query($conexao, $sql1);
+      $grava = "INSERT INTO usuarios ( cpf_obr, datacad_obr, email_obr, endereco, nascimento_obr, nome_obr, senha_obr, sexo_obr, telefone, tipo_cargo ) VALUES ('$cpf_obr', DATE(now),'$email_obr','$endereco','$nascimento_obr','$nome_obr','$senha_obr',,'$sexo_obr''$telefone','$tipo_cargo')";
+      $grava1 = $conexao->query($grava);
+      // $grava1 = mysqli_query($conexao, $grava);
 
-      if($result66->num_rows > 0){
-       echo "<script>alert('Usuário cadastrado com suceso!.'); window.location.href='listaUsuarios.php';</script>";
+      if($result_obr->num_rows > 0){
+       echo "<script>alert('Usuário cadastrado com suceso!.'); window.location.href='lista_obr.php';</script>";
       }
     }else
       {
-        echo "<script>alert('Não foi possível cadastrar, Senhas diferentes.'); location.href='cadastroUsuario.php';</script>";
+        echo "<script>alert('Não foi possível cadastrar, Senhas diferentes.'); location.href='cad_usuario.php';</script>";
       }
 
+      // $nomeUnidade = $_POST['nomeUnidade'];
+
+        	// $senha = md5($senha*10);
+
+        // if($unidade == 'Selecione a unidade')
+        // die("A unidade não foi escolhida!");
+
+    // PROTEÇÃO CONTRA ATAQUE SQL INJECTION  COM addslashes()
+      // foreach ($_POST as $indice => $value) {
+      //   $_POST[$indice] = addslashes($_POST[$indice]);
+      // };
+
+
+
+    	// $sql1 = "INSERT INTO usuarios (perfil, nome) VALUES ('$perfil', '$nome')";
+    	// $salvar1 = mysqli_query($conexao, $sql1);
 
 	// $sql1 = "INSERT INTO usuarios (perfil, matricula, nome, email, senha) VALUES ('$perfil', '$matricula', '$nome', '$email',  '$senha')";
 	// $salvar1 = mysqli_query($conexao, $sql1);
