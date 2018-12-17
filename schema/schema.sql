@@ -142,7 +142,7 @@ CREATE TABLE IF NOT EXISTS `ijemavi`.`telefones` (
   `tel_watzap` VARCHAR(45) NULL,
   `tel_cel` VARCHAR(45) NULL,
   `tel_resid` VARCHAR(45) NULL,
-  `id_obreiro_tel_fk` VARCHAR(45) NULL,
+  `id_obreiro_tel_fk` INT NOT NULL,
   PRIMARY KEY (`id_telefones`),
   INDEX `fk_telefones_obreiros1_idx` (`id_obreiro_tel_fk` ASC),
   CONSTRAINT `fk_telefones_obreiros1`
@@ -220,7 +220,7 @@ CREATE TABLE IF NOT EXISTS `ijemavi`.`acessos_obr` (
   `id_qtd_acessos_obr` INT NOT NULL AUTO_INCREMENT,
   `data_acesso_obr` DATE NULL,
   `acessou_obr` VARCHAR(45) NULL,
-  `id_obreiro_qtd_acessos` VARCHAR(45) NULL,
+  `id_obreiro_qtd_acessos` INT NOT NULL,
   PRIMARY KEY (`id_qtd_acessos_obr`),
   INDEX `fk_acessos_obr_obreiros1_idx` (`id_obreiro_qtd_acessos` ASC),
   CONSTRAINT `fk_acessos_obr_obreiros1`
