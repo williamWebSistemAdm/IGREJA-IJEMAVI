@@ -1,0 +1,74 @@
+<?php
+	include 'conexao.inc.php';
+	include 'verificausuario.inc.php';
+	$idUsuario = $_GET['id'];
+?>
+<!DOCTYPE html>
+<html lang="pt-br">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" href="style/bootstrap.min.css">
+		<title>Editar Devocional</title>
+	</head>
+
+	<body>
+		
+		<?php include 'header.inc.php';?>
+        
+    <div>
+        <div>
+		<div class="container">
+
+        <h1>Editar Devocional</h1>
+         <table>
+        	<tr></tr>
+        </table>
+   		<button>Editar dados</button>
+   		<button>Desativar</button>
+			 
+			<nav>
+                <ul>
+                    <li>
+                        <input type="radio" id="tab1" class="rd_tab" name="tabs" checked>
+                        <label for="tab1" class="tab_label">Perfil</label>
+                        <div class="tab-content">
+                            <div class="container">
+
+                             <div>
+                                <?php // echo " <a href='editarUsuario.php?idUsuario=" . $_GET['id'] . "'>Editar</a> ";?>
+                                 echo " <a href='deletar.php?idUsuario=" . $_GET['id'] . "'>Excluir</a> "; 
+
+
+                            </div><br>
+                            <div>
+                            <?php	echo "<a href='deletarUsuario.php?id=" . $idUsuario . "'>Excluir</a> ";
+                                ?>
+
+                            </div>
+                        </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+
+
+				</div>
+
+
+
+
+			<!-- Erro de Validação W3C Identificado -->
+          <?php include 'perfilUsuario.inc.php'; ?>
+      </div>
+			<!-- Erro de Validação W3C Identificado -->
+			<div class="footer">
+				<?php include 'footer.php'; ?>
+			</div>
+      </div>
+
+	</body>
+
+</html>
