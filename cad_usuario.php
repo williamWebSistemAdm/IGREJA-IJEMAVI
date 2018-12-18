@@ -23,7 +23,13 @@
     <div >
       <div class="container">
         <h3>Cadastro de Obreiros(as)</h3><br>
-
+        <?php
+             setlocale( LC_ALL, 'pt_BR', 'pt_BR.iso-8859-1', 'pt_BR.utf-8', 'portuguese' );
+             date_default_timezone_set( 'America/Sao_Paulo' );
+             $dia = strftime( '%e-%m-%Y ');
+             $hora = strftime( ' %T');
+             echo "Dia: " . $dia . "Hora: ".$hora;
+      ?>
           <form method="post" action="cad_usuario_action2.php">
              <div class="row">
               <div class="col-md-3">
@@ -179,17 +185,17 @@
               </div>
             </div>
 
-            <!-- <div class="row">
+             <div class="row">
               <h4>Escolha a Senha de Usuário</h4>
               <div class="col-md-3">
                 <label>Senha:</label>
-                <input class="form-control" type="password" name="senha" required>
+                <input class="form-control" type="password" name="senha_obr" required>
               </div>
-              <div class="col-md-3">
+              <!-- <div class="col-md-3">
                 <label>Confirmação de senha:</label>
-                <input class="form-control" type="password" name="confsenha" required>
-              </div>
-            </div>  -->
+                <input class="form-control" type="password" name="confsenha_obr" required>
+              </div> -->
+            </div>
             <br>
             <div class="row">
             <button class="btn btn-default" type="submit">Cadastrar</button>

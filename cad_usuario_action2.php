@@ -24,16 +24,20 @@
   $numero_end = $_POST['numero_end'];
   $complemento_end = $_POST['complemento_end'];
 
-  // $senha_obr = $_POST['senha_obr'];
-	// //$confsenha = $_POST['confsenha'];
-  // $datacad_obr = $_POST['datacad_obr'];
-                                       // $data = date("Y-m-d - H:i:s");
+  $senha_obr = $_POST['senha_obr'];
+	// $confsenha_obr = $_POST['confsenha_obr'];
+  // $datacad_obr = date("Y-m-d - H:i:s");
+      // $data = date("Y-m-d - H:i:s");
+
+
   //variável global
   // $_SESSION['confsenha'] = $confsenha;
 
 
 
     //Confirmação de senha
+
+
   $sql_obr = "SELECT * FROM obreiros";
   $result_obr = $conexao->query($sql_obr);
 
@@ -43,14 +47,21 @@
   $sql_tel = "SELECT * FROM telefones";
   $result_tel = $conexao->query($sql_tel);
 
+  // $usuario = addslashes($_POST['usuario']);
+  // $usuario = trim($usuario);
+  // $senha = addslashes($_POST['senha']);
+  // $senha = trim($senha);
 
   // if($senha == $_SESSION['confsenha'])
   //   {
       // $grava = "INSERT INTO usuarios ( cpf_obr, datacad_obr, email_obr, endereco, nascimento_obr, nome_obr, senha_obr, sexo_obr, telefone, tipo_cargo ) VALUES ('$cpf_obr', DATE(now),'$email_obr','$endereco','$nascimento_obr','$nome_obr','$senha_obr',,'$sexo_obr''$telefone','$tipo_cargo')";
-      $grava1 = "INSERT INTO obreiros (  tipocargo_obr , nome_obr, sobrenome_obr, cpf_obr, email_obr, nascimento_obr, sexo_obr)
+      $grava1 = "INSERT INTO obreiros (  tipocargo_obr , nome_obr, sobrenome_obr, cpf_obr, email_obr, nascimento_obr, sexo_obr, senha_obr, datacad_obr)
       VALUES
-      ('$tipocargo_obr','$nome_obr','$sobrenome_obr','$cpf_obr','$email_obr','$nascimento_obr','$sexo_obr')";
+      ('$tipocargo_obr','$nome_obr','$sobrenome_obr','$cpf_obr','$email_obr','$nascimento_obr','$sexo_obr', '$senha_obr',NOW())";
       $grava_obr = $conexao->query($grava1);
+
+
+
 
       $grava_end = "INSERT INTO enderecos (  cep_end , estado_end, cidade_end, bairro_end, rua_end, numero_end, complemento_end)
       VALUES ('$cep_end', '$estado_end', '$cidade_end','$bairro_end','$rua_end','$numero_end','$complemento_end')";
@@ -80,6 +91,7 @@
 	// 	$idTelefone = $row[0];
 	// 	echo $idTelefone;
 	// }
+
 
 	//Pegar id_enderecos
 	$pegar_id_enderecos = "SELECT MAX(id_end) FROM enderecos";
@@ -124,6 +136,7 @@
 
 	$sql5 = "UPDATE telefones SET id_obreiro_tel_fk='$id_obreiros' WHERE id_telefones='$id_obreiros'";
 	$salvar5 = mysqli_query($conexao, $sql5);
+
 
 	// $sql4 = "UPDATE usuarios SET idUnidade='$idUnidade' WHERE idUsuario='$idUsuario'";
 	// $salvar4 = mysqli_query($conexao, $sql4);
