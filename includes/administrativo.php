@@ -1,0 +1,11 @@
+ï»¿<?php
+    // Iniciando Sessão
+    session_start();
+    //Conecção com Banco
+    include 'conexao.inc.php';//conexão com o banco
+    include 'seguranca.inc.php';//segurança
+    include 'msg_boas_vindas.inc.php';//mensagem de boas vindas
+    
+   
+
+?>

@@ -114,7 +114,8 @@
         $_SESSION['nome_obr'],
         $_SESSION['senha_obr'],
         $_SESSION['usuario_obr'],
-        $_SESSION['tipocargo_obr']);
+        $_SESSION['tipocargo_obr'];
+        )
     ?>
 	<div class="contact-form">
 		<img src="img/2.jpg" class="avatar">
