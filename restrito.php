@@ -1,4 +1,7 @@
-﻿<!doctype html>
+<?php
+session_start();
+?>
+<!doctype html>
 <html lang="en">
 
 <head>
@@ -111,11 +114,10 @@
     <?php
     // Apaga dados do usuario se voltar ao login
         unset($_SESSION['id_obreiros'],
-        $_SESSION['nome_obr'],
-        $_SESSION['senha_obr'],
-        $_SESSION['usuario_obr'],
-        $_SESSION['tipocargo_obr'];
-        )
+			        $_SESSION['nome_obr'],
+			        $_SESSION['senha_obr'],
+			        $_SESSION['email_obr'],
+			        $_SESSION['tipocargo_obr']);
     ?>
 	<div class="contact-form">
 		<img src="img/2.jpg" class="avatar">
@@ -129,12 +131,14 @@
 		</form>
         <p class="text-center text-danger">
         <?php
-        //  Mensagem de erro
+
+         // Mensagem de erro
         if (isset($_SESSION['erro_login'])){
             echo $_SESSION['erro_login'];
-            unset['erro_login'];        
-        }else{
-            header('Location: includes/administrativo.php');
+            unset($_SESSION['erro_login']);
+        }
+				else{
+            // header('Location: includes/administrativo.php');
             }
          ?>
         </p>
