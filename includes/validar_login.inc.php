@@ -32,11 +32,11 @@
        // msg Bem vindo
        $_SESSION['Bem_vindo'] = "Bem Vindo " . $_SESSION['nome_obr'] ;
 
-         // if ($_SESSION['tipocargo_obr'] == "adm_padrao" || "pastor_pres") {
-         //   header('Location: administrativo.php');
-         // }else {
-         //   header('Location: usuario_comum.php');
-         // }
+         if ($_SESSION['tipocargo_obr'] == "adm_padrao" || "pr_presidente") {
+           header('Location: administrativo.php');
+         }else {
+           header('Location: usuario_comum.php');
+         }
       }
 
     }else {

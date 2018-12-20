@@ -244,6 +244,11 @@ CREATE TABLE IF NOT EXISTS `ijemavi`.`registro_alteracoes` (
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8;
 
+INSERT INTO `obreiros` (`id_obreiros`, `nome_obr`, `sobrenome_obr`, `senha_obr`, `cpf_obr`, `telefone_obr`, `sexo_obr`, `email_obr`,  `endereco`, `datacad_obr`, `nascimento_obr`, `tipocargo_obr`, `foto_obreiro`) VALUES
+(1, 'Administrador', ' - ', 'admin@ijemavi' , 98765432109, 1, 'm' ,'admin@ijemavi.com',  1 , NOW(), NOW(), 'adm_padrao',NULL),
+(2, 'pr_presidente', 'José', 'Ribeiro do Nascimento', 'pr_zedahilda@ijemavi', COLOCAR CPF , 2, 'm', COLOCAR email, 2,  NOW(), COLOCAR data nascimento 'pr_presidente', NULL);
+
+-- Fazer insert da tabela de enderecos e telefones
 
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
