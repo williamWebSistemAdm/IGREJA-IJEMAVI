@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 session_start();
 ?>
 <!doctype html>
@@ -6,7 +6,7 @@ session_start();
 
 <head>
 	<meta charset="UTF-8">
-	<title>transparent login form</title>
+	<title>login</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
 	<style>
 		body {

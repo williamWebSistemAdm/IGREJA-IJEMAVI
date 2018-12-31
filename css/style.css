@@ -15,6 +15,18 @@
 	background-color: rgba(8, 89, 86, .85);
 }
 
+#conteudo {
+	width: 1000px;
+	margin: auto;
+}
+
+#iframe {
+	width: 400px;
+	height: 280px;
+	border: none;
+	overflow: hidden;
+}
+
 body {
 	background: #fff;
 	font-family: 'Roboto', Arial, sans-serif;
