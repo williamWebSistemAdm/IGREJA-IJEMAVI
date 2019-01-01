@@ -7,7 +7,7 @@
 					$controle_ativo = 2;
 					$controle_num_slide = 1;
 					$result_carousel = "SELECT * FROM carrouses ORDER BY id ASC";
-					$resultado_carousel = mysqli_query($conn, $result_carousel);
+					$resultado_carousel = mysqli_query($conexao, $result_carousel);
 					while($row_carousel = mysqli_fetch_assoc($resultado_carousel)){
 						if($controle_ativo == 2){ ?>
 							<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li><?php
@@ -25,16 +25,16 @@
 				<?php
 					$controle_ativo = 2;
 					$result_carousel = "SELECT * FROM carrouses ORDER BY id ASC";
-					$resultado_carousel = mysqli_query($conn, $result_carousel);
+					$resultado_carousel = mysqli_query($conexao, $result_carousel);
 					while($row_carousel = mysqli_fetch_assoc($resultado_carousel)){
 						if($controle_ativo == 2){ ?>
 							<div class="item active">
-								<img id="image" src="imagens/carousel/<?php echo $row_carousel['imagen_carousel']; ?>" alt="<?php echo $row_carousel['nome']; ?>">
+								<img id="image" src="imagens/<?php echo $row_carousel['imagen_carousel']; ?>" alt="<?php echo $row_carousel['nome']; ?>">
 							</div><?php
 							$controle_ativo = 1;
 						}else{ ?>
 							<div class="item">
-								<img id="image" src="imagens/carousel/<?php echo $row_carousel['imagen_carousel']; ?>" alt="<?php echo $row_carousel['nome']; ?>">
+								<img id="image" src="imagens/<?php echo $row_carousel['imagen_carousel']; ?>" alt="<?php echo $row_carousel['nome']; ?>">
 							</div> <?php
 						}
 					}
