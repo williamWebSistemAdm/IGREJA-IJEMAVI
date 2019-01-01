@@ -15,22 +15,19 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css" >
     <link rel="stylesheet" href="css/style.css" >
+    <link rel="stylesheet" href="style.css" >
 
 	</head>
 
 	<body>
-		<!-- Menu -->
 		<div class="container-fluid">
-			<?php
-			include 'includes/header.inc.php';
-			?>
-		</div>
+			<!-- Menu -->
+			<?php	include 'includes/header.inc.php'; ?>
 
-		<div class="container">
 			<!-- Carroussel -->
-			<?php	include 'carroussel/carroussel_codigo.inc.php'; ?>
+			<?php	include 'carroussel/carroussel.inc.php'; ?>
 
-		</div>
+	</div>
 
 		<script src="js\jquery-3.3.1.slim.min.js" ></script>
 		<script src="js/bootstrap.min.js" ></script>
