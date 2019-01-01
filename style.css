@@ -10,86 +10,6 @@
 	transition: all 500ms ease-in-out;
 }
 
-/********carroussel***********/
-
-/*
-.carroussel img {
-	width: 100%;
-	height: 600px;
-} */
-
-/* Dispositivos extra grandes 1 (grandes laptops e desktops, 1400px e acima) */
-
-/*
-@media only screen and (min-width: 1400px) {
-	.carroussel img {
-		height: 900px;
-	}
-} */
-
-/* Dispositivos extra grandes 2 (grandes laptops e desktops, 1200px e acima) */
-
-/*
-@media only screen and (min-width: 1200px) {
-	.carroussel img {
-		height: 700px;
-	}
-} */
-
-/* Grandes dispositivos (laptops / desktops, 992 px e acima) */
-
-/*
-@media only screen and (min-width: 992px) {
-	.carroussel img {
-		height: 600px;
-	}
-} */
-
-/* Dispositivos médios (tablets de paisagem, 768 px e acima */
-
-/*
-@media only screen and (min-width: 768px) {
-	.carroussel img {
-		height: 500px;
-	}
-} */
-
-/* Pequenos dispositivos (tablets retrato e telefones grandes, 600px e acima) */
-
-/*
-@media only screen and (min-width: 680px) {
-	.carroussel img {
-		height: 450px;
-	}
-} */
-
-/* Pequenos dispositivos (tablets retrato e telefones grandes, 600px e acima) */
-
-/*
-@media only screen and (min-width: 600px) {
-	.carroussel img {
-		height: 350px;
-	}
-} */
-
-/* Pequenos dispositivos (tablets retrato e telefones grandes, 600px e acima) */
-
-/*
-@media only screen and (min-width: 500px) {
-	.carroussel img {
-		height: 230px;
-	}
-} */
-
-/* Dispositivos extras pequenos (telefones, 600px e down) */
-
-/*
-@media only screen and (max-width: 480px) {
-	.carroussel img {
-		height: 150px;
-	}
-} */
-
 /********Menu***********/
 
 .logo img {
@@ -110,6 +30,11 @@
 		width: 60px;
 		margin-left: 22px;
 	}
+}
+
+#link_area_restrita a {
+	color: red;
+	font-size: 15px;
 }
 
 /*

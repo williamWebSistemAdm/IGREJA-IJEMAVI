@@ -33,7 +33,11 @@
 		      <li class="nav-item">
 		        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabilitado</a>
 		      </li> -->
+					<li id="link_area_restrita" class="nav-item">
+						<a class="nav-link" href="restrito.php">Área Restrita</a>
+					</li>
 		    </ul>
+
 		    <form class="form-inline my-2 my-lg-0">
 		      <input class="form-control mr-sm-2" type="search" placeholder="Digite a pesquisa" aria-label="Search">
 		      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
