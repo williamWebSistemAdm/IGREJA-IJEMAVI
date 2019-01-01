@@ -15,7 +15,8 @@
 	<title>IJEMAVI- Igreja de Jesus Manancial de Águas Vivas</title>
 
 	<!-- Bootstrap -->
-	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link  rel="stylesheet" href="css/bootstrap.min.css">
+	<link  rel="stylesheet" href="js/bootstrap.min.js">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/overwrite.css">
@@ -146,15 +147,15 @@
 
 
 	<!-- <hr> -->
-
+<!--
 	<div id="gallery">
 		<div class="container">
 			<div class="text-center">
 				<h3>Galeria</h3>
 				<p>Nossos Momentos</p>
-			</div>
+			</div> -->
 			<!-- <div class="row"> -->
-				<figure class="effect-chico">
+				<!-- <figure class="effect-chico">
 					<div class="col-md-3 wow fadeInUp" data-wow-offset="0" data-wow-delay="0.3s">
 						<a href="img/work/1.jpg" class="flipLightBox">
 						<img src="img/work/1.jpg" class="img-responsive" alt="">
@@ -181,13 +182,13 @@
 						<img src="img/work/4.jpg" class="img-responsive" alt="">
 						</a>
 					</div>
-				</figure>
+				</figure> -->
 			<!-- </div> -->
 			<br>
 
 
 				<!-- <div class="row"> -->
-					<figure class="effect-chico">
+					<!-- <figure class="effect-chico">
 						<div class="col-md-3 wow fadeInUp" data-wow-offset="0" data-wow-delay="0.3s">
 							<a href="img/work/5.jpg" class="flipLightBox">
 							<img src="img/work/5.jpg" class="img-responsive" alt="">
@@ -216,13 +217,13 @@
 						</div>
 					</figure>
 				</div>
-			</div>
+			</div> -->
 			<!-- </div> -->
 
 	<!--/#gallery-->
 
 	<hr>
-
+<!--
 	<div id="our-team">
 		<div class="container">
 			<div class="text-center">
@@ -287,7 +288,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 	<!--/#our-team-->
 	<hr>
 
