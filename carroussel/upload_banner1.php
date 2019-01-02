@@ -38,6 +38,12 @@
 
 				<div class="col-6">
           <div class="row">
+						<?php
+						 	date_default_timezone_set( 'America/Sao_Paulo' );
+									$data = date('d/m/Y');
+									$hora = date('H:i:s');
+									echo "Data: ". $data ." - Hora: " . $hora ;
+									?>
             <!-- <h1> Carregar a foto</h1> -->
             <!-- <form method="POST" action="proc_upload.php" enctype="multipart/form-data">
             	Arquivo: <input  class="form-control-file" name="arquivo" type="file"><br><br>
@@ -45,7 +51,9 @@
             	<input  class="btn btn-primary" type="submit" value="Adicionar">
             </form> -->
             <form method="POST" action="proc_upload.php" enctype="multipart/form-data">
-              <div class="form-group">
+              <div class="form-group"><br>
+                <label for="exampleFormControlFile1">Escreva o nome do banner:</label>
+                <input type="text" placeholder="Ex: Festa dos Jovens" name="nome_escolhido" class="form-control-file" id="exampleFormControlFile1" required>
                 <label for="exampleFormControlFile1">Arquivo:</label>
                 <input type="file"  name="arquivo" class="form-control-file" id="exampleFormControlFile1" required>
       				<input class="btn btn-primary" type="submit" value="Adicionar">

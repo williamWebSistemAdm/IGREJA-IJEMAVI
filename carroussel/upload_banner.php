@@ -4,6 +4,7 @@
   //Conecxao com Banco
   include '../includes/conexao.inc.php';//conexao com o banco
   include '../includes/seguranca.inc.php';//seguranca
+  
   // include 'msg_boas_vindas.inc.php';//mensagem de boas vindas
  ?>
 <!DOCTYPE html>
@@ -46,10 +47,10 @@
             </form> -->
             <form method="POST" action="proc_upload.php" enctype="multipart/form-data">
               <div class="form-group">
-                <label for="exampleFormControlFile1">Arquivo:</label>
-                <input type="file"  name="arquivo" class="form-control-file" id="exampleFormControlFile1" required>
                 <label for="exampleFormControlFile1">Escreva o nome do banner:</label>
                 <input type="text" placeholder="Ex: Festa dos Jovens" name="nome_escolhido" class="form-control-file" id="exampleFormControlFile1" required>
+                <label for="exampleFormControlFile1">Arquivo:</label>
+                <input type="file"  name="arquivo" class="form-control-file" id="exampleFormControlFile1" required>
       				<input class="btn btn-primary" type="submit" value="Adicionar">
             </div>
       			</form>

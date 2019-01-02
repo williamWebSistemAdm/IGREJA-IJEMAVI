@@ -23,6 +23,7 @@
        $senha_obr = $row['senha_obr'];
 
        // colocando variavel em sessao
+       $_SESSION['id_obreiros'] = $id_obreiros;
        $_SESSION['usuario_obr'] = $usuario;
        $_SESSION['email_obr'] = $email_obr;
        $_SESSION['nome_obr'] = $nome_obr;
