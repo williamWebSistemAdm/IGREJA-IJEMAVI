@@ -3,8 +3,8 @@
   session_start();
   //Conecxao com Banco
   include '../includes/conexao.inc.php';//conexao com o banco
-  include '../includes/seguranca.inc.php';//seguranca
-  
+  // include '../includes/seguranca.inc.php';//seguranca
+
   // include 'msg_boas_vindas.inc.php';//mensagem de boas vindas
  ?>
 <!DOCTYPE html>
