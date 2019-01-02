@@ -39,7 +39,7 @@
 
       <h1>Postar Devocional</h1>
 			<div id="formulario" >
-			<form action="Postar_devocional.inc.php" method="post" enctype="multipart/form-data">
+			<form action="postar_devocional.inc.php" method="post" enctype="multipart/form-data">
 				<label for="fname">Título</label>
 				<input type="text" id="fname" name="titulo">
 
@@ -64,7 +64,8 @@
 			<?php include 'includes/footer.inc.php'; ?>
 			</div>
 			</div>
-
+      <script src="js/jquery-3.3.1.slim.min.js" ></script>
+      <script src="js/bootstrap.min.js" ></script>
 	</body>
 
 </html>

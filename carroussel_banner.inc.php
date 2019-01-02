@@ -27,12 +27,12 @@
 				while($row_carousel = mysqli_fetch_assoc($resultado_carousel)){
 					if($controle_ativo == 2){  ?>
 						<div class="carousel-item active">
-							<img src="carroussel/imagens/<?php echo $row_carousel['imagen_carousel']; ?>" class="d-block w-100" alt="<?php echo $row_carousel['nome']; ?>">
+							<img src="img/img_banner/<?php echo $row_carousel['imagen_carousel']; ?>" class="d-block w-100" alt="<?php echo $row_carousel['nome']; ?>">
 						</div> <?php
 						$controle_ativo = 1;
 					}else {   ?>
 						<div class="carousel-item">
-							<img src="carroussel/imagens/<?php echo $row_carousel['imagen_carousel']; ?>" class="d-block w-100" alt="<?php echo $row_carousel['nome']; ?>">
+							<img src="img/img_banner/<?php echo $row_carousel['imagen_carousel']; ?>" class="d-block w-100" alt="<?php echo $row_carousel['nome']; ?>">
 						</div>  <?php
 						}
 					}

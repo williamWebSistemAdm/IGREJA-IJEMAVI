@@ -12,9 +12,9 @@
 		<title>Adiconar Banner</title>
 
 		<!-- Bootstrap CSS -->
-		<link rel="stylesheet" href="../css/bootstrap.min.css" >
-		<link rel="stylesheet" href="../css/style.css" >
-		<link rel="stylesheet" href="../style.css" >
+		<link rel="stylesheet" href="css/bootstrap.min.css" >
+		<link rel="stylesheet" href="css/style.css" >
+		<link rel="stylesheet" href="style.css" >
 
 	</head>
 
@@ -24,7 +24,7 @@
 		<?php
 			// Iniciando Sessão
 			session_start();
-			include '../includes/conexao.inc.php';//conexao com o banco
+			include 'includes/conexao.inc.php';//conexao com o banco
 
 			// nome original do arquivo
 			$nome 	= $_FILES['arquivo']['name'];
@@ -79,7 +79,7 @@
 				$result = $conexao->query($sql);
 
 				//Verificar se é possivel mover o arquivo para a pasta escolhida
-				if(move_uploaded_file($_FILES['arquivo']['tmp_name'], 'imagens/'. $novo_nome)){
+				if(move_uploaded_file($_FILES['arquivo']['tmp_name'], 'img/img_banner/'. $novo_nome)){
 					//Upload efetuado com sucesso, exibe a mensagem
 					$query = mysqli_query($conexao, "INSERT INTO carrouses (imagen_carousel, nome, data_hora_post) VALUES('$novo_nome', '$novo_nome', NOW())");
 					if($result->num_rows > 0){
@@ -117,8 +117,8 @@
 		?>
 
 
-    <script src="../js/jquery-3.3.1.slim.min.js" ></script>
-    <script src="../js/bootstrap.min.js" ></script>
+    <script src="js/jquery-3.3.1.slim.min.js" ></script>
+    <script src="js/bootstrap.min.js" ></script>
   </body>
 
 </html>

@@ -25,7 +25,7 @@
 			<?php	include 'includes/header_comum.inc.php'; ?>
 
 			<!-- Carroussel -->
-			<?php	include 'carroussel/carroussel.inc.php'; ?>
+			<?php	include 'carroussel_banner.inc.php'; ?>
 
 	</div>
 

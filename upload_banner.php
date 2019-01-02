@@ -2,7 +2,7 @@
   // Iniciando Sessao
   session_start();
   //Conecxao com Banco
-  include '../includes/conexao.inc.php';//conexao com o banco
+  include 'includes/conexao.inc.php';//conexao com o banco
   // include '../includes/seguranca.inc.php';//seguranca
 
   // include 'msg_boas_vindas.inc.php';//mensagem de boas vindas
@@ -21,9 +21,9 @@
 		<title>Adiconar Banner</title>
 
 		<!-- Bootstrap CSS -->
-		<link rel="stylesheet" href="../css/bootstrap.min.css" >
-		<link rel="stylesheet" href="../css/style.css" >
-		<link rel="stylesheet" href="../style.css" >
+		<link rel="stylesheet" href="css/bootstrap.min.css" >
+		<link rel="stylesheet" href="css/style.css" >
+		<link rel="stylesheet" href="style.css" >
 
 	</head>
 
@@ -31,7 +31,7 @@
 
     <div class="container-fluid">
 			<!-- Menu -->
-			<?php	include '../includes/header_adm.inc.php'; ?>
+			<?php	include 'includes/header_adm.inc.php'; ?>
 
 			<div class="container">
 
@@ -45,7 +45,7 @@
 
             	<input  class="btn btn-primary" type="submit" value="Adicionar">
             </form> -->
-            <form method="POST" action="proc_upload.php" enctype="multipart/form-data">
+            <form method="POST" action="proc_upload_banner.php" enctype="multipart/form-data">
               <div class="form-group">
                 <label for="exampleFormControlFile1">Escreva o nome do banner:</label>
                 <input type="text" placeholder="Ex: Festa dos Jovens" name="nome_escolhido" class="form-control-file" id="exampleFormControlFile1" required>
@@ -59,8 +59,8 @@
 		  </div> <!--  container -->
 		</div>
 
-    <script src="../js/jquery-3.3.1.slim.min.js" ></script>
-    <script src="../js/bootstrap.min.js" ></script>
+    <script src="js/jquery-3.3.1.slim.min.js" ></script>
+    <script src="js/bootstrap.min.js" ></script>
   </body>
 
   </html>
