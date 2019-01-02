@@ -19,7 +19,7 @@ session_start();
 			position: fixed;
 			width: 100vw;
 			height: 100vh;
-			background-image: url("img/clean.jpg");
+			background-image: url("img/fundo_login.jpg");
 			background-position: center center;
 			background-repeat: no-repeat;
 			background-attachment: fixed;

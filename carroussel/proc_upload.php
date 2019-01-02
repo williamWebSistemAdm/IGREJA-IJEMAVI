@@ -22,7 +22,8 @@
 
 
 		<?php
-
+			// Iniciando Sessão
+			session_start();
 			include '../includes/conexao.inc.php';//conexao com o banco
 
 			// nome original do arquivo
@@ -80,7 +81,7 @@
 				//Verificar se é possivel mover o arquivo para a pasta escolhida
 				if(move_uploaded_file($_FILES['arquivo']['tmp_name'], 'imagens/'. $novo_nome)){
 					//Upload efetuado com sucesso, exibe a mensagem
-					$query = mysqli_query($conexao, "INSERT INTO carrouses (imagen_carousel, nome, data_hora_post, id_obreiro_carousel_fk) VALUES('$novo_nome', '$novo_nome', NOW(), NULL)");
+					$query = mysqli_query($conexao, "INSERT INTO carrouses (imagen_carousel, nome, data_hora_post) VALUES('$novo_nome', '$novo_nome', NOW())");
 					if($result->num_rows > 0){
        				echo "<script>alert('Banner cadastrado com suceso!.'); window.location.href='upload_banner.php';</script>";
 		 				};
@@ -90,6 +91,28 @@
 					echo "<script>alert('Banner NÃO foi cadastrado com suceso!.'); window.location.href='upload_banner.php';</script>";
 				}
 			}
+
+			//Pegar id carrouses
+			$pegar_id_carrouses = "SELECT MAX(id) FROM carrouses LIMIT 1";
+			$result_id_carrouses =  mysqli_query($conexao, $pegar_id_carrouses);
+
+			while($row = mysqli_fetch_row($result_id_carrouses))
+			{
+				$id_carrouses= $row[0];
+			}
+			//
+			// //Pegar id_obreiros
+ 			$id_obr_sessao = $_SESSION['id_obreiros'];
+			// $pegar_id_obreiros = "SELECT id_obreiros FROM obreiros";
+			// $result_id_obreiros =  mysqli_query($conexao, $pegar_id_obreiros);
+			// while($row = mysqli_fetch_row($result_id_obreiros)){
+			// 	$id_obreiros = $row[0];
+			// 	// echo "id obreiros: ".$id_obreiros;
+			// }
+
+
+			$id_obreiro_carousel_fk = "UPDATE carrouses SET id_obreiro_carousel_fk='$id_obr_sessao' WHERE id='$id_obr_sessao'";
+			$salvar_id_obr_carousel_fk = mysqli_query($conexao, $id_obreiro_carousel_fk);
 
 		?>
 
