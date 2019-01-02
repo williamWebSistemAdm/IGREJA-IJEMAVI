@@ -19,7 +19,7 @@ session_start();
 			position: fixed;
 			width: 100vw;
 			height: 100vh;
-			background-image: url("img/4.jpeg");
+			background-image: url("img/clean.jpg");
 			background-position: center center;
 			background-repeat: no-repeat;
 			background-attachment: fixed;
@@ -45,26 +45,27 @@ session_start();
 		}
 
 		.avatar {
+			padding-top: 5px;
 			position: absolute;
-			width: 80px;
-			height: 80px;
-			border-radius: 50%;
+			width: 85px;
+			height: 85px;
+			border-radius: 30%;
 			overflow: hidden;
-			top: calc(-80px/2);
+			top: calc(4%);
 			left: calc(50% - 40px);
 		}
-
+/*
 		.contact-form h2 {
 			margin: 0;
 			padding: 0 0 20px;
 			color: #fff;
 			text-align: center;
 			text-transform: uppercase;
-		}
+		} */
+
 
 		.contact-form p {
-			margin: 0;
-			padding: 0;
+			padding-top: 30px;
 			font-weight: bold;
 			color: #fff;
 		}
@@ -81,17 +82,17 @@ session_start();
 			background: transparent;
 			outline: none;
 			height: 40px;
-			color: #fff;
+			/* color: #a2a5aa; */
 			font-size: 16px;
 		}
 
 		.contact-form input[type="submit"] {
-			height: 30px;
+			height: 35px;
 			color: #fff;
 			font-size: 15px;
-			background: red;
+			background: #134faf;
 			cursor: pointer;
-			border-radius: 25px;
+			border-radius: 4px;
 			border: none;
 			outline: none;
 			margin-top: 15%;
@@ -119,9 +120,9 @@ session_start();
 			        $_SESSION['email_obr'],
 			        $_SESSION['tipocargo_obr']);
     ?>
-	<div class="contact-form">
-		<img src="img/2.jpg" class="avatar">
-		<h2>IJEMAVI</h2>
+	<div class="contact-form"><br>
+		<img src="img/logo.png" class="avatar">
+		<!-- <h2>IJEMAVI</h2> -->
 		<form method="post" action="includes/validar_login.inc.php">
 			<p>Usuário</p>
 			<input type="text" name="email_obr" placeholder="Seu E-Mail" required autofocus>
