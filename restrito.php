@@ -132,7 +132,6 @@ session_start();
 		</form>
         <p class="text-center text-danger">
         <?php
-
          // Mensagem de erro
         if (isset($_SESSION['erro_login'])){
             echo $_SESSION['erro_login'];

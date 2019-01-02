@@ -3,7 +3,7 @@
 
 		<nav class="navbar navbar-expand-lg  navbar-light" style="background-color: #e3f2fd;">
 		  <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-			<a class="logo" href="index.php"> <img src="../img/logo.png" alt="IJEMAVI"></a>
+			<a class="logo" href="../index.php"> <img src="../img/logo.png" alt="logo IJEMAVI"></a>
 		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 		    <span class="navbar-toggler-icon"></span>
 		  </button>
@@ -29,7 +29,7 @@
 						</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 							<a class="dropdown-item" href="#">listar</a>
-							<a class="dropdown-item" href="../devocional/Postar_devocional.php">Adicionar</a>
+							<a class="dropdown-item" href="../Postar_devocional.php">Adicionar</a>
 							<a class="dropdown-item" href="#">Editar</a>
 							<div class="dropdown-divider"></div>
 							<a class="dropdown-item" href="#">Desativar</a>
@@ -41,7 +41,7 @@
 						</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 							<a class="dropdown-item" href="#">listar</a>
-							<a class="dropdown-item" href="../carroussel/upload_banner.php">Adicionar</a>
+							<a class="dropdown-item" href="../upload_banner.php">Adicionar</a>
 							<a class="dropdown-item" href="#">Editar</a>
 							<div class="dropdown-divider"></div>
 							<a class="dropdown-item" href="#">Desativar</a>
@@ -72,7 +72,7 @@
 		    </form>
 				<li class="nav-item">
 				 <!-- <a class="nav-link" href="#" tabindex="-1">Disabilitado</a> -->
-				 <a class="nav-link" href="sair.inc.php">Sair</a>
+				 <!-- <a class="nav-link" href="sair.inc.php">Sair</a> -->
 			 </li>
 		  </div>
 		</nav>

@@ -2,7 +2,7 @@
   // Iniciando Sessao
   session_start();
   //Conecxao com Banco
-  include '../includes/conexao.inc.php';//conexao com o banco
+  include 'includes/conexao.inc.php';//conexao com o banco
   // include '../includes/seguranca.inc.php';//seguranca
 
   // include 'msg_boas_vindas.inc.php';//mensagem de boas vindas
@@ -21,10 +21,10 @@
 		<title>Postar Devocional</title>
 
 		<!-- Bootstrap CSS -->
-		<link rel="stylesheet" href="../css/bootstrap.min.css" >
-		<link rel="stylesheet" href="../css/style.css" >
-		<link rel="stylesheet" href="../style.css" >
-		<link rel="stylesheet" href="../css/devocional.css" >
+		<link rel="stylesheet" href="css/bootstrap.min.css" >
+		<link rel="stylesheet" href="css/style.css" >
+		<link rel="stylesheet" href="style.css" >
+		<link rel="stylesheet" href="css/devocional.css" >
 
 	</head>
 
@@ -32,7 +32,8 @@
 
     <div class="container-fluid">
 			<!-- Menu -->
-			<?php	include '../includes/header_adm.inc.php'; ?>
+			<?php	include 'includes/header_adm.inc.php'; ?>
+      <a class="nav-link" href="includes/sair.inc.php">Sair</a>
 
 			<div class="container">
 
@@ -48,18 +49,19 @@
 				<label for="subject">Texto</label>
 				<textarea id="subject" name="texto" style="height:200px"></textarea>
 
-				<!-- <label for="fname">Autor</label>
-				<input type="text" id="fname" name="autor"> -->
+				<label for="fname">Autor</label>
+        <?php include 'includes/select_obreiros.inc.php';//Selecionando Obreiro?>
+				<input type="text" id="fname" name="autor" value="<?php echo "$tipocargo_obr -"." $nome_obr"; ?>" disabled>
 
 				<label>Imagem</label><br /><br />
 				<input type="file" name="userfile"><br />
 
-				<input type="submit" name="submit">
+				<input type="submit" name="submit" value="Postar">
 			</form>
 
 			</div>
 			<div>
-			<?php include '../includes/footer.inc.php'; ?>
+			<?php include 'includes/footer.inc.php'; ?>
 			</div>
 			</div>
 
