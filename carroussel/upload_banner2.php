@@ -48,8 +48,6 @@
               <div class="form-group">
                 <label for="exampleFormControlFile1">Arquivo:</label>
                 <input type="file"  name="arquivo" class="form-control-file" id="exampleFormControlFile1" required>
-                <label for="exampleFormControlFile1">Escreva o nome do banner:</label>
-                <input type="text" placeholder="Ex: Festa dos Jovens" name="nome_escolhido" class="form-control-file" id="exampleFormControlFile1" required>
       				<input class="btn btn-primary" type="submit" value="Adicionar">
             </div>
       			</form>
