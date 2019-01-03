@@ -59,12 +59,14 @@
 				//Upload efetuado com sucesso, exibe a mensagem
 				$query_dev = mysqli_query($conexao, "INSERT INTO devocional (titulo_dev, resumo_dev, texto_dev, autor_dev, usuario_logado_dev, foto_dev, data_dev, id_obreiro_dev_fk) VALUES('$titulo_dev', '$resumo_dev', '$texto_dev', '$autor_dev', '$usuario_logado_dev', '$novo_nome', current_timestamp, NULL)");
 				if($result_dev->num_rows > 0){
-     				echo "<script>alert('Devocional cadastrado com suceso!.'); window.location.href='postar_devocional.php';</script>";
-	 				};
+     				echo "<script>alert('Devocional cadastrado com sucesso!.'); window.location.href='postar_devocional.php';</script>";
+	 				}else {
+						echo "<script>alert('Salvou a imagem, mas nao iseriu no banco de dados. Algum erro de SQL.'); window.location.href='upload_banner.php';</script>";
+					};
 
 			}else{
 				//Upload não efetuado com sucesso, exibe a mensagem
-				echo "<script>alert('Devocional NÃO foi cadastrado com suceso!.'); window.location.href='postar_devocional.php';</script>";
+				echo "<script>alert('Devocional NÃO foi cadastrado com sucesso!.'); window.location.href='postar_devocional.php';</script>";
 			}
 		}
 

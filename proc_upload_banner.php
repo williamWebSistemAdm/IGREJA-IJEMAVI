@@ -34,7 +34,7 @@
 
 			// Data e hora
 			date_default_timezone_set( 'America/Sao_Paulo' );
-			$data = date('d-m-Y--H-i');
+			$data = date('d-m-Y--H-i-s');
 
 			//Tamanho máximo do arquivo em Bytes
 			$_UP['tamanho'] = 1024*1024*100; //5mb
@@ -83,6 +83,8 @@
 					$query = mysqli_query($conexao, "INSERT INTO carrouses (imagen_carousel, nome, data_hora_post) VALUES('$novo_nome', '$novo_nome', current_timestamp)");
 					if($result->num_rows > 0){
        				echo "<script>alert('Banner cadastrado com suceso!.'); window.location.href='upload_banner.php';</script>";
+		 				}else {
+							echo "<script>alert('Salvou a imagem, mas nao iseriu no banco de dados. Algum erro de SQL.'); window.location.href='upload_banner.php';</script>";
 		 				};
 
 				}else{
