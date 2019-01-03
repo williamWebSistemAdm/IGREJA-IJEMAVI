@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 03-Jan-2019 às 14:28
+-- Generation Time: 03-Jan-2019 às 17:21
 -- Versão do servidor: 10.1.28-MariaDB
 -- PHP Version: 7.1.11
 
@@ -83,10 +83,10 @@ CREATE TABLE `devocional` (
 
 CREATE TABLE `dia_culto` (
   `id_dia_culto` int(11) NOT NULL,
-  `dia_semana_culto` varchar(45) NOT NULL,
-  `nome_culto` varchar(100) NOT NULL,
-  `hora_culto` varchar(45) NOT NULL,
-  `id_obreiro_diaculto_fk` int(11) NOT NULL
+  `dia_semana_culto` varchar(45) DEFAULT NULL,
+  `nome_culto` varchar(100) DEFAULT NULL,
+  `hora_culto` varchar(45) DEFAULT NULL,
+  `id_obreiro_diaculto_fk` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -124,7 +124,9 @@ CREATE TABLE `galeria` (
   `id_galeria` int(11) NOT NULL,
   `img_galeria` varchar(100) NOT NULL,
   `nome_img_galeria` varchar(100) NOT NULL,
-  `id_obreiro_gal_fk` int(11) NOT NULL
+  `postador_img` varchar(70) DEFAULT NULL,
+  `data_post_img` varchar(20) DEFAULT NULL,
+  `id_obreiro_gal_fk` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -319,7 +321,7 @@ ALTER TABLE `enderecos`
 -- AUTO_INCREMENT for table `galeria`
 --
 ALTER TABLE `galeria`
-  MODIFY `id_galeria` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_galeria` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
 -- AUTO_INCREMENT for table `obreiros`

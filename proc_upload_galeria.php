@@ -23,10 +23,10 @@
 			include 'includes/conexao.inc.php';//conexao com o banco
 
 			// novo nome escolhido pelo usuario
-			// $nome_img_galeria	= $_POST['nome_img_galeria'];
+			$nome_img_galeria	= $_POST['nome_img_galeria'];
 			// nome original do arquivo
 			$img_galeria	= $_FILES['img_galeria']['name'];
-			// $postador_img	=	'eu';
+			$postador_img	=	'eu';
 
 			// Data e hora
 			date_default_timezone_set( 'America/Sao_Paulo' );
@@ -75,10 +75,11 @@
 				//Verificar se é possivel mover o arquivo para a pasta escolhida
 				if(move_uploaded_file($_FILES['img_galeria']['tmp_name'], 'img/img_galeria/'. $novo_nome)){
 					//Upload efetuado com sucesso, exibe a mensagem
-					$query_galeria = mysqli_query($conexao, "INSERT INTO galeria (img_galeria) VALUES('$img_galeria')");
-					// $query_galeria = mysqli_query($conexao, "INSERT INTO galeria (img_galeria, nome_img_galeria, postador_img, data_post_img) VALUES('$img_galeria', '$nome_img_galeria', '$postador_img', now())");
+					// $query_galeria = mysqli_query($conexao, "INSERT INTO galeria (img_galeria) VALUES('$img_galeria')");
+					$query_galeria = mysqli_query($conexao, "INSERT INTO galeria (img_galeria, nome_img_galeria, postador_img, data_post_img) VALUES('$img_galeria', '$nome_img_galeria', '$postador_img', now())");
 					if($result_galeria->num_rows > 0){
        				echo "<script>alert('Imagem adicionada com sucesso!.'); window.location.href='upload_galeria.php';</script>";
+							exit; //Para a execução do script
 		 				}else {
 							echo "<script>alert('Salvou a imagem, mas nao iseriu no banco de dados. Algum erro de SQL.'); window.location.href='upload_galeria.php';</script>";
 		 				};
