@@ -39,25 +39,30 @@
 
       <h1>Postar Devocional</h1>
 			<div id="formulario" >
-			<form action="postar_devocional.inc.php" method="post" enctype="multipart/form-data">
+			<form action="proc_postar_devoc.inc.php" method="post" enctype="multipart/form-data">
 
-				<label for="fname">Título</label>
-				<input type="text" id="fname" name="titulo">
+				<label >Título</label>
+				<input type="text" id="fname" name="titulo_dev" required>
 
 				<label for="subject">Resumo</label>
-				<textarea maxlength="300" id="subject" name="resumo" placeholder="300 caracteres" style="height:100px"></textarea>
+				<textarea maxlength="300" id="subject" name="resumo_dev" placeholder="300 caracteres" style="height:100px" required></textarea>
 
-				<label for="subject">Texto</label>
-				<textarea id="subject" name="texto" style="height:200px"></textarea>
+				<label >Texto</label>
+				<textarea id="subject" name="texto_dev" style="height:200px" required></textarea>
 
-				<label for="fname">Autor</label>
         <?php include 'includes/select_obreiros.inc.php';//Selecionando Obreiro?>
-				<input type="text" id="fname" name="autor" value="<?php echo "$tipocargo_obr -"." $nome_obr"; ?>" disabled>
+
+        <!-- Autor escolhido pelo usuario -->
+        <label >Autor</label><br>
+        <input type="text" id="fname" name="autor_dev" required>
+        <?php echo "$tipocargo_obr -"." $nome_obr"; ?>
+        <!-- Autor Usuário logado que vai para o banco -->
+				<input type="hidden" name="usuario_logado_dev" value="<?php echo "$tipocargo_obr -"." $nome_obr"; ?>" >
 
 				<!-- <label>Imagem</label><br /><br />
 				<input type="file" name="foto_dev"><br /> -->
-        <label for="exampleFormControlFile1">Imagem:</label>
-        <input type="file"  name="foto_dev" class="form-control" id="exampleFormControlFile1" required>
+        <br> <label >Imagem:</label>
+        <input type="file"  name="foto_dev" class="form-control" required>
 
 				<input type="submit" name="submit" value="Postar">
 			</form>

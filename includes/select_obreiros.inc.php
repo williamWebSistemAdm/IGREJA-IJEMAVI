@@ -14,6 +14,7 @@
       // Pegando nome e perfil do obreiro
       $nome_obr = $row['nome_obr'];
       $tipocargo_obr = $row['tipocargo_obr'];
+
      }
    }
    else{
