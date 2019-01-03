@@ -30,7 +30,7 @@
              $hora = strftime( ' %T');
              echo "Dia: " . $dia . "Hora: ".$hora;
       ?>
-          <form method="post" action="cad_usuario_action2.php">
+          <form method="post" action="cad_obreiro.inc.php">
              <div class="row">
               <div class="col-md-3">
                 <label>Perfil/Cargo: </label>

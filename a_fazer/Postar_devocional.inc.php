@@ -1,13 +1,13 @@
 <?php
 
-	if (isset($_POST['submit'])) {
+
 		include 'includes/conexao.inc.php';//conexao com o banco
 
-		$titulo = $_POST ["titulo"];
-		$resumo = $_POST ["resumo"];
-		$texto = $_POST ["texto"];
-		$autor = $_POST ["autor"];
-		$foto_dev = $_FILES ["foto_dev"];
+		$titulo = $_POST["titulo"];
+		$resumo = $_POST["resumo"];
+		$texto = $_POST["texto"];
+		$autor = $_POST["autor"];
+		$foto_dev = $_FILES["foto_dev"];
 
 			// Data e hora
 			date_default_timezone_set( 'America/Sao_Paulo' );
@@ -66,7 +66,6 @@
 				echo "<script>alert('Devocional NÃO foi cadastrado com suceso!.'); window.location.href='postar_devocional.php';</script>";
 			}
 		}
-	}
 
 
 
