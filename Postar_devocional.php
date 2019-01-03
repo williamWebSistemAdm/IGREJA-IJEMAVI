@@ -40,6 +40,7 @@
       <h1>Postar Devocional</h1>
 			<div id="formulario" >
 			<form action="postar_devocional.inc.php" method="post" enctype="multipart/form-data">
+
 				<label for="fname">Título</label>
 				<input type="text" id="fname" name="titulo">
 
@@ -53,8 +54,10 @@
         <?php include 'includes/select_obreiros.inc.php';//Selecionando Obreiro?>
 				<input type="text" id="fname" name="autor" value="<?php echo "$tipocargo_obr -"." $nome_obr"; ?>" disabled>
 
-				<label>Imagem</label><br /><br />
-				<input type="file" name="userfile"><br />
+				<!-- <label>Imagem</label><br /><br />
+				<input type="file" name="foto_dev"><br /> -->
+        <label for="exampleFormControlFile1">Imagem:</label>
+        <input type="file"  name="foto_dev" class="form-control" id="exampleFormControlFile1" required>
 
 				<input type="submit" name="submit" value="Postar">
 			</form>

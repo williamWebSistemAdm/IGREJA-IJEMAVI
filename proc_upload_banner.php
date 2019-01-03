@@ -30,6 +30,7 @@
 			$nome 	= $_FILES['arquivo']['name'];
 			// novo nome escolhido pelo usuario
 			$nome_escolhido		= $_POST['nome_escolhido'];
+			$data_evento  		= $_POST['data_evento'];
 
 			// Data e hora
 			date_default_timezone_set( 'America/Sao_Paulo' );
@@ -41,8 +42,6 @@
 			//Array com a extensões permitidas
 			$_UP['extensoes'] = array('png', 'jpg', 'jpeg');
 
-			//Renomeiar
-			// $_UP['renomeia'] = false;
 
 			//Array com os tipos de erros de upload do PHP
 			$_UP['erros'][0] = 'Não houve erro';
@@ -81,7 +80,7 @@
 				//Verificar se é possivel mover o arquivo para a pasta escolhida
 				if(move_uploaded_file($_FILES['arquivo']['tmp_name'], 'img/img_banner/'. $novo_nome)){
 					//Upload efetuado com sucesso, exibe a mensagem
-					$query = mysqli_query($conexao, "INSERT INTO carrouses (imagen_carousel, nome, data_hora_post) VALUES('$novo_nome', '$novo_nome', NOW())");
+					$query = mysqli_query($conexao, "INSERT INTO carrouses (imagen_carousel, nome, data_hora_post) VALUES('$novo_nome', '$novo_nome', current_timestamp)");
 					if($result->num_rows > 0){
        				echo "<script>alert('Banner cadastrado com suceso!.'); window.location.href='upload_banner.php';</script>";
 		 				};
@@ -91,6 +90,11 @@
 					echo "<script>alert('Banner NÃO foi cadastrado com suceso!.'); window.location.href='upload_banner.php';</script>";
 				}
 			}
+
+				// FALTA INSERIR DATA HORA DO EVENTO NO BANCO E NO PHPMYADMIM
+				// FALTA INSERIR DATA HORA DO EVENTO NO BANCO E NO PHPMYADMIM
+				// FALTA INSERIR DATA HORA DO EVENTO NO BANCO E NO PHPMYADMIM
+				// FALTA INSERIR DATA HORA DO EVENTO NO BANCO E NO PHPMYADMIM
 
 			//Pegar id carrouses
 			$pegar_id_carrouses = "SELECT MAX(id) FROM carrouses LIMIT 1";
