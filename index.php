@@ -16,13 +16,13 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" >
     <link rel="stylesheet" href="css/style.css" >
     <link rel="stylesheet" href="style.css" >
-
+    <link rel="shortcut icon" type="image/png" href="img/logo_favicon.ico">
 	</head>
 
 	<body>
 		<div class="container-fluid">
 			<!-- Menu -->
-			<?php	include 'includes/header_comum.inc.php'; ?>
+			<?php	include 'includes/header_index.inc.php'; ?>
 
 			<!-- Carroussel -->
 			<?php	include 'carroussel_banner.inc.php'; ?>

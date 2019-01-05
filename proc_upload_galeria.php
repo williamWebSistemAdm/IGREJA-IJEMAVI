@@ -13,6 +13,7 @@
 		<link rel="stylesheet" href="css/bootstrap.min.css" >
 		<link rel="stylesheet" href="css/style.css" >
 		<link rel="stylesheet" href="style.css" >
+    <link rel="shortcut icon" type="image/png" href="img/logo_favicon.ico">
 	</head>
 	<body>
 
@@ -79,7 +80,6 @@
 					$query_galeria = mysqli_query($conexao, "INSERT INTO galeria (img_galeria, nome_img_galeria, postador_img, data_post_img) VALUES('$img_galeria', '$nome_img_galeria', '$postador_img', now())");
 					if($result_galeria->num_rows > 0){
        				echo "<script>alert('Imagem adicionada com sucesso!.'); window.location.href='upload_galeria.php';</script>";
-							exit; //Para a execução do script
 		 				}else {
 							echo "<script>alert('Salvou a imagem, mas nao iseriu no banco de dados. Algum erro de SQL.'); window.location.href='upload_galeria.php';</script>";
 		 				};

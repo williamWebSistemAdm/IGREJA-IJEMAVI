@@ -3,7 +3,7 @@
 
 		<nav class="navbar navbar-expand-lg  navbar-light" style="background-color: #e3f2fd;">
 		  <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-			<a class="logo" href="../index.php"> <img src="../img/logo.png" alt="logo IJEMAVI"></a>
+			<a class="logo" href="administrativo.php"> <img src="img/logo.png" alt="logo IJEMAVI"></a>
 		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 		    <span class="navbar-toggler-icon"></span>
 		  </button>
@@ -16,8 +16,8 @@
 							Usuários
 						</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="../listar_obreiros.php">Listar</a>
-							<a class="dropdown-item" href="../cad_obreiro.php">Cadastrar</a>
+							<a class="dropdown-item" href="listar_obreiros.php">Listar</a>
+							<a class="dropdown-item" href="cad_obreiro.php">Cadastrar</a>
 							<a class="dropdown-item" href="#">Editar</a>
 							<div class="dropdown-divider"></div>
 							<a class="dropdown-item" href="#">Desativar</a>
@@ -29,7 +29,7 @@
 						</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 							<a class="dropdown-item" href="#">listar</a>
-							<a class="dropdown-item" href="../postar_devocional.php">Adicionar</a>
+							<a class="dropdown-item" href="postar_devocional.php">Adicionar</a>
 							<a class="dropdown-item" href="#">Editar</a>
 							<div class="dropdown-divider"></div>
 							<a class="dropdown-item" href="#">Desativar</a>
@@ -40,8 +40,8 @@
 							Banner
 						</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="../listar_banner.php">listar</a>
-							<a class="dropdown-item" href="../upload_banner.php">Adicionar</a>
+							<a class="dropdown-item" href="listar_banner.php">listar</a>
+							<a class="dropdown-item" href="upload_banner.php">Adicionar</a>
 							<a class="dropdown-item" href="#">Editar</a>
 							<div class="dropdown-divider"></div>
 							<a class="dropdown-item" href="#">Desativar</a>
@@ -53,7 +53,7 @@
 						</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 							<a class="dropdown-item" href="#">listar</a>
-							<a class="dropdown-item" href="../upload_galeria.php">Adicionar</a>
+							<a class="dropdown-item" href="upload_galeria.php">Adicionar</a>
 							<a class="dropdown-item" href="#">Editar</a>
 							<div class="dropdown-divider"></div>
 							<a class="dropdown-item" href="#">Desativar</a>

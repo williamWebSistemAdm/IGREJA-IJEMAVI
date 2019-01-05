@@ -8,6 +8,7 @@ session_start();
 	<meta charset="UTF-8">
 	<title>login</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="shortcut icon" type="image/png" href="img/logo_favicon.ico">
 	<style>
 		body {
 			margin: 0;
