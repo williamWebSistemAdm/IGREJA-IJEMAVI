@@ -3,7 +3,7 @@
   session_start();
   //Conecxao com Banco
   include 'includes/conexao.inc.php';//conexao com o banco
-  // include '../includes/seguranca.inc.php';//seguranca
+  include 'includes/seguranca.inc.php';//seguranca
 
   // include 'msg_boas_vindas.inc.php';//mensagem de boas vindas
  ?>
@@ -23,7 +23,7 @@
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="css/bootstrap.min.css" >
 		<link rel="stylesheet" href="css/style.css" >
-		<link rel="stylesheet" href="style.css" >
+		<!-- <link rel="stylesheet" href="style.css" > -->
     <link rel="shortcut icon" type="image/png" href="img/logo_favicon.ico">
 	</head>
 
@@ -31,7 +31,7 @@
 
     <div class="container-fluid">
 			<!-- Menu -->
-			<?php	include 'includes/header_adm.inc.php'; ?>
+			<?php	include 'includes/menu_adm.inc.php'; ?>
 
 		<div class="container">
 
@@ -40,14 +40,15 @@
 			<table class="table table-striped table-sm table-dark table-hover">
 				<tr class="bg-primary">
 					<th>Nome</th>
-					<th>Sobrenome</th>
+					<!-- <th>Sobrenome</th> -->
 					<th>CPF</th>
 					<th>Telefone</th>
-					<th>Sexo</th>
+					<!-- <th>Sexo</th> -->
 					<th>E-mail</th>
-					<th>Endereço</th>
-					<th>Data nascimento</th>
+					<!-- <th>Endereço</th> -->
+					<!-- <th>Data nascimento</th> -->
 					<th>Perfil/Cargo</th>
+					<th>Ações</th>
 				</tr>
 				<?php
 				// trazendo sessão
@@ -62,16 +63,21 @@
 						echo "<tr>";
 
 						// echo "<td>" . $row['foto_obreiro'] . "</td>";
-						echo "<td>" . $row['nome_obr'] . "</td>";
-						echo "<td>" . $row['sobrenome_obr'] . "</td>";
+						echo "<td>" . $row['nome_obr'] ." ". $row['sobrenome_obr'] .  "</td>";
+						// echo "<td>" . $row['sobrenome_obr'] . "</td>";
 						echo "<td>" . $row['cpf_obr'] . "</td>";
 						echo "<td>" . $row['telefone_obr'] . "</td>";
-						echo "<td>" . $row['sexo_obr'] . "</td>";
+						// echo "<td>" . $row['sexo_obr'] . "</td>";
 						echo "<td>" . $row['email_obr'] . "</td>";
-						echo "<td>" . $row['endereco'] . "</td>";
-						echo "<td>" . $row['nascimento_obr'] . "</td>";
+						// echo "<td>" . $row['endereco'] . "</td>";
+						// echo "<td>" . $row['nascimento_obr'] . "</td>";
 						echo "<td>" . $row['tipocargo_obr'] . "</td>";
-						echo "<td>" . $row['foto_obreiro'] . "</td>";
+						// echo "<td>" . $row['foto_obreiro'] . "</td>";
+						echo "<td>".'
+            <a href="#" ><button type="button" class="btn btn-sm btn-info">Visualizar</button></a>
+            <a href="#" ><button type="button" class="btn btn-sm btn-warning">Editar</button></a>
+            <a href="#" ><button type="button" class="btn btn-sm btn-danger">Desativar</button></a>
+            '."</td>";
 
 						 echo "</tr>";
 					 }

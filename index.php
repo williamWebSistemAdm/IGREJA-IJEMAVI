@@ -22,7 +22,7 @@
 	<body>
 		<div class="container-fluid">
 			<!-- Menu -->
-			<?php	include 'includes/header_index.inc.php'; ?>
+			<?php	include 'includes/menu_index.inc.php'; ?>
 
 			<!-- Carroussel -->
 			<?php	include 'carroussel_banner.inc.php'; ?>

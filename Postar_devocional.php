@@ -32,7 +32,7 @@
 
     <div class="container-fluid">
 			<!-- Menu -->
-			<?php	include 'includes/header_adm.inc.php'; ?>
+			<?php	include 'includes/menu_adm.inc.php'; ?>
       <a class="nav-link" href="includes/sair.inc.php">Sair</a>
 
 			<div class="container">

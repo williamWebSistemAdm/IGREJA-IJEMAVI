@@ -1,6 +1,7 @@
 <?php
+session_start();
     include 'includes/conexao.inc.php';
-    // include 'verificausuario.inc.php';
+    include 'includes/seguranca.inc.php';//seguranca
 
 ?>
 
@@ -9,19 +10,19 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="shortcut icon" type="image/png" href="img/logo_favicon.ico">
-    <title>Cadastro de Obreiros(as)</title>
+    <title>Cadastro de Usuários</title>
 </head>
 
 <body>
   <?php
-    // include 'header.inc.php';
+    include 'includes/menu_adm.inc.php';
   ?>
 
-	<div id="fundoTransparente">
-    <div >
+  <div id="fundoTransparente">
+
       <div class="container">
         <h3>Cadastro de Obreiros(as)</h3><br>
         <?php
@@ -81,8 +82,8 @@
               <div class="col-md-2">
                 <label>sexo:</label>
                 <select class="form-control" type="text" name="sexo_obr" required>
-                  <option value="masculino">Masculino</option>
-                  <option value="feminino">Feminino</option>
+                  <option value="Masculino">Masculino</option>
+                  <option value="Feminino">Feminino</option>
                 </select>
               </div>
 
@@ -202,6 +203,7 @@
             <button class="btn btn-default" type="submit">Cadastrar</button>
           </div>
         </div>
+      </form>
       </div><br><br>
 
 
@@ -216,7 +218,6 @@
                 </div>
                 </div> -->
 
-        </form>
         </div>
 
 

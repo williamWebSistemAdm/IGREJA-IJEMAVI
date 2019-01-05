@@ -10,6 +10,11 @@
 	transition: all 500ms ease-in-out;
 }
 
+#fundoTransparente {
+	background: rgba(0, 0, 0, 0.5);
+	min-height: 860px;
+}
+
 /********Logo***********/
 
 .logo img {
