@@ -14,10 +14,12 @@
     $nome_obr = $_SESSION['nome_obr'];
 
     //mensagem de Boas Vindas
-    if ($adm_padrao == 'adm_padrao'){
-        echo "Bem vindo ". $nome_adm_padrao ;
-    }elseif($perfil_obr == 'pr_presidente'){
-        echo "Bem vindo ". $perfil_obr .$nome_obr ."!";
+    if ($_SESSION['tipocargo_obr'] == "adm_padrao"){
+        echo "Bem vindo Administrador Padrão!" ;
+    }elseif($_SESSION['tipocargo_obr'] == "pr_presidente"){
+        echo "Bem vindo Pastor Presidente!";
+    }else {
+      echo "Bem vindo Ir. ". $nome_obr;
     }
 
 ?>

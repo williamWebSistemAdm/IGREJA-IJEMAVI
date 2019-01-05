@@ -16,9 +16,9 @@
 							Usuários
 						</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="listar_obreiros.php">Listar</a>
+							<a class="dropdown-item" href="administrativo.php?link=1">Listar</a>
 							<a class="dropdown-item" href="cad_obreiro.php">Cadastrar</a>
-							<a class="dropdown-item" href="#">Editar</a>
+							<a class="dropdown-item" href="administrativo.php?ink=3">Editar</a>
 							<div class="dropdown-divider"></div>
 							<a class="dropdown-item" href="#">Desativar</a>
 						</div>

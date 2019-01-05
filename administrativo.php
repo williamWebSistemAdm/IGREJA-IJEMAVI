@@ -32,16 +32,39 @@
 				<?php	include 'includes/menu_adm.inc.php'; ?>
 				<div class="container">
 
+	      <?php
+          @$link = $_GET['link'];
+
+          $pag['1'] = 'listar_obreiros.php';
+          $pag['2'] = 'cad_obreiro.php';
+          $pag['3'] = 'editar_obreiro.php';
+          $pag['4'] = '#'; //Desaivar
+          $pag['5'] = 'listar_obreiros.php';
+          $pag['6'] = 'listar_obreiros.php';
+          $pag['7'] = 'listar_obreiros.php';
+
+          // validar se apagina existe e redirecionar para ela
+          if (!empty($link)) {
+            if (file_exists($pag[$link])) {
+              include $pag[$link];
+            }
+          }
+          // else {
+          //   // Verifica se é administrador ou usuario comum
+          //   if (($_SESSION['tipocargo_obr'] == "adm_padrao") || ($_SESSION['tipocargo_obr'] == "pr_presidente")) {
+          //     header('Location: administrativo.php');
+          //   }
+            else {
+              // header('Location: usuario_comum.php');
+            }
 
 
-		  <h1>Administrativo</h1>
-		  <?php
-		      // echo "Bem vindo";
-		      if (isset($_SESSION['Bem_vindo'])){
-		          echo $_SESSION['Bem_vindo'];
-		          unset($_SESSION['Bem_vindo']);
-		      }
-		  ?>
+
+
+
+
+        ?>
+
 
 		  <br>
 		  <!-- <a href="sair.inc.php">Sair</a> -->
