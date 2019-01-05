@@ -22,7 +22,7 @@
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="css/bootstrap.min.css" >
 		<link rel="stylesheet" href="css/style.css" >
-		<link rel="stylesheet" href="style.css" >
+		<!-- <link rel="stylesheet" href="style.css" > -->
     <link rel="shortcut icon" type="image/png" href="img/logo_favicon.ico">
 	</head>
 

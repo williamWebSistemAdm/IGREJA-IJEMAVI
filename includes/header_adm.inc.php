@@ -52,7 +52,7 @@
 							Imagens
 						</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="#">listar</a>
+							<a class="dropdown-item" href="../galeria_foto.php">listar</a>
 							<a class="dropdown-item" href="upload_galeria.php">Adicionar</a>
 							<a class="dropdown-item" href="#">Editar</a>
 							<div class="dropdown-divider"></div>
