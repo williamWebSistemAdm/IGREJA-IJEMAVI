@@ -1,0 +1,91 @@
+<?php
+  // Iniciando Sessao
+  session_start();
+  //Conecxao com Banco
+  include 'includes/conexao.inc.php';//conexao com o banco
+  // include '../includes/seguranca.inc.php';//seguranca
+
+  // include 'msg_boas_vindas.inc.php';//mensagem de boas vindas
+ ?>
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="IJEMAVI - Igreja de Jesus Manacial de Águas Vivas, ijemavi">
+		<meta name="keywords" content="Igreja, Jesus, Manancial, Águas, Vivas, Pastor, Família, Adoradores, IJEMAVI, ijemavi">
+		<meta name="author" content="Igreja IJEMAVI">
+		<meta http-equiv="refresh" content="300">
+		<title>Galeria de Imagens</title>
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="css/bootstrap.min.css" >
+		<link rel="stylesheet" href="css/style.css" >
+		<link rel="stylesheet" href="style.css" >
+    <link rel="shortcut icon" type="image/png" href="img/logo_favicon.ico">
+
+    <link rel="stylesheet" href="css/galeria_foto_baguetteBox.min.css">
+    <link rel="stylesheet" href="css/galeria_foto_fluid-gallery.css">
+    <link rel="stylesheet" href="css/galeria_foto_font.css">
+
+	</head>
+	<body>
+
+    <div class="container-fluid">
+			<!-- Menu -->
+			<?php	include 'includes/header_adm.inc.php'; ?>
+
+			<div class="container">
+
+      <div class="container gallery-container">
+          <h1>Galeria de Imagens</h1>
+          <p class="page-description text-center">Fluid Layout With Overlay Effect</p>
+          <div class="tz-gallery">
+              <div class="row">
+                  <div class="col-sm-6 col-md-3">
+                      <a class="lightbox" href="images/bridge.jpg">
+                          <img src="images/bridge.jpg" alt="Bridge">
+                      </a>
+                  </div>
+                  <div class="col-sm-6 col-md-3">
+                      <a class="lightbox" href="images/park.jpg">
+                          <img src="images/park.jpg" alt="Park">
+                      </a>
+                  </div>
+                  <div class="col-sm-6 col-md-3">
+                      <a class="lightbox" href="images/tunnel.jpg">
+                          <img src="images/tunnel.jpg" alt="Tunnel">
+                      </a>
+                  </div>
+                  <div class="col-sm-6 col-md-3">
+                      <a class="lightbox" href="images/traffic.jpg">
+                          <img src="images/traffic.jpg" alt="Traffic">
+                      </a>
+                  </div>
+                  <div class="col-sm-6 col-md-3">
+                      <a class="lightbox" href="images/coast.jpg">
+                          <img src="images/coast.jpg" alt="Coast">
+                      </a>
+                  </div>
+                  <div class="col-sm-6 col-md-3">
+                      <a class="lightbox" href="images/rails.jpg">
+                          <img src="images/rails.jpg" alt="Rails">
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+
+
+		  </div> <!--  container -->
+		</div>
+    <script src="js/jquery-3.3.1.slim.min.js" ></script>
+    <script src="js/bootstrap.min.js" ></script>
+    <script src="js/Galeria_foto_baguetteBox.min.js"></script>
+    <script>
+    baguetteBox.run('.tz-gallery');
+    </script>
+  </body>
+
+  </html>
