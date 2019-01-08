@@ -93,7 +93,7 @@
 	// }
 
 
-	//Pegar o maior e ultimo id_enderecos cadastrado
+	//Pegar id_enderecos
 	$pegar_id_enderecos = "SELECT MAX(id_end) FROM enderecos";
 	$result_id_enderecos =  mysqli_query($conexao, $pegar_id_enderecos);
 
@@ -104,7 +104,7 @@
     echo "<br>";
 	}
 
-	//Pegar o maior e ultimo id_telefones cadastrado
+	//Pegar id_telefones
 	$pegar_id_telefones = "SELECT MAX(id_telefones) FROM telefones";
 	$result_id_telefones =  mysqli_query($conexao, $pegar_id_telefones);
 
@@ -115,7 +115,7 @@
     echo "<br>";
 	}
 
-	//Pegar o maior e ultimo id_obreiros cadastrado
+	//Pegar id_obreiros
 	$pegar_id_obreiros = "SELECT MAX(id_obreiros) FROM obreiros";
 	$result_id_obreiros =  mysqli_query($conexao, $pegar_id_obreiros);
 
