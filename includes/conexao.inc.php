@@ -6,5 +6,4 @@
 
 	//Criar a conexao
 	$conexao = mysqli_connect($servidor, $usuario, $senha, $dbname);
-
 ?>

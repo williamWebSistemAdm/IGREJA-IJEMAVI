@@ -53,12 +53,10 @@ $resultado_consulta = mysqli_fetch_assoc($result_consulta);
   	{
   		$id_tipocargo_obr = $rowc['id_tipocargo'];
       $_SESSION['id_tipocargo'] = $id_tipocargo_obr;
-
   		$Perfil_cargo_obr = $rowc['Perfil_cargo_obr'];
   		echo "Perfil/cargo: ".$Perfil_cargo_obr;
       echo "<br>";
   	}
-
 ?>
 
   <div id="fundoTransparente">
@@ -77,26 +75,26 @@ $resultado_consulta = mysqli_fetch_assoc($result_consulta);
               <div class="col-md-3">
                 <label>Perfil/Cargo: </label>
                 <select class="form-control" name="tipocargo_obr"  >
-                  <option value="pr_presidente" value="<?php echo $Perfil_cargo_obr; ?>" selected><?php echo $Perfil_cargo_obr; ?></option>
+                  <option value="<?php echo $Perfil_cargo_obr; ?>" selected><?php echo $Perfil_cargo_obr; ?></option>
 
                   <optgroup value="pastor" label="Pastor">
-                    <option value="pr_presidente">Pastor Presidente</option>
+                    <!-- <option value="Pastor Presidente">Pastor Presidente</option> -->
 
-                    <option value="pr_dir_congregacional">Pastor Dirigente Congregacional</option>
+                    <option value="Pastor Dirigente Congregacional">Pastor Dirigente Congregacional</option>
 
-                    <option value="pr_evanglista">Pastor Evangelista</option>
-                    <option value="pr_missionario">Pastor Missionário</option>
+                    <option value="Pastor Evangelista">Pastor Evangelista</option>
+                    <option value="Pastor Missionário">Pastor Missionário</option>
                   </optgroup>
 
-                  <option name="missionario" value="presbítero">Missionário(a)</option>
-                  <option name="presbitero" value="presbítero">Presbítero</option>
+                  <option name="missionario" value="Missionário">Missionário(a)</option>
+                  <option name="presbitero" value="Presbítero">Presbítero</option>
                   <option name="diacono" value="Diácono">Diácono</option>
 
                   <optgroup label="Cooperador(a)">
-                    <option name="coop_port" value="coop_porteiro">Porteiro(a)</option>
-                    <option name="coop_secret" value="coop_secretario">Secretário(a)</option>
-                    <option name="coop_teso" value="coop_tesoureiro">Tesoureiro(a)</option>
-                    <option name="coop_auxiliar" value="coop_auxiliar">Auxiliar</option>
+                    <option name="coop_port" value="Coop. Porteiro(a)">Porteiro(a)</option>
+                    <option name="coop_secret" value="Coop. Secretário(a)">Secretário(a)</option>
+                    <option name="coop_teso" value="Coop. Tesoureiro(a)">Tesoureiro(a)</option>
+                    <option name="coop_auxiliar" value="Coop. Auxiliar">Auxiliar</option>
                   </optgroup>
                 </select>
               </div>
@@ -160,8 +158,8 @@ $resultado_consulta = mysqli_fetch_assoc($result_consulta);
               </div>
               <div class="col-md-3">
                 <label>Cidade:</label>
-                <select class="form-control" value="<?php echo $cidade_end; ?>"  name="cidade_end" >
-                  <option value="">Selecione o município</option>
+                <select class="form-control" name="cidade_end" >
+                  <option value="<?php echo $cidade_end; ?>"><?php echo $cidade_end; ?></option>
                   <option value="Aguiarnópolis">Aguiarnópolis</option>
                   <option value="Almas">Almas</option>
                   <option value="Ananás">Ananás</option>
@@ -189,7 +187,7 @@ $resultado_consulta = mysqli_fetch_assoc($result_consulta);
                   <option value="Monte do Carmo">Monte do Carmo</option>
                   <option value="Natividade">Natividade</option>
                   <option value="Novo Acordo">Novo Acordo</option>
-                  <option value="Palmas" selected>Palmas</option>
+                  <option value="Palmas">Palmas</option>
                   <option value="Paraíso do Tocantins">Paraíso do Tocantins</option>
                   <option value="Paranã">Paranã</option>
                   <option value="Pau d'Arco">Pau d'Arco</option>
@@ -238,7 +236,10 @@ $resultado_consulta = mysqli_fetch_assoc($result_consulta);
               <div class="col-md-3">
                 <label>Senha:</label>
                 <input class="form-control" type="password" value="<?php echo $resultado_consulta['senha_obr']; ?>"  name="senha_obr" >
-                <!-- <input class="form-control" type="password" value=""  name="senha_obr" > -->
+              </div>
+              <div class="col-md-3">
+                <label>Confirmação de senha:</label>
+                <input class="form-control" type="password" name="confsenha_obr" required>
               </div>
             </div>
             <br>
