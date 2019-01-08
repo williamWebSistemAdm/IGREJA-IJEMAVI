@@ -24,9 +24,11 @@
 	 if($result_obr->num_rows > 0){
 		while($row = $result_obr->fetch_assoc())
 		{
+			$id = $row['id_obreiros'];
 			echo "<tr>";
 
 			// echo "<td>" . $row['foto_obreiro'] . "</td>";
+			// echo "<td>" . $row['id_obreiros'] ." ". $row['sobrenome_obr'] .  "</td>";
 			echo "<td>" . $row['nome_obr'] ." ". $row['sobrenome_obr'] .  "</td>";
 			// echo "<td>" . $row['sobrenome_obr'] . "</td>";
 			echo "<td>" . $row['cpf_obr'] . "</td>";
@@ -37,11 +39,12 @@
 			// echo "<td>" . $row['nascimento_obr'] . "</td>";
 			echo "<td>" . $row['tipocargo_obr'] . "</td>";
 			// echo "<td>" . $row['foto_obreiro'] . "</td>";
-			?> <td>
-	    <a href="#" ><button type="button" class="btn btn-sm btn-info">Visualizar</button></a>
-	    <a href="administrativo.php?ink=3" ><button type="button" class="btn btn-sm btn-warning">Editar</button></a>
-	    <a href="#" ><button type="button" class="btn btn-sm btn-danger">Desativar</button></a>
-	    </td>;
+			?>
+			<td>
+	    <a href="administrativo.php?link=2&id_obreiros=<?php echo $id; ?>" ><button type="button" class="btn btn-sm btn-info">Visualizar</button></a>
+	    <a href="administrativo.php?link=4&id_obreiros=<?php echo $id; ?>" ><button type="button" class="btn btn-sm btn-warning">Editar</button></a>
+	    <a href="administrativo.php?link=5&id_obreiros=<?php echo $id; ?>" ><button type="button" class="btn btn-sm btn-danger">Desativar</button></a>
+	    </td>
 			<?php
 			 echo "</tr>";
 		 }

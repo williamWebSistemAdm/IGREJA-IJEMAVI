@@ -16,6 +16,7 @@
 		<meta name="description" content="IJEMAVI - Igreja de Jesus Manacial de Águas Vivas, ijemavi">
 		<meta name="keywords" content="Igreja, Jesus, Manancial, Águas, Vivas, Pastor, Família, Adoradores, IJEMAVI, ijemavi">
 		<meta name="author" content="Igreja IJEMAVI">
+    <link rel="shortcut icon" type="image/png" href="img/logo_favicon.ico">
 		<meta http-equiv="refresh" content="300">
 		<title>Administrativo</title>
 
@@ -27,7 +28,6 @@
 	</head>
 
 	<body>
-	    <div class="container-fluid">
 				<!-- Menu -->
 				<?php	include 'includes/menu_adm.inc.php'; ?>
 				<div class="container">
@@ -36,12 +36,13 @@
           @$link = $_GET['link'];
 
           $pag['1'] = 'listar_obreiros.php';
-          $pag['2'] = 'cad_obreiro.php';
-          $pag['3'] = 'editar_obreiro.php';
-          $pag['4'] = '#'; //Desaivar
-          $pag['5'] = 'listar_obreiros.php';
+          $pag['2'] = 'visualizar_perfil_obreiro.php';
+          $pag['3'] = 'cad_obreiro.php';
+          $pag['4'] = 'editar_obreiro.php';
+          $pag['5'] = '#'; //Desaivar
           $pag['6'] = 'listar_obreiros.php';
           $pag['7'] = 'listar_obreiros.php';
+          $pag['8'] = 'listar_obreiros.php';
 
           // validar se apagina existe e redirecionar para ela
           if (!empty($link)) {
@@ -58,50 +59,13 @@
               // header('Location: usuario_comum.php');
             }
 
-
-
-
-
-
         ?>
 
 
 		  <br>
 		  <!-- <a href="sair.inc.php">Sair</a> -->
 
-    <table class="table table-striped">
-      <thead class="sucess">
-        <tr>
-          <th scope="col">#</th>
-          <th scope="col">First</th>
-          <th scope="col">Last</th>
-          <th scope="col">Handle</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th scope="row">1</th>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
-        </tr>
-        <tr>
-          <th scope="row">2</th>
-          <td>Jacob</td>
-          <td>Thornton</td>
-          <td>@fat</td>
-        </tr>
-        <tr>
-          <th scope="row">3</th>
-          <td>Larry</td>
-          <td>the Bird</td>
-          <td>@twitter</td>
-        </tr>
-      </tbody>
-    </table>
 		</div>
-	</div>
-
 
     <script src="js/jquery-3.3.1.slim.min.js" ></script>
     <script src="js/bootstrap.min.js" ></script>

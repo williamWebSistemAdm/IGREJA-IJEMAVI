@@ -1,30 +1,70 @@
 <?php
-session_start();
-    include 'includes/conexao.inc.php';
-    include 'includes/seguranca.inc.php';//seguranca
+include 'includes/conexao.inc.php';//conexao com o banco
+include 'includes/seguranca.inc.php';//seguranca
+
+
+$id = $_GET['id_obreiros'];
+
+// Consultar obreiros
+$sql_consulta = "SELECT * FROM obreiros WHERE id_obreiros='$id' limit 1";
+$result_consulta = $conexao->query($sql_consulta);
+$resultado_consulta = mysqli_fetch_assoc($result_consulta);
+
+	//Pegar o id_enderecos
+	$pegar_id_enderecos = "SELECT * FROM enderecos WHERE id_end='$id' limit 1";
+	$result_id_enderecos =  mysqli_query($conexao, $pegar_id_enderecos);
+	while($row = mysqli_fetch_assoc($result_id_enderecos))
+	{
+		$id_enderecos = $row['id_end'];
+		$_SESSION['id_end'] = $id_enderecos;
+
+		$cep_end = $row['cep_end'];
+		$estado_end = $row['estado_end'];
+		$estado_end = $row['estado_end'];
+		$cidade_end = $row['cidade_end'];
+		$bairro_end = $row['bairro_end'];
+		$rua_end = $row['rua_end'];
+		$numero_end = $row['numero_end'];
+		$complemento_end = $row['complemento_end'];
+		echo "id endereço: ".$id_enderecos;
+    echo "<br>";
+	}
+
+	//Pegar o  id_telefones
+	$pegar_id_telefones = "SELECT * FROM telefones WHERE id_telefones='$id' limit 1";
+	$result_id_telefones =  mysqli_query($conexao, $pegar_id_telefones);
+	while($rowt = mysqli_fetch_assoc($result_id_telefones))
+	{
+		$id_telefones = $rowt['id_telefones'];
+    $_SESSION['id_telefones'] = $id_telefones;
+
+		$tel_watzap = $rowt['tel_watzap'];
+		$tel_cel = $rowt['tel_cel'];
+		$tel_resid = $rowt['tel_resid'];
+
+		echo "id telefone: ".$id_telefones;
+    echo "<br>";
+	}
+
+  	//Pegar o  tipocargo_obr
+  	$pegar_tipocargo_obr = "SELECT * FROM tipocargo_obr WHERE id_tipocargo='$id' limit 1";
+  	$result_tipocargo_obr =  mysqli_query($conexao, $pegar_tipocargo_obr);
+  	while($rowc = mysqli_fetch_assoc($result_tipocargo_obr))
+  	{
+  		$id_tipocargo_obr = $rowc['id_tipocargo'];
+      $_SESSION['id_tipocargo'] = $id_tipocargo_obr;
+
+  		$Perfil_cargo_obr = $rowc['Perfil_cargo_obr'];
+  		echo "Perfil/cargo: ".$Perfil_cargo_obr;
+      echo "<br>";
+  	}
 
 ?>
-
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="shortcut icon" type="image/png" href="img/logo_favicon.ico">
-    <title>Cadastro de Usuários</title>
-</head>
-
-<body>
-  <?php
-    include 'includes/menu_adm.inc.php';
-  ?>
 
   <div id="fundoTransparente">
 
       <div class="container">
-        <h3>Cadastro de Obreiros(as)</h3><br>
+        <h3>Editar Obreiro(a)</h3><br>
         <?php
              setlocale( LC_ALL, 'pt_BR', 'pt_BR.iso-8859-1', 'pt_BR.utf-8', 'portuguese' );
              date_default_timezone_set( 'America/Sao_Paulo' );
@@ -32,20 +72,24 @@ session_start();
              $hora = strftime( ' %T');
              echo "Dia: " . $dia . "Hora: ".$hora;
       ?>
-          <form method="post" action="cad_obreiro.inc.php">
+          <form method="post" action="proc_editar_obreiro.inc.php">
              <div class="row">
               <div class="col-md-3">
                 <label>Perfil/Cargo: </label>
-                <select class="form-control" name="tipocargo_obr" required autofocus>
+                <select class="form-control" name="tipocargo_obr"  >
+                  <option value="pr_presidente" value="<?php echo $Perfil_cargo_obr; ?>" selected><?php echo $Perfil_cargo_obr; ?></option>
+
                   <optgroup value="pastor" label="Pastor">
                     <option value="pr_presidente">Pastor Presidente</option>
+
                     <option value="pr_dir_congregacional">Pastor Dirigente Congregacional</option>
+
                     <option value="pr_evanglista">Pastor Evangelista</option>
                     <option value="pr_missionario">Pastor Missionário</option>
                   </optgroup>
 
-                  <option name="missionario" value="presbítero" >Missionário(a)</option>
-                  <option name="presbitero" value="presbítero" selected>Presbítero</option>
+                  <option name="missionario" value="presbítero">Missionário(a)</option>
+                  <option name="presbitero" value="presbítero">Presbítero</option>
                   <option name="diacono" value="Diácono">Diácono</option>
 
                   <optgroup label="Cooperador(a)">
@@ -58,30 +102,30 @@ session_start();
               </div>
               <div class="col-md-3">
                 <label>Nome:</label>
-                <input class="form-control" type="text" name="nome_obr" required>
+                <input class="form-control" type="text" value="<?php echo $resultado_consulta['nome_obr']; ?>" name="nome_obr" >
               </div>
               <div class="col-md-6">
                 <label>Sobrenome:</label>
-                <input class="form-control" type="text" name="sobrenome_obr" required>
+                <input class="form-control" type="text" value="<?php echo $resultado_consulta['sobrenome_obr']; ?>"  name="sobrenome_obr" >
               </div>
             </div>
 
            <div class="row">
              <div class="col-md-3">
                <label>CPF:</label>
-               <input class="form-control" type="text" name="cpf_obr" required>
+               <input class="form-control" type="text" value="<?php echo $resultado_consulta['cpf_obr']; ?>"  name="cpf_obr" >
              </div>
               <div class="col-md-5 mb-3">
                 <label>E-mail:</label>
-                <input class="form-control" type="text" name="email_obr" size="35" maxlength="100"  required>
+                <input class="form-control" type="text" value="<?php echo $resultado_consulta['email_obr']; ?>"  name="email_obr" size="35" maxlength="100" >
               </div>
               <div class="col-md-2">
                 <label>Data Nascimento:</label>
-                <input class="form-control" type="date" name="nascimento_obr" required>
+                <input class="form-control" type="date" value="<?php echo $resultado_consulta['nascimento_obr']; ?>"  name="nascimento_obr" >
               </div>
               <div class="col-md-2">
                 <label>sexo:</label>
-                <select class="form-control" type="text" name="sexo_obr" required>
+                <select class="form-control" type="text" value="<?php echo $resultado_consulta['sexo_obr']; ?>"  name="sexo_obr" >
                   <option value="Masculino">Masculino</option>
                   <option value="Feminino">Feminino</option>
                 </select>
@@ -89,34 +133,34 @@ session_start();
 
               <div class="col-md-2">
                 <label>Celular:</label>
-                <input class="form-control" type="text" name="tel_cel">
+                <input class="form-control" type="text" value="<?php echo $tel_cel; ?>"  name="tel_cel">
               </div>
               <div class="col-md-2">
                 <label>WatZap:</label>
-                <input class="form-control" type="text" name="tel_watzap">
+                <input class="form-control" type="text" value="<?php echo $tel_watzap; ?>"  name="tel_watzap">
               </div>
               <div class="col-md-2">
                 <label>Telefone Residencial:</label>
-                <input class="form-control" type="text" name="tel_resid">
+                <input class="form-control" type="text" value="<?php echo $tel_resid; ?>"  name="tel_resid">
               </div>
             </div>
 
+            <h4>Endereço</h4>
              <div class="row">
-              <h4>Endereço</h4>
               <div class="col-md-3">
                 <label>CEP:</label>
-                <input class="form-control" type="text" name="cep_end" required>
+                <input class="form-control" type="text" value="<?php echo $cep_end; ?>"  name="cep_end" >
               </div>
 
               <div class="col-md-2">
                 <label>UF:</label>
-                <select class="form-control" name="estado_end" required >
+                <select class="form-control" value="<?php echo $estado_end; ?>"  name="estado_end"  >
                   <option value="Tocantins">Tocantins</option>
                 </select>
               </div>
               <div class="col-md-3">
                 <label>Cidade:</label>
-                <select class="form-control" name="cidade_end" required >
+                <select class="form-control" value="<?php echo $cidade_end; ?>"  name="cidade_end" >
                   <option value="">Selecione o município</option>
                   <option value="Aguiarnópolis">Aguiarnópolis</option>
                   <option value="Almas">Almas</option>
@@ -169,74 +213,38 @@ session_start();
 
               <div class="col-md-4">
                 <label>Bairro:</label>
-                <input class="form-control" type="text" name="bairro_end" required>
+                <input class="form-control" type="text" value="<?php echo $bairro_end; ?>"  name="bairro_end" >
               </div>
             </div>
             <div class="row">
               <div class="col-md-4">
                 <label>Rua:</label>
-                <input class="form-control" type="text" name="rua_end" required>
+                <input class="form-control" type="text" value="<?php echo $rua_end; ?>"  name="rua_end" >
               </div>
               <div class="col-md-2">
                 <label>Número:</label>
-                <input class="form-control" type="text" name="numero_end" required>
+                <input class="form-control" type="text" value="<?php echo $numero_end; ?>"  name="numero_end" >
               </div>
               <div class="col-md-6">
                 <label>Complemento:</label>
-                <input class="form-control" type="text" name="complemento_end" required>
+                <input class="form-control" type="text" value="<?php echo $complemento_end; ?>"  name="complemento_end" >
               </div>
             </div>
 
+            <input  type="hidden" value="<?php echo $resultado_consulta['id_obreiros']; ?>"  name="id_obreiros" >
+
+            <h4>Escolha a Senha de Usuário</h4>
              <div class="row">
-              <h4>Escolha a Senha de Usuário</h4>
               <div class="col-md-3">
                 <label>Senha:</label>
-                <input class="form-control" type="password" name="senha_obr" required>
+                <input class="form-control" type="password" value="<?php echo $resultado_consulta['senha_obr']; ?>"  name="senha_obr" >
+                <!-- <input class="form-control" type="password" value=""  name="senha_obr" > -->
               </div>
-              <!-- <div class="col-md-3">
-                <label>Confirmação de senha:</label>
-                <input class="form-control" type="password" name="confsenha_obr" required>
-              </div> -->
             </div>
             <br>
             <div class="row">
-            <button class="btn btn-default" type="submit">Cadastrar</button>
+            <button class="btn btn-default" type="submit">Atualizar</button>
           </div>
         </div>
       </form>
       </div><br><br>
-
-
-<!--           <div class="row">
-                <div class="col-md-3 mb-3">
-                  <label>Selecione a Unidade:</label><br>
-                  <select class="form-control" name="nomeUnidade" size=1>
-                    <?php
-                   // include 'selectUnidades.inc.php';
-                    ?>
-                  </select>
-                </div>
-                </div> -->
-
-        </div>
-
-
-<!--
-      <div id="alerta">
-        <div id="boxtop"></div>
-        Não há nenhuma unidade cadastrada. Por favor, cadastre uma unidade primeiro.
-        <button id="botao" onclick="redirect(); apagar(); ">OK</button>
-      </div> -->
-
-        <?php
-          // include 'footer.php';
-          // include 'verificarUnidades.inc.php';
-        ?>
-
-
-
-
-
-
-</body>
-</html>

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 03-Jan-2019 às 17:21
+-- Generation Time: 08-Jan-2019 às 21:17
 -- Versão do servidor: 10.1.28-MariaDB
 -- PHP Version: 7.1.11
 
@@ -112,7 +112,8 @@ CREATE TABLE `enderecos` (
 --
 
 INSERT INTO `enderecos` (`id_end`, `cep_end`, `estado_end`, `cidade_end`, `bairro_end`, `rua_end`, `numero_end`, `complemento_end`, `id_obreiro_end_fk`) VALUES
-(1, '7565443654', 'Tocantins', 'Palmas', 'efdgdf', 'dfgsgsghg', '6565', 'gdfgfdgf', NULL);
+(1, '-', 'Tocantins', 'Palmas', '-', '-', '000', '', 1),
+(2, '77050062', 'Tocantins', 'Palmas', 'Santa Helena', '12', '7', NULL, 2);
 
 -- --------------------------------------------------------
 
@@ -141,13 +142,13 @@ CREATE TABLE `obreiros` (
   `sobrenome_obr` varchar(45) NOT NULL,
   `senha_obr` varchar(45) NOT NULL,
   `cpf_obr` varchar(45) NOT NULL,
-  `telefone_obr` varchar(45) NOT NULL,
+  `telefone_obr` varchar(45) DEFAULT NULL,
   `sexo_obr` varchar(45) NOT NULL,
   `email_obr` varchar(45) NOT NULL,
   `endereco` varchar(45) DEFAULT NULL,
   `datacad_obr` date NOT NULL,
   `nascimento_obr` date NOT NULL,
-  `tipocargo_obr` varchar(45) NOT NULL,
+  `tipocargo_obr` int(11) DEFAULT NULL,
   `foto_obreiro` varchar(45) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -156,8 +157,8 @@ CREATE TABLE `obreiros` (
 --
 
 INSERT INTO `obreiros` (`id_obreiros`, `nome_obr`, `sobrenome_obr`, `senha_obr`, `cpf_obr`, `telefone_obr`, `sexo_obr`, `email_obr`, `endereco`, `datacad_obr`, `nascimento_obr`, `tipocargo_obr`, `foto_obreiro`) VALUES
-(1, 'Administrador', ' - ', 'admin@ijemavi', '98765432109', '1', 'm', 'admin@ijemavi.com', '1', '2018-12-20', '2018-12-20', 'adm_padrao', NULL),
-(2, 'fernando', 'alves', '321', '2354365', '', 'masculino', 'fer@gmail.com', '1', '2019-01-02', '2019-01-02', 'presbÃ­tero', NULL);
+(1, 'Administrador', ' - ', 'admin@ijemavi', '98765432109', '1', 'm', 'admin@ijemavi.com', '1', '2018-12-20', '2018-12-20', 1, NULL),
+(2, 'José', 'Ribeiro do Nascimento', 'jr.n.admin.ijemavi', '216.038.043-15', '2', 'Masculino', 'jr.n@live.com', '2', '2019-01-05', '1958-02-16', 2, NULL);
 
 -- --------------------------------------------------------
 
@@ -192,6 +193,14 @@ CREATE TABLE `telefones` (
   `id_obreiro_tel_fk` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+--
+-- Extraindo dados da tabela `telefones`
+--
+
+INSERT INTO `telefones` (`id_telefones`, `tel_watzap`, `tel_cel`, `tel_resid`, `id_obreiro_tel_fk`) VALUES
+(1, '63984349210', '63984349210', '-', 1),
+(2, '', '(63)999985118', NULL, 2);
+
 -- --------------------------------------------------------
 
 --
@@ -203,6 +212,14 @@ CREATE TABLE `tipocargo_obr` (
   `id_tipocargo` int(11) NOT NULL,
   `Perfil_cargo_obr` varchar(45) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Extraindo dados da tabela `tipocargo_obr`
+--
+
+INSERT INTO `tipocargo_obr` (`id_tipocargo_obr_fk`, `id_tipocargo`, `Perfil_cargo_obr`) VALUES
+(1, 1, 'Administrador'),
+(2, 2, 'Pastor Presidente');
 
 --
 -- Indexes for dumped tables
@@ -303,7 +320,7 @@ ALTER TABLE `carrouses`
 -- AUTO_INCREMENT for table `devocional`
 --
 ALTER TABLE `devocional`
-  MODIFY `id_devocional` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id_devocional` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `dia_culto`
@@ -315,13 +332,13 @@ ALTER TABLE `dia_culto`
 -- AUTO_INCREMENT for table `enderecos`
 --
 ALTER TABLE `enderecos`
-  MODIFY `id_end` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_end` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `galeria`
 --
 ALTER TABLE `galeria`
-  MODIFY `id_galeria` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `id_galeria` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `obreiros`
@@ -339,13 +356,13 @@ ALTER TABLE `registro_alteracoes`
 -- AUTO_INCREMENT for table `telefones`
 --
 ALTER TABLE `telefones`
-  MODIFY `id_telefones` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_telefones` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `tipocargo_obr`
 --
 ALTER TABLE `tipocargo_obr`
-  MODIFY `id_tipocargo` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_tipocargo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- Constraints for dumped tables

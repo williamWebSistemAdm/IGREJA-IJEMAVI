@@ -3,6 +3,10 @@
 -- Model: New Model    Version: 1.0
 -- MySQL Workbench Forward Engineering
 
+INSERT INTO `tipocargo_obr` (`id_tipocargo_obr_fk`, `id_tipocargo`, `Perfil_cargo_obr`) VALUES ('1', '1', 'Administrador'), ('2', '2', 'Pastor Presidente'), ('3', '3', 'Pastor Dirigente Congregacional'), ('4', '4', 'Pastor Evangelista'),  ('5', '5', 'Pastor Missionário'),  ('6', '6', 'Missionário(a)'),
+ ('7', '7', 'Presbítero'), ('8', '8', 'Diácono'),  ('9', '9', 'Porteiro(a)'), ('10', '10', 'Secretário(a)'),  ('11', '11', 'Tesoureiro(a)'), ('12', '12', 'Auxiliar');
+
+
 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='TRADITIONAL,ALLOW_INVALID_DATES';
