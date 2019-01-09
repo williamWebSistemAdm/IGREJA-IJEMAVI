@@ -37,26 +37,20 @@
 		<?php
 			$result_foto = "SELECT img_galeria, nome_img_galeria FROM galeria ORDER BY id_galeria ASC";
 			$resultado_foto = mysqli_query($conexao, $result_foto);
-			while($row_foto = mysqli_fetch_assoc($resultado_foto)){
-				if($row_foto > 0){  ?>
-					<div class="tz-gallery">
-						<div class="row">
-								<div class="col-sm-6 col-md-3">
-										<a class="lightbox" href="img/img_galeria/<?php echo $row_foto['img_galeria']; ?>">
-											<img src="img/img_galeria/<?php echo $row_foto['img_galeria']; ?>" alt="<?php echo $row_foto['nome_img_galeria']; ?>">
-										</a>
-								</div>
-						</div>
-				</div>
-				<?php }else {   ?>
+			if ($resultado_foto->num_rows > 0) {
+				while($item = $resultado_foto->fetch_assoc()){
+					echo '<div>';
+					if($item['img_galeria']==''){
+						echo '  <div>  <img src="img/no-image.jpg" alt="Sem Imagem"></div>  ';
 
-				<div class="carousel-item">
-				 nao mostra  <img src="img/img_galeria/<?php echo $row_foto['img_galeria']; ?>" alt="<?php echo $row_foto['nome_img_galeria']; ?>">
-			 	</div>  <?php
+					}else{
+						echo '  <div><a href="img/img_galeria/' . $item['img_galeria'] . '"> <img src=img/img_galeria/'.$item['img_galeria'].' alt="Imagem galeria"></a></div>';
 					}
+					echo '</div>';
 				}
-
-
+			}else {
+				echo 'Nenhuma imagem encontrada. <br />';
+			}
 
 		 ?>
 
