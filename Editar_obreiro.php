@@ -109,7 +109,7 @@ $resultado_consulta = mysqli_fetch_assoc($result_consulta);
             </div>
 
            <div class="row">
-             <div class="col-md-3">
+             <div class="col-md-2">
                <label>CPF:</label>
                <input class="form-control" type="text" value="<?php echo $resultado_consulta['cpf_obr']; ?>"  name="cpf_obr" >
              </div>
@@ -117,7 +117,7 @@ $resultado_consulta = mysqli_fetch_assoc($result_consulta);
                 <label>E-mail:</label>
                 <input class="form-control" type="text" value="<?php echo $resultado_consulta['email_obr']; ?>"  name="email_obr" size="35" maxlength="100" >
               </div>
-              <div class="col-md-2">
+              <div class="col-md-3">
                 <label>Data Nascimento:</label>
                 <input class="form-control" type="date" value="<?php echo $resultado_consulta['nascimento_obr']; ?>"  name="nascimento_obr" >
               </div>
@@ -238,7 +238,7 @@ $resultado_consulta = mysqli_fetch_assoc($result_consulta);
                 <input class="form-control" type="password" value="<?php echo $resultado_consulta['senha_obr']; ?>"  name="senha_obr" >
               </div>
               <div class="col-md-3">
-                <label>Confirmação de senha:</label>
+                <label>Repita sua senha:</label>
                 <input class="form-control" type="password" name="confsenha_obr" required>
               </div>
             </div>

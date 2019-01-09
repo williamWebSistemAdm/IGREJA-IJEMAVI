@@ -1,10 +1,3 @@
-<?php
-session_start();
-    include 'includes/conexao.inc.php';
-    include 'includes/seguranca.inc.php';//seguranca
-
-?>
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -12,15 +5,12 @@ session_start();
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="shortcut icon" type="image/png" href="img/logo_favicon.ico">
+  <!-- <link rel="shortcut icon" type="image/png" href="img/logo_favicon.ico"> -->
     <title>Cadastro de Usuários</title>
 </head>
 
 <body>
-  <?php
-    include 'includes/menu_adm.inc.php';
-  ?>
-
+  <?php	include 'includes/menu_adm.inc.php'; ?>
   <div id="fundoTransparente">
 
       <div class="container">
@@ -32,7 +22,7 @@ session_start();
              $hora = strftime( ' %T');
              echo "Dia: " . $dia . "Hora: ".$hora;
       ?>
-          <form method="post" action="cad_obreiro.inc.php">
+          <form method="post" action="proc_cad_obreiro.php">
              <div class="row">
               <div class="col-md-3">
                 <label>Perfil/Cargo: </label>
@@ -87,23 +77,23 @@ session_start();
                 </select>
               </div>
 
-              <div class="col-md-2">
+              <div class="col-md-4">
                 <label>Celular:</label>
                 <input class="form-control" type="text" name="tel_cel">
               </div>
-              <div class="col-md-2">
+              <div class="col-md-4">
                 <label>WatZap:</label>
                 <input class="form-control" type="text" name="tel_watzap">
               </div>
-              <div class="col-md-2">
+              <div class="col-md-4">
                 <label>Telefone Residencial:</label>
                 <input class="form-control" type="text" name="tel_resid">
               </div>
-            </div>
+            </div><br>
 
+            <h4>Endereço</h4>
              <div class="row">
-              <h4>Endereço</h4>
-              <div class="col-md-3">
+              <div class="col-md-2">
                 <label>CEP:</label>
                 <input class="form-control" type="text" name="cep_end" required>
               </div>
@@ -167,76 +157,50 @@ session_start();
                 </select>
               </div>
 
-              <div class="col-md-4">
+              <div class="col-md-2">
                 <label>Bairro:</label>
                 <input class="form-control" type="text" name="bairro_end" required>
               </div>
-            </div>
-            <div class="row">
-              <div class="col-md-4">
+              <div class="col-md-3">
                 <label>Rua:</label>
                 <input class="form-control" type="text" name="rua_end" required>
               </div>
+            </div>
+            <div class="row">
               <div class="col-md-2">
                 <label>Número:</label>
                 <input class="form-control" type="text" name="numero_end" required>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-10">
                 <label>Complemento:</label>
                 <input class="form-control" type="text" name="complemento_end" required>
               </div>
-            </div>
+            </div><br>
 
+            <h4>Escolha a Senha de Usuário</h4>
              <div class="row">
-              <h4>Escolha a Senha de Usuário</h4>
               <div class="col-md-3">
                 <label>Senha:</label>
                 <input class="form-control" type="password" name="senha_obr" required>
               </div>
-              <!-- <div class="col-md-3">
+              <div class="col-md-3">
                 <label>Confirmação de senha:</label>
                 <input class="form-control" type="password" name="confsenha_obr" required>
-              </div> -->
+              </div>
             </div>
             <br>
             <div class="row">
             <button class="btn btn-default" type="submit">Cadastrar</button>
           </div>
-        </div>
       </form>
+    </div>
       </div><br><br>
 
 
-<!--           <div class="row">
-                <div class="col-md-3 mb-3">
-                  <label>Selecione a Unidade:</label><br>
-                  <select class="form-control" name="nomeUnidade" size=1>
-                    <?php
-                   // include 'selectUnidades.inc.php';
-                    ?>
-                  </select>
-                </div>
-                </div> -->
-
-        </div>
-
-
-<!--
-      <div id="alerta">
-        <div id="boxtop"></div>
-        Não há nenhuma unidade cadastrada. Por favor, cadastre uma unidade primeiro.
-        <button id="botao" onclick="redirect(); apagar(); ">OK</button>
-      </div> -->
-
+      <script src="js/jquery-3.3.1.slim.min.js" ></script>
+      <script src="js/bootstrap.min.js" ></script>
         <?php
-          // include 'footer.php';
-          // include 'verificarUnidades.inc.php';
+          // include 'includes/footer.inc.php';
         ?>
-
-
-
-
-
-
-</body>
-</html>
+      </body>
+      </html>

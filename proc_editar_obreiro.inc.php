@@ -3,12 +3,6 @@
 	include 'includes/conexao.inc.php';
   SESSION_START();
 
-   setlocale( LC_ALL, 'pt_BR', 'pt_BR.iso-8859-1', 'pt_BR.utf-8', 'portuguese' );
-   date_default_timezone_set( 'America/Sao_Paulo' );
-   $dia = strftime( '%e-%m-%Y ');
-   $hora = strftime( ' %T');
-   // echo "Dia: " . $dia . "Hora: ".$hora;
-
 
   $id_enderecos = $_SESSION['id_end'] ;
   $id_telefones = $_SESSION['id_telefones'];
@@ -38,12 +32,6 @@
   $senha_obr = $_POST['senha_obr'];
 	$confsenha_obr = $_POST['confsenha_obr'];
 
-  //variável global
-  // $_SESSION['confsenha_obr'] = $confsenha_obr;
-
-
-
-    //Confirmação de senha
 
   $sql_obr = "SELECT * FROM obreiros";
   $result_obr = $conexao->query($sql_obr);
@@ -83,7 +71,7 @@
       echo "<script>alert('Erro ao atualizar dados.'); window.location.href='administrativo.php?link=1';</script>";
     };
 }else {
-  echo "<script>alert('Senha e Confirmação de senha estão Diferentes,precisam ser iguais!'); window.location.href='administrativo.php?link=1';</script>";
+  echo "<script>alert('Senha e Confirmação de senha estão Diferentes,Tente novamente!'); window.location.href='administrativo.php?link=1';</script>";
 }
 
 ?>

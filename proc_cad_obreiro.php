@@ -1,13 +1,16 @@
 <?php
 //Conexão com Banco
   	include 'includes/conexao.inc.php';
-    // SESSION_START();
+    SESSION_START();
 
+    // $id_enderecos = $_SESSION['id_end'] ;
+    // $id_telefones = $_SESSION['id_telefones'];
+    $id_tipocargo_obr = $_SESSION['id_tipocargo'];
 
   $tipocargo_obr = $_POST['tipocargo_obr'];
   $nome_obr = $_POST['nome_obr'];
   $sobrenome_obr = $_POST['sobrenome_obr'];
-	 $cpf_obr = $_POST['cpf_obr'];
+  $cpf_obr = $_POST['cpf_obr'];
 	$email_obr = $_POST['email_obr'];
   $nascimento_obr = $_POST['nascimento_obr'];
   $sexo_obr = $_POST['sexo_obr'];
@@ -25,17 +28,7 @@
   $complemento_end = $_POST['complemento_end'];
 
   $senha_obr = $_POST['senha_obr'];
-	// $confsenha_obr = $_POST['confsenha_obr'];
-  // $datacad_obr = date("Y-m-d - H:i:s");
-      // $data = date("Y-m-d - H:i:s");
-
-
-  //variável global
-  // $_SESSION['confsenha'] = $confsenha;
-
-
-
-    //Confirmação de senha
+	$confsenha_obr = $_POST['confsenha_obr'];
 
 
   $sql_obr = "SELECT * FROM obreiros";
@@ -47,21 +40,21 @@
   $sql_tel = "SELECT * FROM telefones";
   $result_tel = $conexao->query($sql_tel);
 
+  $sql_tipocargo_obr = "SELECT * FROM tipocargo_obr";
+  $result_tipocargo_obr = $conexao->query($sql_tipocargo_obr);
+
   // $usuario = addslashes($_POST['usuario']);
   // $usuario = trim($usuario);
   // $senha = addslashes($_POST['senha']);
   // $senha = trim($senha);
 
-  // if($senha == $_SESSION['confsenha'])
-  //   {
-      // $grava = "INSERT INTO usuarios ( cpf_obr, datacad_obr, email_obr, endereco, nascimento_obr, nome_obr, senha_obr, sexo_obr, telefone, tipo_cargo ) VALUES ('$cpf_obr', DATE(now),'$email_obr','$endereco','$nascimento_obr','$nome_obr','$senha_obr',,'$sexo_obr''$telefone','$tipo_cargo')";
-      $grava1 = "INSERT INTO obreiros (  tipocargo_obr , nome_obr, sobrenome_obr, cpf_obr, email_obr, nascimento_obr, sexo_obr, senha_obr, datacad_obr)
+
+    if($senha_obr == $confsenha_obr){
+
+      $grava1 = "INSERT INTO obreiros (nome_obr, sobrenome_obr, cpf_obr, email_obr, nascimento_obr, sexo_obr, senha_obr, datacad_obr)
       VALUES
-      ('$tipocargo_obr','$nome_obr','$sobrenome_obr','$cpf_obr','$email_obr','$nascimento_obr','$sexo_obr', '$senha_obr',NOW())";
+      ('$nome_obr','$sobrenome_obr','$cpf_obr','$email_obr','$nascimento_obr','$sexo_obr', '$senha_obr',NOW())";
       $grava_obr = $conexao->query($grava1);
-
-
-
 
       $grava_end = "INSERT INTO enderecos (  cep_end , estado_end, cidade_end, bairro_end, rua_end, numero_end, complemento_end)
       VALUES ('$cep_end', '$estado_end', '$cidade_end','$bairro_end','$rua_end','$numero_end','$complemento_end')";
@@ -71,32 +64,15 @@
       VALUES ('$tel_cel', '$tel_watzap', '$tel_resid')";
       $gravando_tel = $conexao->query($grava_tel);
 
+      $grava_tipocargo_obr = "INSERT INTO tipocargo_obr ( Perfil_cargo_obr)
+      VALUES ( '$tipocargo_obr')";
+      $gravando_tipocargo_obr = $conexao->query($grava_tipocargo_obr);
 
-    	// $sql1 = "INSERT INTO usuarios (perfil, nome) VALUES ('$perfil', '$nome')";
-    	// $salvar1 = mysqli_query($conexao, $sql1);
-
-	// $sql1 = "INSERT INTO usuarios (perfil, matricula, nome, email, senha) VALUES ('$perfil', '$matricula', '$nome', '$email',  '$senha')";
-	// $salvar1 = mysqli_query($conexao, $sql1);
-
-	// $sql2 = "INSERT INTO telefones (numero) VALUES ('$telefone')";
-	// $salvar2 = mysqli_query($conexao, $sql2);
-
-
-	// //Pegar idTelefone
-	// $pegarTelefone = "SELECT MAX(idTelefone) FROM telefones";
-	// $resultTelefone =  mysqli_query($conexao, $pegarTelefone);
-
-	// while($row = mysqli_fetch_row($resultTelefone))
-	// {
-	// 	$idTelefone = $row[0];
-	// 	echo $idTelefone;
-	// }
 
 
 	//Pegar o maior e ultimo id_enderecos cadastrado
 	$pegar_id_enderecos = "SELECT MAX(id_end) FROM enderecos";
 	$result_id_enderecos =  mysqli_query($conexao, $pegar_id_enderecos);
-
 	while($row = mysqli_fetch_row($result_id_enderecos))
 	{
 		$id_enderecos = $row[0];
@@ -107,7 +83,6 @@
 	//Pegar o maior e ultimo id_telefones cadastrado
 	$pegar_id_telefones = "SELECT MAX(id_telefones) FROM telefones";
 	$result_id_telefones =  mysqli_query($conexao, $pegar_id_telefones);
-
 	while($row = mysqli_fetch_row($result_id_telefones))
 	{
 		$id_telefones = $row[0];
@@ -118,14 +93,23 @@
 	//Pegar o maior e ultimo id_obreiros cadastrado
 	$pegar_id_obreiros = "SELECT MAX(id_obreiros) FROM obreiros";
 	$result_id_obreiros =  mysqli_query($conexao, $pegar_id_obreiros);
-
 	while($row = mysqli_fetch_row($result_id_obreiros))
 	{
 		$id_obreiros = $row[0];
 		echo "id obreiros: ".$id_obreiros;
+    echo "<br>";
 	}
 
-	$sql1 = "UPDATE obreiros SET endereco='$id_enderecos' WHERE id_obreiros='$id_obreiros'";
+	//Pegar o maior e ultimo id_tipocargo_obr cadastrado
+	$pegar_id_tipocargo_obr = "SELECT MAX(id_tipocargo) FROM tipocargo_obr";
+	$result_id_tipocargo_obr =  mysqli_query($conexao, $pegar_id_tipocargo_obr);
+	while($row = mysqli_fetch_row($result_id_tipocargo_obr))
+	{
+		$id_tipocargo = $row[0];
+		echo "id tipocargo: ".$id_tipocargo;
+	}
+
+	$sql1 = "UPDATE obreiros SET endereco='$id_enderecos', tipocargo_obr='$id_obreiros' WHERE id_obreiros='$id_obreiros'";
 	$salvar1 = mysqli_query($conexao, $sql1);
 
 	$sql2 = "UPDATE obreiros SET telefone_obr='$id_telefones' WHERE id_obreiros='$id_obreiros'";
@@ -138,9 +122,18 @@
 	$salvar5 = mysqli_query($conexao, $sql5);
 
 
-	// $sql4 = "UPDATE usuarios SET idUnidade='$idUnidade' WHERE idUsuario='$idUsuario'";
-	// $salvar4 = mysqli_query($conexao, $sql4);
+	$sql6 = "UPDATE tipocargo_obr SET	id_tipocargo_obr_fk='$id_tipocargo' WHERE id_tipocargo='$id_obreiros'";
+	$salvar6 = mysqli_query($conexao, $sql6);
 
-	 // header("Location:listaUsuarios.php");
+  if($result_obr->num_rows > 0){
+    echo "<script>alert('Usuário Cadastrado com suceso!.'); window.location.href='administrativo.php?link=1';</script>";
+  }else {
+    echo "<script>alert('Erro ao Cadastrar Usuário.'); window.location.href='administrativo.php?link=1';</script>";
+  }
+
+  } else {
+    echo "<script>alert('Senha e Confirmação de senha estão Diferentes,precisam ser iguais!'); window.location.href='administrativo.php?link=1';</script>";
+  }
+
 
 ?>
