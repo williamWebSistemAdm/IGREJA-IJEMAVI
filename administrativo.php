@@ -55,9 +55,9 @@
           //   if (($_SESSION['tipocargo_obr'] == "adm_padrao") || ($_SESSION['tipocargo_obr'] == "pr_presidente")) {
           //     header('Location: administrativo.php');
           //   }
-            else {
+            // else {
               // header('Location: usuario_comum.php');
-            }
+            // }
 
         ?>
 

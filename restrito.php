@@ -10,7 +10,8 @@ session_start();
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="shortcut icon" type="image/png" href="img/logo_favicon.ico">
 		<!-- <link rel="stylesheet" href="css/style.css" > -->
-		<link rel="stylesheet" href="style.css" >
+		<!-- <link rel="stylesheet" href="style.css" > -->
+		<link rel="stylesheet" href="style_login.css" >
 
 </head>
 

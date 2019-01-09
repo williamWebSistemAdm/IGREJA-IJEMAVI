@@ -27,7 +27,15 @@
 			<!-- Carroussel -->
 			<?php	include 'carroussel_banner.inc.php'; ?>
 
-	</div>
+
+			<!-- galeria foto -->
+			<?php	include 'galeria_foto.php'; ?>
+		</div>
+
+
+
+
+
 
 		<script src="js\jquery-3.3.1.slim.min.js" ></script>
 		<script src="js/bootstrap.min.js" ></script>

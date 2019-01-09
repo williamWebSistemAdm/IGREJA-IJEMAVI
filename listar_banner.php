@@ -31,7 +31,7 @@
 
     <div class="container-fluid">
 			<!-- Menu -->
-			<?php	include 'includes/header_adm.inc.php'; ?>
+			<?php	include 'includes/menu_adm.inc.php'; ?>
 
 		<div class="container">
 

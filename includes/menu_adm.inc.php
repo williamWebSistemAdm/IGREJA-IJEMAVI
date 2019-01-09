@@ -18,9 +18,8 @@
 						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 							<a class="dropdown-item" href="administrativo.php?link=1">Listar</a>
 							<a class="dropdown-item" href="cad_obreiro.php?link=3">Cadastrar</a>
-							<!-- <a class="dropdown-item" href="administrativo.php?ink=4">Editar</a> -->
 							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="#">Desativar</a>
+							<a class="dropdown-item" href="#">Excuir</a>
 						</div>
 					</li>
 					<li class="nav-item dropdown">

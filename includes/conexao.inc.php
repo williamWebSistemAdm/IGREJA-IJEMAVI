@@ -1,5 +1,5 @@
 <?php
-	header('content-type: text/html;charset=utf8');
+	// header('content-type: text/html;charset=utf8');
 	$servidor = "localhost";
 	$usuario = "root";
 	$senha = "";

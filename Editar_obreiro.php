@@ -10,7 +10,7 @@ $sql_consulta = "SELECT * FROM obreiros WHERE id_obreiros='$id' limit 1";
 $result_consulta = $conexao->query($sql_consulta);
 $resultado_consulta = mysqli_fetch_assoc($result_consulta);
 
-	//Pegar o id_enderecos
+	// Pegar o id_enderecos
 	$pegar_id_enderecos = "SELECT * FROM enderecos WHERE id_end='$id' limit 1";
 	$result_id_enderecos =  mysqli_query($conexao, $pegar_id_enderecos);
 	while($row = mysqli_fetch_assoc($result_id_enderecos))
@@ -30,7 +30,7 @@ $resultado_consulta = mysqli_fetch_assoc($result_consulta);
     echo "<br>";
 	}
 
-	//Pegar o  id_telefones
+	// Pegar o  id_telefones
 	$pegar_id_telefones = "SELECT * FROM telefones WHERE id_telefones='$id' limit 1";
 	$result_id_telefones =  mysqli_query($conexao, $pegar_id_telefones);
 	while($rowt = mysqli_fetch_assoc($result_id_telefones))
@@ -46,7 +46,7 @@ $resultado_consulta = mysqli_fetch_assoc($result_consulta);
     echo "<br>";
 	}
 
-  	//Pegar o  tipocargo_obr
+  	// Pegar o  tipocargo_obr
   	$pegar_tipocargo_obr = "SELECT * FROM tipocargo_obr WHERE id_tipocargo='$id' limit 1";
   	$result_tipocargo_obr =  mysqli_query($conexao, $pegar_tipocargo_obr);
   	while($rowc = mysqli_fetch_assoc($result_tipocargo_obr))
@@ -64,11 +64,11 @@ $resultado_consulta = mysqli_fetch_assoc($result_consulta);
       <div class="container">
         <h3>Editar Obreiro(a)</h3><br>
         <?php
-             setlocale( LC_ALL, 'pt_BR', 'pt_BR.iso-8859-1', 'pt_BR.utf-8', 'portuguese' );
-             date_default_timezone_set( 'America/Sao_Paulo' );
-             $dia = strftime( '%e-%m-%Y ');
-             $hora = strftime( ' %T');
-             echo "Dia: " . $dia . "Hora: ".$hora;
+             // setlocale( LC_ALL, 'pt_BR', 'pt_BR.iso-8859-1', 'pt_BR.utf-8', 'portuguese' );
+             // date_default_timezone_set( 'America/Sao_Paulo' );
+             // $dia = strftime( '%e-%m-%Y ');
+             // $hora = strftime( ' %T');
+             // echo "Dia: " . $dia . "Hora: ".$hora;
       ?>
           <form method="post" action="proc_editar_obreiro.inc.php">
              <div class="row">
