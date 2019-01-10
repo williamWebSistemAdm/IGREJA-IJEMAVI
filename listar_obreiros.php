@@ -15,24 +15,8 @@
 		<!-- <th>Data nascimento</th> -->
 	</tr>
 	<?php
-
-	// trazendo sessão
-		$nome_obr_sessao = $_SESSION['nome_obr'];
-		// $id_obreiros =	$_SESSION['id_obreiros'];
-
-		// Selecionando cargo obr
-		$sql_tipocargo = "SELECT * FROM tipocargo_obr";
-	  $result_tipocargo = $conexao->query($sql_tipocargo);
-	  if($result_tipocargo->num_rows > 0){
-		 	while($row = $result_tipocargo->fetch_assoc())
-	 		{
-		 		$id_tipocargo = $row['id_tipocargo'];
-				$Perfil_cargo_obr = $row['Perfil_cargo_obr'];
-			}
-		}
-
 		// Selecionando obr
-	 $sql_obr = "SELECT * FROM obreiros, tipocargo_obr WHERE id_obreiros='$id_tipocargo'";
+	 $sql_obr = "SELECT * FROM obreiros, tipocargo_obr WHERE id_obreiros=id_tipocargo";
 	 $result_obr = $conexao->query($sql_obr);
 	 if($result_obr->num_rows > 0){
 		while($row = $result_obr->fetch_assoc())

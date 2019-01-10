@@ -15,7 +15,7 @@
 
     <h1>Postar Devocional</h1>
 		<div id="formulario" >
-  		<form action="proc_postar_devoc.inc.php" method="post" enctype="multipart/form-data">
+  		<form action="proc_postar_devoc.php" method="post" enctype="multipart/form-data">
 
   			<label >Título</label>
   			<input type="text" id="fname" name="titulo_dev" required>
