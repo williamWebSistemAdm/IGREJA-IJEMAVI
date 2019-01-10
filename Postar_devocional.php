@@ -30,7 +30,7 @@
 
         <!-- Autor escolhido pelo usuario -->
         <label >Autor</label><br>
-        <input type="text" id="fname" name="autor_dev" required>
+        <input type="text" id="fname" name="autor_dev" placeholder="Caso seja de outrem"required>
         <?php echo "$tipocargo_obr -"." $nome_obr"; ?>
         <!-- Autor Usuário logado que vai para o banco -->
   			<input type="hidden" name="usuario_logado_dev" value="<?php echo "$tipocargo_obr -"." $nome_obr"; ?>" >

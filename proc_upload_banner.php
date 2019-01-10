@@ -61,12 +61,12 @@
 			$extensao					= explode('.', $nome);
 			$extensao					= end($extensao);
 			if(array_search($extensao, $_UP['extensoes'])=== false){
-				echo "<script>alert('A extensão .".$extensao." NÃO é permitida! Extensões permitidas .jpg, .jpeg e .png '); window.location.href='upload_banner.php';</script>";
+				echo "<script>alert('A extensão .".$extensao." NÃO é permitida! Extensões permitidas .jpg, .jpeg e .png '); window.location.href='administrativo.php?link=11';</script>";
 			}
 
 			//Faz a verificação do tamanho do arquivo
 			else if ($_UP['tamanho'] < $_FILES['arquivo']['size']){
-				echo "<script>alert('Arquivo muito grande.'); window.location.href='upload_banner.php';</script>";
+				echo "<script>alert('Arquivo muito grande.'); window.location.href='administrativo.php?link=11';</script>";
 			}
 
 			//O arquivo passou em todas as verificações, hora de tentar move-lo para a pasta foto
@@ -82,14 +82,14 @@
 					//Upload efetuado com sucesso, exibe a mensagem
 					$query = mysqli_query($conexao, "INSERT INTO carrouses (imagen_carousel, nome, data_hora_post) VALUES('$novo_nome', '$novo_nome', current_timestamp)");
 					if($result->num_rows > 0){
-       				echo "<script>alert('Banner cadastrado com suceso!.'); window.location.href='upload_banner.php';</script>";
+       				echo "<script>alert('Banner cadastrado com suceso!.'); window.location.href='administrativo.php?link=11';</script>";
 		 				}else {
-							echo "<script>alert('Salvou a imagem, mas nao iseriu no banco de dados. Algum erro de SQL.'); window.location.href='upload_banner.php';</script>";
+							echo "<script>alert('Salvou a imagem, mas nao iseriu no banco de dados. Algum erro de SQL.'); window.location.href='administrativo.php?link=11';</script>";
 		 				};
 
 				}else{
 					//Upload não efetuado com sucesso, exibe a mensagem
-					echo "<script>alert('Banner NÃO foi cadastrado com suceso!.'); window.location.href='upload_banner.php';</script>";
+					echo "<script>alert('Banner NÃO foi cadastrado com suceso!.'); window.location.href='administrativo.php?link=11';</script>";
 				}
 			}
 

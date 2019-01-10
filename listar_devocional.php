@@ -7,7 +7,7 @@
 				<th>Titulo</th>
 				<th>Autor</th>
         <th>Data postagem</th>
-  			<!-- <th>Nome imagem</th> -->
+  			<!-- <th> imagem</th> -->
   			<!-- <th>Postador</th> -->
   		</tr>
   		<?php
@@ -20,9 +20,10 @@
   			{
   				echo "<tr>";
 
-          echo "<td>" . $row['titulo_dev '] . "</td>";
-          echo "<td>" . $row['autor_dev '] . "</td>";
-  				echo "<td>" . $row['data_dev '] . "</td>";
+          echo "<td>" . $row['titulo_dev'] . "</td>";
+          echo "<td>" . $row['autor_dev'] . "</td>";
+  				echo "<td>" . $row['data_dev'] . "</td>";
+  				// echo "<td>" . $row['foto_dev'] . "</td>";
 
   				 echo "</tr>";
   			 }
