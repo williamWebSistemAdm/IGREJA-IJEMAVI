@@ -101,7 +101,7 @@ CREATE TABLE `devocional` (
 
 CREATE TABLE `dia_culto` (
   `id_dia_culto` int(11) NOT NULL,
-  `dia_culto_dom` varchar(45) DEFAULT NULL,
+  `dia_semana_culto` varchar(45) DEFAULT NULL,
   `local_culto` varchar(45) DEFAULT NULL,
   `nome_culto` varchar(100) DEFAULT NULL,
   `hora_culto` varchar(45) DEFAULT NULL,

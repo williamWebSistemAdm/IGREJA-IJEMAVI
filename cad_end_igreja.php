@@ -13,7 +13,7 @@ session_start();
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="shortcut icon" type="image/png" href="img/logo_favicon.ico">
-    <title>Cadastro de Usuários</title>
+    <title>Cadastro de Endereço</title>
 </head>
 
 <body>
@@ -24,83 +24,16 @@ session_start();
   <div id="fundoTransparente">
 
       <div class="container">
-        <h3>Cadastro de Obreiros(as)</h3><br>
+        <h3>Cadastro de Endereço</h3><br>
         <?php
              setlocale( LC_ALL, 'pt_BR', 'pt_BR.iso-8859-1', 'pt_BR.utf-8', 'portuguese' );
              date_default_timezone_set( 'America/Sao_Paulo' );
              $dia = strftime( '%e-%m-%Y ');
              $hora = strftime( ' %T');
-             echo "Dia: " . $dia . "Hora: ".$hora;
+             echo "Data: " . $dia . "- ".$hora . "h ";
+             echo "Usuário: " . $usuário ;
       ?>
-          <form method="post" action="cad_obreiro.inc.php">
-             <div class="row">
-              <div class="col-md-3">
-                <label>Perfil/Cargo: </label>
-                <select class="form-control" name="tipocargo_obr" required autofocus>
-                  <optgroup value="pastor" label="Pastor">
-                    <option value="pr_presidente">Pastor Presidente</option>
-                    <option value="pr_dir_congregacional">Pastor Dirigente Congregacional</option>
-                    <option value="pr_evanglista">Pastor Evangelista</option>
-                    <option value="pr_missionario">Pastor Missionário</option>
-                  </optgroup>
-
-                  <option name="missionario" value="presbítero" >Missionário(a)</option>
-                  <option name="presbitero" value="presbítero" selected>Presbítero</option>
-                  <option name="diacono" value="Diácono">Diácono</option>
-
-                  <optgroup label="Cooperador(a)">
-                    <option name="coop_port" value="coop_porteiro">Porteiro(a)</option>
-                    <option name="coop_secret" value="coop_secretario">Secretário(a)</option>
-                    <option name="coop_teso" value="coop_tesoureiro">Tesoureiro(a)</option>
-                    <option name="coop_auxiliar" value="coop_auxiliar">Auxiliar</option>
-                  </optgroup>
-                </select>
-              </div>
-              <div class="col-md-3">
-                <label>Nome:</label>
-                <input class="form-control" type="text" name="nome_obr" required>
-              </div>
-              <div class="col-md-6">
-                <label>Sobrenome:</label>
-                <input class="form-control" type="text" name="sobrenome_obr" required>
-              </div>
-            </div>
-
-           <div class="row">
-             <div class="col-md-3">
-               <label>CPF:</label>
-               <input class="form-control" type="text" name="cpf_obr" required>
-             </div>
-              <div class="col-md-5 mb-3">
-                <label>E-mail:</label>
-                <input class="form-control" type="text" name="email_obr" size="35" maxlength="100"  required>
-              </div>
-              <div class="col-md-2">
-                <label>Data Nascimento:</label>
-                <input class="form-control" type="date" name="nascimento_obr" required>
-              </div>
-              <div class="col-md-2">
-                <label>sexo:</label>
-                <select class="form-control" type="text" name="sexo_obr" required>
-                  <option value="Masculino">Masculino</option>
-                  <option value="Feminino">Feminino</option>
-                </select>
-              </div>
-
-              <div class="col-md-2">
-                <label>Celular:</label>
-                <input class="form-control" type="text" name="tel_cel">
-              </div>
-              <div class="col-md-2">
-                <label>WatZap:</label>
-                <input class="form-control" type="text" name="tel_watzap">
-              </div>
-              <div class="col-md-2">
-                <label>Telefone Residencial:</label>
-                <input class="form-control" type="text" name="tel_resid">
-              </div>
-            </div>
-
+          <form method="post" action="proc_cad_endereco.php">
              <div class="row">
               <h4>Endereço</h4>
               <div class="col-md-3">
@@ -187,18 +120,6 @@ session_start();
               </div>
             </div>
 
-             <div class="row">
-              <h4>Escolha a Senha de Usuário</h4>
-              <div class="col-md-3">
-                <label>Senha:</label>
-                <input class="form-control" type="password" name="senha_obr" required>
-              </div>
-              <!-- <div class="col-md-3">
-                <label>Confirmação de senha:</label>
-                <input class="form-control" type="password" name="confsenha_obr" required>
-              </div> -->
-            </div>
-            <br>
             <div class="row">
             <button class="btn btn-default" type="submit">Cadastrar</button>
           </div>
@@ -207,30 +128,11 @@ session_start();
       </div><br><br>
 
 
-<!--           <div class="row">
-                <div class="col-md-3 mb-3">
-                  <label>Selecione a Unidade:</label><br>
-                  <select class="form-control" name="nomeUnidade" size=1>
-                    <?php
-                   // include 'selectUnidades.inc.php';
-                    ?>
-                  </select>
-                </div>
-                </div> -->
-
         </div>
 
 
-<!--
-      <div id="alerta">
-        <div id="boxtop"></div>
-        Não há nenhuma unidade cadastrada. Por favor, cadastre uma unidade primeiro.
-        <button id="botao" onclick="redirect(); apagar(); ">OK</button>
-      </div> -->
-
         <?php
-          // include 'footer.php';
-          // include 'verificarUnidades.inc.php';
+          // include 'includes/footer.inc.php';
         ?>
 
 
