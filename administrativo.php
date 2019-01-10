@@ -53,9 +53,11 @@
           $pag['14'] = 'upload_galeria.php';
           $pag['15'] = 'excluir_foto_galeria.php';
           // localização
-          $pag['16'] = 'editar_end_igreja.php';
+          $pag['16'] = 'listar_end_igreja.php';
+          $pag['17'] = 'editar_end_igreja.php';
           // Dia culto
-          $pag['17'] = 'editar_dia_culto.php';
+          $pag['18'] = 'listar_dia_culto.php';
+          $pag['19'] = 'editar_dia_culto.php';
 
 
           // validar se apagina existe e redirecionar para ela

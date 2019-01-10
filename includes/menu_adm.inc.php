@@ -63,9 +63,9 @@
 							Localização
 						</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="administrativo.php?link=16">Editar</a>
-							<!-- <a class="dropdown-item" href="../galeria_foto.php">Visualizar</a>
-							<div class="dropdown-divider"></div> -->
+							<a class="dropdown-item" href="administrativo.php?link=16">Visualizar</a>
+							<a class="dropdown-item" href="administrativo.php?link=17">Editar</a>
+							<!-- <div class="dropdown-divider"></div> -->
 						</div>
 					</li>
 					<li class="nav-item dropdown">
@@ -73,9 +73,9 @@
 							Dia de Culto
 						</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="administrativo.php?link=17">Editar</a>
-							<!-- <a class="dropdown-item" href="../galeria_foto.php">Visualizar</a>
-							<a class="dropdown-item" href="../galeria_foto.php">Cadastrar</a>
+							 <a class="dropdown-item" href="administrativo.php?link=18">Visualizar</a>
+							 <a class="dropdown-item" href="administrativo.php?link=19">Editar</a>
+						<!--	<a class="dropdown-item" href="../galeria_foto.php">Cadastrar</a>
 							<div class="dropdown-divider"></div> -->
 						</div>
 					</li>
