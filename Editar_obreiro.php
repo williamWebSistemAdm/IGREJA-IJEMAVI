@@ -75,7 +75,7 @@ $resultado_consulta = mysqli_fetch_assoc($result_consulta);
               <div class="col-md-3">
                 <label>Perfil/Cargo: </label>
                 <select class="form-control" name="tipocargo_obr"  >
-                  <option value="<?php echo $Perfil_cargo_obr; ?>" selected required><?php echo $Perfil_cargo_obr; ?></option>
+                  <option value="<?php echo $Perfil_cargo_obr; ?>" selected><?php echo $Perfil_cargo_obr; ?></option>
 
                   <optgroup value="pastor" label="Pastor">
                     <!-- <option value="Pastor Presidente">Pastor Presidente</option> -->
@@ -100,30 +100,30 @@ $resultado_consulta = mysqli_fetch_assoc($result_consulta);
               </div>
               <div class="col-md-3">
                 <label>Nome:</label>
-                <input class="form-control" type="text" value="<?php echo $resultado_consulta['nome_obr']; ?>" name="nome_obr" required>
+                <input class="form-control" type="text" value="<?php echo $resultado_consulta['nome_obr']; ?>" name="nome_obr" >
               </div>
               <div class="col-md-6">
                 <label>Sobrenome:</label>
-                <input class="form-control" type="text" value="<?php echo $resultado_consulta['sobrenome_obr']; ?>"  name="sobrenome_obr" required>
+                <input class="form-control" type="text" value="<?php echo $resultado_consulta['sobrenome_obr']; ?>"  name="sobrenome_obr" >
               </div>
             </div>
 
            <div class="row">
              <div class="col-md-2">
                <label>CPF:</label>
-               <input class="form-control" type="text" value="<?php echo $resultado_consulta['cpf_obr']; ?>"  name="cpf_obr" required>
+               <input class="form-control" type="text" value="<?php echo $resultado_consulta['cpf_obr']; ?>"  name="cpf_obr" >
              </div>
               <div class="col-md-5 mb-3">
                 <label>E-mail:</label>
-                <input class="form-control" type="text" value="<?php echo $resultado_consulta['email_obr']; ?>"  name="email_obr" size="35" maxlength="100" required>
+                <input class="form-control" type="text" value="<?php echo $resultado_consulta['email_obr']; ?>"  name="email_obr" size="35" maxlength="100" >
               </div>
               <div class="col-md-3">
                 <label>Data Nascimento:</label>
-                <input class="form-control" type="date" value="<?php echo $resultado_consulta['nascimento_obr']; ?>"  name="nascimento_obr" required>
+                <input class="form-control" type="date" value="<?php echo $resultado_consulta['nascimento_obr']; ?>"  name="nascimento_obr" >
               </div>
               <div class="col-md-2">
                 <label>sexo:</label>
-                <select class="form-control" type="text" value="<?php echo $resultado_consulta['sexo_obr']; ?>"  name="sexo_obr" required>
+                <select class="form-control" type="text" value="<?php echo $resultado_consulta['sexo_obr']; ?>"  name="sexo_obr" >
                   <option value="Masculino">Masculino</option>
                   <option value="Feminino">Feminino</option>
                 </select>
@@ -131,7 +131,7 @@ $resultado_consulta = mysqli_fetch_assoc($result_consulta);
 
               <div class="col-md-2">
                 <label>Celular:</label>
-                <input class="form-control" type="text" value="<?php echo $tel_cel; ?>"  name="tel_cel" >
+                <input class="form-control" type="text" value="<?php echo $tel_cel; ?>"  name="tel_cel">
               </div>
               <div class="col-md-2">
                 <label>WatZap:</label>
@@ -147,18 +147,18 @@ $resultado_consulta = mysqli_fetch_assoc($result_consulta);
              <div class="row">
               <div class="col-md-3">
                 <label>CEP:</label>
-                <input class="form-control" type="text" value="<?php echo $cep_end; ?>"  name="cep_end" required>
+                <input class="form-control" type="text" value="<?php echo $cep_end; ?>"  name="cep_end" >
               </div>
 
               <div class="col-md-2">
                 <label>UF:</label>
-                <select class="form-control" value="<?php echo $estado_end; ?>"  name="estado_end"  required>
+                <select class="form-control" value="<?php echo $estado_end; ?>"  name="estado_end"  >
                   <option value="Tocantins">Tocantins</option>
                 </select>
               </div>
               <div class="col-md-3">
                 <label>Cidade:</label>
-                <select class="form-control" name="cidade_end" required>
+                <select class="form-control" name="cidade_end" >
                   <option value="<?php echo $cidade_end; ?>"><?php echo $cidade_end; ?></option>
                   <option value="Aguiarnópolis">Aguiarnópolis</option>
                   <option value="Almas">Almas</option>
@@ -211,7 +211,7 @@ $resultado_consulta = mysqli_fetch_assoc($result_consulta);
 
               <div class="col-md-4">
                 <label>Bairro:</label>
-                <input class="form-control" type="text" value="<?php echo $bairro_end; ?>"  name="bairro_end" required>
+                <input class="form-control" type="text" value="<?php echo $bairro_end; ?>"  name="bairro_end" >
               </div>
             </div>
             <div class="row">
