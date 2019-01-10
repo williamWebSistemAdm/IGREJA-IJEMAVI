@@ -35,7 +35,7 @@
           @$link = $_GET['link'];
           // Obreiro
           $pag['1'] = 'listar_obreiros.php';
-          $pag['2'] = 'visualizar_perfil_obreiro.php';
+          $pag['2'] = 'ver_perfil_obr.php';
           $pag['3'] = 'cad_obreiro.php';
           $pag['4'] = 'editar_obreiro.php';
           $pag['5'] = 'excluir_obreiro.php';
