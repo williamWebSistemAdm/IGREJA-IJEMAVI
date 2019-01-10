@@ -17,9 +17,9 @@
 						</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 							<a class="dropdown-item" href="administrativo.php?link=1">Listar</a>
-							<a class="dropdown-item" href="cad_obreiro.php?link=3">Cadastrar</a>
+							<a class="dropdown-item" href="administrativo.php?link=3">Cadastrar</a>
 							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="#">Excuir</a>
+							<a class="dropdown-item" href="administrativo.php?link=1">Excuir</a>
 						</div>
 					</li>
 					<li class="nav-item dropdown">
@@ -51,11 +51,32 @@
 							Imagens
 						</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="../galeria_foto.php">listar</a>
+							<a class="dropdown-item" href="administrativo.php?link=">listar</a>
 							<a class="dropdown-item" href="upload_galeria.php">Adicionar</a>
 							<a class="dropdown-item" href="#">Editar</a>
 							<div class="dropdown-divider"></div>
 							<a class="dropdown-item" href="#">Desativar</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Localização
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="../galeria_foto.php">Visualizar</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">Editar</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Dia de Culto
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="../galeria_foto.php">Cadastrar</a>
+							<a class="dropdown-item" href="../galeria_foto.php">Visualizar</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">Editar</a>
 						</div>
 					</li>
 

@@ -34,15 +34,28 @@
 
 	      <?php
           @$link = $_GET['link'];
-
+          // Obreiro
           $pag['1'] = 'listar_obreiros.php';
           $pag['2'] = 'visualizar_perfil_obreiro.php';
           $pag['3'] = 'cad_obreiro.php';
           $pag['4'] = 'editar_obreiro.php';
-          $pag['5'] = '#'; //Desaivar
-          $pag['6'] = 'listar_obreiros.php';
-          $pag['7'] = 'listar_obreiros.php';
-          $pag['8'] = 'listar_obreiros.php';
+          $pag['5'] = 'excluir_obreiro.php';
+          // Devocional
+          $pag['6'] = 'adicionar_devocional.php';
+          $pag['7'] = 'Listar_devocional.php';
+          $pag['8'] = 'editar_devocional.php';
+          $pag['9'] = 'excluir_devocional.php';
+          // Foto Galeria
+          $pag['10'] = 'upload_banner.php';
+          $pag['11'] = 'excluir_banner.php';
+          // Foto galeria
+          $pag['12'] = 'upload_galeria.php';
+          $pag['13'] = 'excluir_foto_galeria.php';
+          // localização
+          $pag['14'] = 'editar_localização.php';
+          // Dia culto
+          $pag['15'] = 'editar_dia_culto.php';
+          
 
           // validar se apagina existe e redirecionar para ela
           if (!empty($link)) {

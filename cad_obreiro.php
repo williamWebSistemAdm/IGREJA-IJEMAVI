@@ -10,7 +10,6 @@
 </head>
 
 <body>
-  <?php	include 'includes/menu_adm.inc.php'; ?>
   <div id="fundoTransparente">
 
       <div class="container">
@@ -196,9 +195,6 @@
     </div>
       </div><br><br>
 
-
-      <script src="js/jquery-3.3.1.slim.min.js" ></script>
-      <script src="js/bootstrap.min.js" ></script>
         <?php
           // include 'includes/footer.inc.php';
         ?>
