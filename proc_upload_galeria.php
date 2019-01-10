@@ -1,21 +1,3 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="IJEMAVI - Igreja de Jesus Manacial de Águas Vivas, ijemavi">
-		<meta name="keywords" content="Igreja, Jesus, Manancial, Águas, Vivas, Pastor, Família, Adoradores, IJEMAVI, ijemavi">
-		<meta name="author" content="Igreja IJEMAVI">
-		<meta http-equiv="refresh" content="300">
-		<title>Adiconar imagem</title>
-		<!-- Bootstrap CSS -->
-		<link rel="stylesheet" href="css/bootstrap.min.css" >
-		<link rel="stylesheet" href="css/style.css" >
-		<link rel="stylesheet" href="style.css" >
-    <link rel="shortcut icon" type="image/png" href="img/logo_favicon.ico">
-	</head>
-	<body>
 
 
 		<?php
@@ -23,11 +5,15 @@
 			session_start();
 			include 'includes/conexao.inc.php';//conexao com o banco
 
-			// novo nome escolhido pelo usuario
+
+			// Tazendo nome usuário sessao
+			$postador_img = $_SESSION['nome_obr'];
+
+			// novo nome imagem escolhido pelo usuario para o atributo alt
 			$nome_img_galeria	= $_POST['nome_img_galeria'];
 			// nome original do arquivo
 			$img_galeria	= $_FILES['img_galeria']['name'];
-			$postador_img	=	'eu';
+			// $postador_img	=	'eu';
 
 			// Data e hora
 			date_default_timezone_set( 'America/Sao_Paulo' );
@@ -57,12 +43,12 @@
 			$extensao					= explode('.', $img_galeria);
 			$extensao					= end($extensao);
 			if(array_search($extensao, $_UP['extensoes'])=== false){
-				echo "<script>alert('A extensão .".$extensao." NÃO é permitida! Extensões permitidas .jpg, .jpeg e .png '); window.location.href='upload_galeria.php';</script>";
+				echo "<script>alert('A extensão .".$extensao." NÃO é permitida! Extensões permitidas .jpg, .jpeg e .png '); window.location.href='administrativo.php?link=14';</script>";
 			}
 
 			//Faz a verificação do tamanho do arquivo
 			else if ($_UP['tamanho'] < $_FILES['img_galeria']['size']){
-				echo "<script>alert('Arquivo muito grande.'); window.location.href='upload_galeria.php';</script>";
+				echo "<script>alert('Arquivo muito grande.'); window.location.href='administrativo.php?link=14';</script>";
 			}
 
 			//O arquivo passou em todas as verificações, hora de tentar move-lo para a pasta foto
@@ -79,39 +65,17 @@
 					// $query_galeria = mysqli_query($conexao, "INSERT INTO galeria (img_galeria) VALUES('$img_galeria')");
 					$query_galeria = mysqli_query($conexao, "INSERT INTO galeria (img_galeria, nome_img_galeria, postador_img, data_post_img) VALUES('$img_galeria', '$nome_img_galeria', '$postador_img', now())");
 					if($result_galeria->num_rows > 0){
-       				echo "<script>alert('Imagem adicionada com sucesso!.'); window.location.href='upload_galeria.php';</script>";
+       				echo "<script>alert('Imagem adicionada com sucesso!.'); window.location.href='administrativo.php?link=14';</script>";
+							exit;
 		 				}else {
-							echo "<script>alert('Salvou a imagem, mas nao iseriu no banco de dados. Algum erro de SQL.'); window.location.href='upload_galeria.php';</script>";
+							echo "<script>alert('Salvou a imagem, mas nao iseriu no banco de dados. Algum erro de SQL.'); window.location.href='administrativo.php?link=14';</script>";
 		 				};
 
 				}else{
 					//Upload não efetuado com sucesso, exibe a mensagem
-					echo "<script>alert('Banner NÃO foi cadastrado com suceso!.'); window.location.href='upload_galeria.php';</script>";
+					echo "<script>alert('Banner NÃO foi cadastrado com suceso!.'); window.location.href='administrativo.php?link=14';</script>";
 				}
 			};
-
-			//
-			// //Pegar id carrouses
-			// $pegar_id_carrouses = "SELECT MAX(id) FROM carrouses LIMIT 1";
-			// $result_id_carrouses =  mysqli_query($conexao, $pegar_id_carrouses);
-			//
-			// while($row = mysqli_fetch_row($result_id_carrouses))
-			// {
-			// 	$id_carrouses= $row[0];
-			// }
-			// //
-			// // //Pegar id_obreiros
- 			// $id_obr_sessao = $_SESSION['id_obreiros'];
-			// // $pegar_id_obreiros = "SELECT id_obreiros FROM obreiros";
-			// // $result_id_obreiros =  mysqli_query($conexao, $pegar_id_obreiros);
-			// // while($row = mysqli_fetch_row($result_id_obreiros)){
-			// // 	$id_obreiros = $row[0];
-			// // 	// echo "id obreiros: ".$id_obreiros;
-			// // }
-			//
-			//
-			// $id_obreiro_carousel_fk = "UPDATE carrouses SET id_obreiro_carousel_fk='$id_obr_sessao' WHERE id='$id_obr_sessao'";
-			// $salvar_id_obr_carousel_fk = mysqli_query($conexao, $id_obreiro_carousel_fk);
 
 		?>
 

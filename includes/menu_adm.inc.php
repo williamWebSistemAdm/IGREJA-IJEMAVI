@@ -27,11 +27,11 @@
 							Devocional
 						</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="#">listar</a>
-							<a class="dropdown-item" href="postar_devocional.php">Adicionar</a>
-							<a class="dropdown-item" href="#">Editar</a>
+							<a class="dropdown-item" href="administrativo.php?link=6">listar</a>
+							<a class="dropdown-item" href="administrativo.php?link=7">Adicionar</a>
+							<!-- <a class="dropdown-item" href="administrativo.php?link=8">Editar</a> -->
 							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="#">Desativar</a>
+							<a class="dropdown-item" href="administrativo.php?link=9">Excluir</a>
 						</div>
 					</li>
 					<li class="nav-item dropdown">
@@ -39,11 +39,11 @@
 							Banner
 						</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="listar_banner.php">listar</a>
-							<a class="dropdown-item" href="upload_banner.php">Adicionar</a>
-							<a class="dropdown-item" href="#">Editar</a>
+							<a class="dropdown-item" href="administrativo.php?link=10">listar</a>
+							<a class="dropdown-item" href="administrativo.php?link=11">Adicionar</a>
+							<!-- <a class="dropdown-item" href="administrativo.php?link=1">Editar</a> -->
 							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="#">Desativar</a>
+							<a class="dropdown-item" href="administrativo.php?link=12">Desativar</a>
 						</div>
 					</li>
 					<li class="nav-item dropdown">
@@ -51,11 +51,11 @@
 							Imagens
 						</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="administrativo.php?link=">listar</a>
-							<a class="dropdown-item" href="upload_galeria.php">Adicionar</a>
-							<a class="dropdown-item" href="#">Editar</a>
+							<a class="dropdown-item" href="administrativo.php?link=13">listar</a>
+							<a class="dropdown-item" href="administrativo.php?link=14">Adicionar</a>
+							<!-- <a class="dropdown-item" href="administrativo.php?link=1">Editar</a> -->
 							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="#">Desativar</a>
+							<a class="dropdown-item" href="administrativo.php?link=15">Desativar</a>
 						</div>
 					</li>
 					<li class="nav-item dropdown">
@@ -63,9 +63,9 @@
 							Localização
 						</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="../galeria_foto.php">Visualizar</a>
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="#">Editar</a>
+							<a class="dropdown-item" href="administrativo.php?link=16">Editar</a>
+							<!-- <a class="dropdown-item" href="../galeria_foto.php">Visualizar</a>
+							<div class="dropdown-divider"></div> -->
 						</div>
 					</li>
 					<li class="nav-item dropdown">
@@ -73,10 +73,10 @@
 							Dia de Culto
 						</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="administrativo.php?link=17">Editar</a>
+							<!-- <a class="dropdown-item" href="../galeria_foto.php">Visualizar</a>
 							<a class="dropdown-item" href="../galeria_foto.php">Cadastrar</a>
-							<a class="dropdown-item" href="../galeria_foto.php">Visualizar</a>
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="#">Editar</a>
+							<div class="dropdown-divider"></div> -->
 						</div>
 					</li>
 

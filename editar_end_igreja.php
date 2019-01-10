@@ -1,25 +1,4 @@
-<?php
-session_start();
-    include 'includes/conexao.inc.php';
-    include 'includes/seguranca.inc.php';//seguranca
-
-?>
-
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="shortcut icon" type="image/png" href="img/logo_favicon.ico">
-    <title>Cadastro de Endereço</title>
-</head>
-
-<body>
-  <?php
-    include 'includes/menu_adm.inc.php';
-  ?>
+<h1>criar codigo editat endereçoda igreja no banco</h1>
 
   <div id="fundoTransparente">
 
@@ -31,11 +10,10 @@ session_start();
              $dia = strftime( '%e-%m-%Y ');
              $hora = strftime( ' %T');
              echo "Data: " . $dia . "- ".$hora . "h ";
-             echo "Usuário: " . $usuário ;
       ?>
           <form method="post" action="proc_cad_endereco.php">
-             <div class="row">
               <h4>Editar Endereço</h4>
+              <div class="row">
               <div class="col-md-3">
                 <label>CEP:</label>
                 <input class="form-control" type="text" name="cep_end" required>
@@ -118,27 +96,10 @@ session_start();
                 <label>Complemento:</label>
                 <input class="form-control" type="text" name="complemento_end" required>
               </div>
-            </div>
+            </div><br>
 
-            <div class="row">
-            <button class="btn btn-default" type="submit">Cadastrar</button>
-          </div>
+            <button class="btn btn-primary" type="submit">Cadastrar</button>
+
         </div>
       </form>
       </div><br><br>
-
-
-        </div>
-
-
-        <?php
-          // include 'includes/footer.inc.php';
-        ?>
-
-
-
-
-
-
-</body>
-</html>

@@ -5,8 +5,8 @@
 	<tr class="bg-primary">
 		<th>Perfil/Cargo</th>
 		<th>Nome</th>
-		<!-- <th>E-mail</th> -->
 		<th class="text-center">Ações</th>
+		<!-- <th>E-mail</th> -->
 		<!-- <th>Sobrenome</th> -->
 		<!-- <th>CPF</th> -->
 		<!-- <th>Telefone</th> -->
@@ -20,6 +20,7 @@
 		$nome_obr_sessao = $_SESSION['nome_obr'];
 		// $id_obreiros =	$_SESSION['id_obreiros'];
 
+		// Selecionando cargo obr
 		$sql_tipocargo = "SELECT * FROM tipocargo_obr";
 	  $result_tipocargo = $conexao->query($sql_tipocargo);
 	  if($result_tipocargo->num_rows > 0){
@@ -30,7 +31,7 @@
 			}
 		}
 
-
+		// Selecionando obr
 	 $sql_obr = "SELECT * FROM obreiros, tipocargo_obr WHERE id_obreiros='$id_tipocargo'";
 	 $result_obr = $conexao->query($sql_obr);
 	 if($result_obr->num_rows > 0){
@@ -41,23 +42,21 @@
 			echo "<tr>";
 			echo "<td>" . $row['Perfil_cargo_obr'] . "</td>";
 			echo "<td>" . $row['nome_obr'] ." ". $row['sobrenome_obr'] .  "</td>";
-			// echo "<td>" . $row['email_obr'] . "</td>";
 
+			// echo "<td>" . $row['email_obr'] . "</td>";
 			// echo "<td>" . $row['foto_obreiro'] . "</td>";
 			// echo "<td>" . $row['id_obreiros'] ." ". $row['sobrenome_obr'] .  "</td>";
 			// echo "<td>" . $row['sobrenome_obr'] . "</td>";
 			// echo "<td>" . $row['cpf_obr'] . "</td>";
 			// echo "<td>" . $row['telefone_obr'] . "</td>";
 			// echo "<td>" . $row['sexo_obr'] . "</td>";
-			// echo "<td>" . $row['endereco'] . "</td>";
 			// echo "<td>" . $row['nascimento_obr'] . "</td>";
 			// echo "<td>" . $row['foto_obreiro'] . "</td>";
 			?>
 			<td>
 			<div class="text-center">
-		    <a href="#" ><button type="button">Visualizar</button></a>
 		    <a href="administrativo.php?link=2&id_obreiros=<?php echo $id; ?>" ><button type="button" class="btn btn-sm btn-info">Visualizar</button></a>
-		    <a href="administrativo.php?link=4&id_obreiros=<?php echo $id; ?>" ><button type="button" class="btn btn-sm btn-warning">Editar</button></a>
+		    <a href="administrativo.php?link=4&id_obreiros=<?php echo $id; ?>" ><button type="button" class="btn btn-sm btn-warning"> Editar </button></a>
 		    <a href="administrativo.php?link=5&id_obreiros=<?php echo $id; ?>" ><button type="button" class="btn btn-sm btn-danger">Desativar</button></a>
 			</div>
 	    </td>
@@ -67,10 +66,10 @@
 	 }
 	 else{
 		 echo "<tr>";
+		 echo "<td>" . "Sem Dados" . "</td>";
+		 echo "<td>" . "Sem Dados" . "</td>";
 
 		 // echo "<td>" . $row['foto_obreiro'] . "</td>";
-		 echo "<td>" . "Sem Dados" . "</td>";
-		 echo "<td>" . "Sem Dados" . "</td>";
 		 // echo "<td>" . "Sem Dados" . "</td>";
 		 // echo "<td>" . "Sem Dados" . "</td>";
 		 // echo "<td>" . "Sem Dados" . "</td>";

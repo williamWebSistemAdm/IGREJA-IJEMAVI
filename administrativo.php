@@ -23,7 +23,6 @@
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="css/bootstrap.min.css" >
 		<link rel="stylesheet" href="css/style.css" >
-		<!-- <link rel="stylesheet" href="style.css" > -->
     <link rel="shortcut icon" type="image/png" href="img/logo_favicon.ico">
 	</head>
 
@@ -41,27 +40,32 @@
           $pag['4'] = 'editar_obreiro.php';
           $pag['5'] = 'excluir_obreiro.php';
           // Devocional
-          $pag['6'] = 'adicionar_devocional.php';
-          $pag['7'] = 'Listar_devocional.php';
+          $pag['6'] = 'Listar_devocional.php';
+          $pag['7'] = 'postar_devocional.php';
           $pag['8'] = 'editar_devocional.php';
           $pag['9'] = 'excluir_devocional.php';
           // Foto Galeria
-          $pag['10'] = 'upload_banner.php';
-          $pag['11'] = 'excluir_banner.php';
+          $pag['10'] = 'listar_banner.php';
+          $pag['11'] = 'upload_banner.php';
+          $pag['12'] = 'excluir_banner.php';
           // Foto galeria
-          $pag['12'] = 'upload_galeria.php';
-          $pag['13'] = 'excluir_foto_galeria.php';
+          $pag['13'] = 'listar_foto_galeria.php';
+          $pag['14'] = 'upload_galeria.php';
+          $pag['15'] = 'excluir_foto_galeria.php';
           // localização
-          $pag['14'] = 'editar_localização.php';
+          $pag['16'] = 'editar_end_igreja.php';
           // Dia culto
-          $pag['15'] = 'editar_dia_culto.php';
-          
+          $pag['17'] = 'editar_dia_culto.php';
+
 
           // validar se apagina existe e redirecionar para ela
           if (!empty($link)) {
             if (file_exists($pag[$link])) {
               include $pag[$link];
             }
+          }
+          else {
+            echo "Bem Vindo!";
           }
           // else {
           //   // Verifica se é administrador ou usuario comum
