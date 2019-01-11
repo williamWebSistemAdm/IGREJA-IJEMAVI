@@ -1,6 +1,7 @@
 
-<div class="container">
-	<h2>Lista de Devocional</h2>
+	<div class="text-center"><h3>Lista de Devocional</h3></div>
+
+	<h2></h2>
 	 <div class="table-responsive">
   	<table class="table table-striped table-sm table-dark table-hover">
   		<tr class="bg-primary">
@@ -52,6 +53,4 @@
 
   	 ?>
   	</table>
-
   </div>
-</div>

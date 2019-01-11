@@ -11,9 +11,16 @@
 		$usuario_logado_dev = $_POST["usuario_logado_dev"];
 		$foto_dev = $_FILES["foto_dev"]['name'];
 
-			// Data e hora
-			date_default_timezone_set( 'America/Sao_Paulo' );
-			$data = date('d-m-Y--H-i-s');
+		// Data e hora
+		date_default_timezone_set( 'America/Sao_Paulo' );
+		$data = date('d-m-Y--H-i-s');
+		// Data e hora outro modo
+	  setlocale( LC_ALL, 'pt_BR', 'pt_BR.iso-8859-1', 'pt_BR.utf-8', 'portuguese' );
+	  date_default_timezone_set( 'America/Sao_Paulo' );
+	  $dia = strftime( '%e-%m-%Y ');
+	  $hora = strftime( ' %T');
+	  echo "Dia: " . $dia . "Hora: ".$hora;
+
 
 		//Tamanho máximo do arquivo em Bytes
 		$_UP['tamanho'] = 1024*1024*100; //5mb

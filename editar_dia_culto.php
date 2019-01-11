@@ -37,10 +37,9 @@ while($row = mysqli_fetch_assoc($result_dia_culto_sab)){
 
 ?>
 
-		<div class="container">
-		  <div class="text-center"><h2 class="h2">Editar dia de culto:</h2><br></div>
+		  <div class="text-center"><h2 class="h2">Editar dia de culto:</h2></div><br>
           <form method="post" action="proc_editar_diaculto.php">
-						<h3>Domingo:</h3><br>
+						<h4 class="table-success">Domingo:</h4>
              <div class="row domingo">
               <div>
               	<input type="hidden" value="Domingo" name="dia_culto_dom">
@@ -173,8 +172,7 @@ while($row = mysqli_fetch_assoc($result_dia_culto_sab)){
             	</div>
              </div><br> -->
 
-            <div class="row">
+            <div>
             <button class="btn btn-primary" type="submit">Atualizar</button>
           </div>
         </form>
-      </div>

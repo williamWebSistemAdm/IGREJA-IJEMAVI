@@ -63,9 +63,7 @@ while($rowc = mysqli_fetch_assoc($result_tipocargo_obr))
 		$dia = strftime( '%e-%m-%Y ');
 		$hora = strftime( ' %T');
 ?>
-
-
-	<h3 class="text-center table-primary">Perfil Obreiro(a)</h3>
+	<div class="text-center "><h3>Perfil Obreiro(a)</h3></div><br>
 	<div class="text-right">
 		<a href="administrativo.php?link=1" ><button type="button" class="btn btn-sm btn-info">Listar</button></a>
 		<a href="administrativo.php?link=4&id_obreiros=<?php echo $id; ?>" ><button type="button" class="btn btn-sm btn-warning"> Editar </button></a>

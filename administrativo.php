@@ -17,7 +17,7 @@
 		<meta name="keywords" content="Igreja, Jesus, Manancial, Águas, Vivas, Pastor, Família, Adoradores, IJEMAVI, ijemavi">
 		<meta name="author" content="Igreja IJEMAVI">
     <link rel="shortcut icon" type="image/png" href="img/logo_favicon.ico">
-		<!-- <meta http-equiv="refresh" content="300"> -->
+		<meta http-equiv="refresh" content="200">
 		<title>Administrativo</title>
 
 		<!-- Bootstrap CSS -->
@@ -27,9 +27,10 @@
 	</head>
 
 	<body>
-				<!-- Menu -->
-				<?php	include 'includes/menu_adm.inc.php'; ?>
-				<div class="container">
+		<!-- Menu -->
+		<?php	include 'includes/menu_adm.inc.php'; ?>
+		<div class="container">
+      <div class="editar">
 
 	      <?php
           @$link = $_GET['link'];
@@ -67,7 +68,8 @@
             }
           }
           else {
-            echo "Bem Vindo!";
+
+            echo "<div class='text-center'><h3>Bem Vindo!</h3></div><br>";
           }
           // else {
           //   // Verifica se é administrador ou usuario comum
@@ -84,7 +86,8 @@
 		  <br>
 		  <!-- <a href="sair.inc.php">Sair</a> -->
 
-		</div>
+	  </div>
+	</div>
 
     <script src="js/jquery-3.3.1.slim.min.js" ></script>
     <script src="js/bootstrap.min.js" ></script>

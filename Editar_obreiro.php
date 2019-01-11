@@ -52,8 +52,7 @@ $resultado_consulta = mysqli_fetch_assoc($result_consulta);
   	}
 ?>
 
-
-        <h3  class="text-center table-primary">Editar Obreiro(a)</h3>
+				<div class="text-center "><h3>Editar Obreiro(a)</h3></div><br>
 				<div class="text-right">
 					<a href="administrativo.php?link=1" ><button type="button" class="btn btn-sm btn-info">Listar</button></a>
 					<a href="administrativo.php?link=5&id_obreiros=<?php echo $id; ?>" ><button type="button" class="btn btn-sm btn-danger">Desativar</button></a>
@@ -65,7 +64,7 @@ $resultado_consulta = mysqli_fetch_assoc($result_consulta);
              // $hora = strftime( ' %T');
              // echo "Dia: " . $dia . "Hora: ".$hora;
       ?>
-			<div class="editar">
+
 
           <form  method="post" action="proc_editar_obreiro.inc.php">
              <div class="row">
@@ -244,4 +243,3 @@ $resultado_consulta = mysqli_fetch_assoc($result_consulta);
             <button class="btn btn-primary" type="submit">Atualizar</button>
           </div>
       </form>
-			</div>

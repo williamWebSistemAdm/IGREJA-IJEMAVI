@@ -1,26 +1,5 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <!-- <link rel="shortcut icon" type="image/png" href="img/logo_favicon.ico"> -->
-    <title>Cadastro de Usuários</title>
-</head>
+	<div class="text-center"><h3>Cadastro de Obreiros(as)</h3></div><br>
 
-<body>
-  <div id="fundoTransparente">
-
-      <div class="container">
-        <h3>Cadastro de Obreiros(as)</h3><br>
-        <?php
-             setlocale( LC_ALL, 'pt_BR', 'pt_BR.iso-8859-1', 'pt_BR.utf-8', 'portuguese' );
-             date_default_timezone_set( 'America/Sao_Paulo' );
-             $dia = strftime( '%e-%m-%Y ');
-             $hora = strftime( ' %T');
-             echo "Dia: " . $dia . "Hora: ".$hora;
-      ?>
           <form method="post" action="proc_cad_obreiro.php">
              <div class="row">
               <div class="col-md-3">
@@ -188,15 +167,7 @@
               </div>
             </div>
             <br>
-            <div class="row">
-            <button class="btn btn-default" type="submit">Cadastrar</button>
+            <div>
+            <button class="btn btn-primary" type="submit">Cadastrar</button>
           </div>
       </form>
-    </div>
-      </div><br><br>
-
-        <?php
-          // include 'includes/footer.inc.php';
-        ?>
-      </body>
-      </html>

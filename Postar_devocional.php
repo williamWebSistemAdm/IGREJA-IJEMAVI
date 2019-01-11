@@ -1,36 +1,36 @@
 
+      <div class="text-center"><h3>Postar Devocional</h3></div>
 
-    <h1>Postar Devocional</h1>
 		<div id="formulario" >
   		<form action="proc_postar_devoc.php" method="post" enctype="multipart/form-data">
 
   			<label >Título</label>
-  			<input type="text" id="fname" name="titulo_dev" required>
+  			<input class="form-control" type="text" id="fname" name="titulo_dev" required>
 
   			<label for="subject">Resumo</label>
-  			<textarea maxlength="300" id="subject" name="resumo_dev" placeholder="300 caracteres" style="height:100px" required></textarea>
+  			<textarea class="form-control" maxlength="300" id="subject" name="resumo_dev" placeholder="300 caracteres" style="height:100px" required></textarea>
 
   			<label >Texto</label>
-  			<textarea id="subject" name="texto_dev" style="height:200px" required></textarea>
+  			<textarea class="form-control" id="subject" name="texto_dev" style="height:200px" required></textarea>
 
         <?php include 'includes/select_obreiros.inc.php';//Selecionando Obreiro?>
 
         <!-- Autor escolhido pelo usuario -->
         <label >Autor</label><br>
-        <input type="text" id="fname" name="autor_dev" placeholder="Caso seja de outrem"required>
-        <?php echo "$tipocargo_obr -"." $nome_obr"; ?>
+        <input class="form-control" type="text" id="fname" name="autor_dev" placeholder="Caso seja de outrem"required>
+        <!-- <?php echo "$tipocargo_obr -"." $nome_obr"; ?> -->
         <!-- Autor Usuário logado que vai para o banco -->
   			<input type="hidden" name="usuario_logado_dev" value="<?php echo "$tipocargo_obr -"." $nome_obr"; ?>" >
 
   			<!-- <label>Imagem</label><br /><br />
   			<input type="file" name="foto_dev"><br /> -->
         <br> <label >Imagem:</label>
-        <input type="file"  name="foto_dev" class="form-control" required>
+        <input type="file"  name="foto_dev" class="form-control" required><br>
 
-  			<input type="submit" name="submit" value="Postar">
+  			<input class="btn btn-primary" type="submit" name="submit" value="Postar">
   		</form>
 
-		</div>
+  </div>
 		<div>
 		<?php include 'includes/footer.inc.php'; ?>
 		</div>

@@ -1,6 +1,4 @@
-
-<div class="container">
-	<h2>Lista de fotos</h2>
+	<div class="text-center"><h3>Lista de fotos</h3></div><br>
 	 <div class="table-responsive">
   	<table class="table table-striped table-sm table-dark table-hover">
   		<tr class="bg-primary">
@@ -42,4 +40,3 @@
   	</table>
 
   </div>
-</div>

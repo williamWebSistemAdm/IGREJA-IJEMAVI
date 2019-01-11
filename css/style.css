@@ -42,61 +42,11 @@
 	font-size: 15px;
 }
 
-/* Editar dia de culto */
-
-.domingo {
-	background-color: #d0dbe5;
-	padding-bottom: 14px;
-	border-radius: 5px;
-}
-
-.segunda {
-	background-color: #caccce;
-	padding-bottom: 14px;
-	border-radius: 5px;
-}
-
-.terca {
-	background-color: #bad3ce;
-	padding-bottom: 14px;
-	border-radius: 5px;
-}
-
-.quarta {
-	background-color: #c4b9d2;
-	padding-bottom: 14px;
-	border-radius: 5px;
-}
-
-.quinta {
-	background-color: #b3c6af;
-	padding-bottom: 14px;
-	border-radius: 5px;
-}
-
-.sexta {
-	background-color: #c6afc1;
-	padding-bottom: 14px;
-	border-radius: 5px;
-}
-
-.sabado {
-	background-color: #b3afc6;
-	padding-bottom: 14px;
-	border-radius: 5px;
-}
-
-.h2 {
-	margin-top: 5px;
-}
-
-/* Fim Editar dia de culto */
-
 /* Ver perfil obreiro */
 
 .editar {
 	background-color: #a5b7b5;
-	/* background-image: url('img/nature.jpg'); */
+	min-height: 600px;
 	padding: 10px;
 	border-radius: 5px;
 }

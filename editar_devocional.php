@@ -18,28 +18,27 @@ while($row = mysqli_fetch_assoc($result_dev))
  ?>
 
 
-    
 
-		<div class="editar">
 
-    <h1>Editar Devocional</h1>
+
+	<div class="text-center"><h3>Editar Devocional</h3></div>
 		<div id="formulario" >
   		<form action="proc_editar_devoc.php" method="post" enctype="multipart/form-data">
 
   			<label >Título</label>
-  			<input type="text" id="fname" value="<?php echo $titulo_dev; ?>" name="titulo_dev" required>
+  			<input class="form-control" type="text" id="fname" value="<?php echo $titulo_dev; ?>" name="titulo_dev" required>
 
   			<label for="subject">Resumo</label>
-  			<textarea maxlength="300" id="subject" name="resumo_dev" placeholder="300 caracteres" style="height:100px" required><?php echo $resumo_dev; ?></textarea>
+  			<textarea class="form-control" maxlength="300" id="subject" name="resumo_dev" placeholder="300 caracteres" style="height:100px" required><?php echo $resumo_dev; ?></textarea>
 
   			<label >Texto</label>
-  			<textarea id="subject" name="texto_dev" style="height:200px" required><?php echo $texto_dev; ?></textarea>
+  			<textarea class="form-control" id="subject" name="texto_dev" style="height:200px" required><?php echo $texto_dev; ?></textarea>
 
         <?php include 'includes/select_obreiros.inc.php';//Selecionando Obreiro?>
 
         <!-- Autor escolhido pelo usuario -->
         <label >Autor</label><br>
-        <input type="text" id="fname" name="autor_dev" placeholder="Caso seja de outrem" required value="<?php echo $autor_dev; ?>">
+        <input class="form-control" type="text" id="fname" name="autor_dev" placeholder="Caso seja de outrem" required value="<?php echo $autor_dev; ?>">
         <!-- <?php
 				// echo "$tipocargo_obr -"." $nome_obr"; ?> -->
         <!-- Autor Usuário logado que vai para o banco -->
@@ -48,10 +47,9 @@ while($row = mysqli_fetch_assoc($result_dev))
         <!-- <br> <label >Imagem:</label>
         <input type="file"  name="foto_dev" class="form-control" > -->
 
-  			<input type="submit" name="submit" value="Atualizar">
+  			<br> <input class="btn btn-success" type="submit" name="submit" value="Atualizar">
   		</form>
 
-		</div>
 		<div>
 		<?php include 'includes/footer.inc.php'; ?>
 		</div>
