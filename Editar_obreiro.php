@@ -26,8 +26,6 @@ $resultado_consulta = mysqli_fetch_assoc($result_consulta);
 		$rua_end = $row['rua_end'];
 		$numero_end = $row['numero_end'];
 		$complemento_end = $row['complemento_end'];
-		echo "id endereço: ".$id_enderecos;
-    echo "<br>";
 	}
 
 	// Pegar o  id_telefones
@@ -41,9 +39,6 @@ $resultado_consulta = mysqli_fetch_assoc($result_consulta);
 		$tel_watzap = $rowt['tel_watzap'];
 		$tel_cel = $rowt['tel_cel'];
 		$tel_resid = $rowt['tel_resid'];
-
-		echo "id telefone: ".$id_telefones;
-    echo "<br>";
 	}
 
   	// Pegar o  tipocargo_obr
@@ -54,15 +49,15 @@ $resultado_consulta = mysqli_fetch_assoc($result_consulta);
   		$id_tipocargo_obr = $rowc['id_tipocargo'];
       $_SESSION['id_tipocargo'] = $id_tipocargo_obr;
   		$Perfil_cargo_obr = $rowc['Perfil_cargo_obr'];
-  		echo "Perfil/cargo: ".$Perfil_cargo_obr;
-      echo "<br>";
   	}
 ?>
 
-  <div id="fundoTransparente">
 
-      <div class="container">
-        <h3>Editar Obreiro(a)</h3><br>
+        <h3  class="text-center table-primary">Editar Obreiro(a)</h3>
+				<div class="text-right">
+					<a href="administrativo.php?link=1" ><button type="button" class="btn btn-sm btn-info">Listar</button></a>
+					<a href="administrativo.php?link=5&id_obreiros=<?php echo $id; ?>" ><button type="button" class="btn btn-sm btn-danger">Desativar</button></a>
+				</div>
         <?php
              // setlocale( LC_ALL, 'pt_BR', 'pt_BR.iso-8859-1', 'pt_BR.utf-8', 'portuguese' );
              // date_default_timezone_set( 'America/Sao_Paulo' );
@@ -70,7 +65,9 @@ $resultado_consulta = mysqli_fetch_assoc($result_consulta);
              // $hora = strftime( ' %T');
              // echo "Dia: " . $dia . "Hora: ".$hora;
       ?>
-          <form method="post" action="proc_editar_obreiro.inc.php">
+			<div class="editar">
+
+          <form  method="post" action="proc_editar_obreiro.inc.php">
              <div class="row">
               <div class="col-md-3">
                 <label>Perfil/Cargo: </label>
@@ -141,7 +138,7 @@ $resultado_consulta = mysqli_fetch_assoc($result_consulta);
                 <label>Telefone Residencial:</label>
                 <input class="form-control" type="text" value="<?php echo $tel_resid; ?>"  name="tel_resid">
               </div>
-            </div>
+            </div><br>
 
             <h4>Endereço</h4>
              <div class="row">
@@ -229,7 +226,7 @@ $resultado_consulta = mysqli_fetch_assoc($result_consulta);
               </div>
             </div>
 
-            <input  type="hidden" value="<?php echo $resultado_consulta['id_obreiros']; ?>"  name="id_obreiros" >
+            <input  type="hidden" value="<?php echo $resultado_consulta['id_obreiros']; ?>"  name="id_obreiros" ><br>
 
             <h4>Escolha a Senha de Usuário</h4>
              <div class="row">
@@ -243,9 +240,8 @@ $resultado_consulta = mysqli_fetch_assoc($result_consulta);
               </div>
             </div>
             <br>
-            <div class="row">
-            <button class="btn btn-default" type="submit">Atualizar</button>
+            <div >
+            <button class="btn btn-primary" type="submit">Atualizar</button>
           </div>
-        </div>
       </form>
-      </div><br><br>
+			</div>

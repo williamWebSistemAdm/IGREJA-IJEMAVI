@@ -18,20 +18,9 @@ while($row = mysqli_fetch_assoc($result_dev))
  ?>
 
 
-<!DOCTYPE html>
-<html lang="pt-br">
+    
 
-	<head>
-		<!-- Bootstrap CSS -->
-		<link rel="stylesheet" href="css/bootstrap.min.css" >
-		<link rel="stylesheet" href="css/devocional.css" >
-	</head>
-
-	<body>
-
-    <a class="nav-link" href="includes/sair.inc.php">Sair</a>
-
-		<div class="container">
+		<div class="editar">
 
     <h1>Editar Devocional</h1>
 		<div id="formulario" >
@@ -66,7 +55,3 @@ while($row = mysqli_fetch_assoc($result_dev))
 		<div>
 		<?php include 'includes/footer.inc.php'; ?>
 		</div>
-
-	</body>
-
-</html>

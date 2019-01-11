@@ -1,17 +1,4 @@
-<!DOCTYPE html>
-<html lang="pt-br">
 
-	<head>
-		<!-- Bootstrap CSS -->
-		<link rel="stylesheet" href="css/bootstrap.min.css" >
-		<link rel="stylesheet" href="css/devocional.css" >
-	</head>
-
-	<body>
-
-    <a class="nav-link" href="includes/sair.inc.php">Sair</a>
-
-		<div class="container">
 
     <h1>Postar Devocional</h1>
 		<div id="formulario" >
@@ -47,7 +34,3 @@
 		<div>
 		<?php include 'includes/footer.inc.php'; ?>
 		</div>
-
-	</body>
-
-</html>

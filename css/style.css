@@ -91,3 +91,12 @@
 }
 
 /* Fim Editar dia de culto */
+
+/* Ver perfil obreiro */
+
+.editar {
+	background-color: #a5b7b5;
+	/* background-image: url('img/nature.jpg'); */
+	padding: 10px;
+	border-radius: 5px;
+}

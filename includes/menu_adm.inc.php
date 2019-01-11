@@ -80,21 +80,14 @@
 						</div>
 					</li>
 
-		      <!-- <li class="nav-item">
-		        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabilitado</a>
-		      </li> -->
 
 
 		    </ul>
-		    <form class="form-inline my-2 my-lg-0">
-		      <input class="form-control mr-sm-2" type="search" placeholder="Digite a pesquisa" aria-label="Search">
-		      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
-		    </form>
-				<li class="nav-item">
-				 <!-- <a class="nav-link" href="#" tabindex="-1">Disabilitado</a> -->
-				 <!-- <a class="nav-link" href="sair.inc.php">Sair</a> -->
-			 </li>
+
 		  </div>
+			<div class="text-right">
+				<a href="includes/sair.inc.php" ><button type="button" class="btn btn-sm btn-warning"> Sair </button></a>
+			</div>
 		</nav>
 
 		<!-- <a id="logout" href="logout.php">Log out<img src="img/logout.png" alt="Logout"></a> -->
