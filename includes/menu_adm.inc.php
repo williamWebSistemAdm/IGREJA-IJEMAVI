@@ -1,7 +1,7 @@
 
 	<header id="header">
 
-		<nav class="navbar navbar-expand-lg  navbar-light" style="background-color: #e3f2fd;">
+		<nav class="navbar navbar-expand-lg  navbar-light bg-primary" >
 		  <!-- <a class="navbar-brand" href="#">Navbar</a> -->
 			<a class="logo" href="administrativo.php"> <img src="img/logo.png" alt="logo IJEMAVI"></a>
 		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -13,7 +13,7 @@
 
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Usuários
+							<label class="link">Usuários</label>
 						</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 							<a class="dropdown-item" href="administrativo.php?link=1">Listar</a>
@@ -24,7 +24,7 @@
 					</li>
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Devocional
+							<label class="link">Devocional</label>
 						</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 							<a class="dropdown-item" href="administrativo.php?link=6">listar</a>
@@ -36,7 +36,7 @@
 					</li>
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Banner
+							<label class="link">Banner</label>
 						</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 							<a class="dropdown-item" href="administrativo.php?link=10">listar</a>
@@ -48,7 +48,7 @@
 					</li>
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Imagens
+							<label class="link">Imagens</label>
 						</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 							<a class="dropdown-item" href="administrativo.php?link=13">listar</a>
@@ -60,7 +60,7 @@
 					</li>
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Localização
+							<label class="link">Localização</label>
 						</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 							<a class="dropdown-item" href="administrativo.php?link=16">Visualizar</a>
@@ -70,7 +70,7 @@
 					</li>
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Dia de Culto
+							<label class="link">Dia de Culto</label>
 						</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 							 <a class="dropdown-item" href="administrativo.php?link=18">Visualizar</a>
@@ -86,7 +86,7 @@
 
 		  </div>
 			<div class="text-right">
-				<a href="includes/sair.inc.php" ><button type="button" class="btn btn-sm btn-warning"> Sair </button></a>
+				<a href="includes/sair.inc.php" ><button type="button" class="btn btn-sm btn-danger"> Sair </button></a>
 			</div>
 		</nav>
 

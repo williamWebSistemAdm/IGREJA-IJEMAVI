@@ -70,13 +70,13 @@ while($rowc = mysqli_fetch_assoc($result_tipocargo_obr))
 		<a href="administrativo.php?link=5&id_obreiros=<?php echo $id; ?>" ><button type="button" class="btn btn-sm btn-danger">Desativar</button></a>
 	</div>
 	<!-- <div class="text-right">	<?php	echo "Dia: " . $dia . "Hora: ".$hora;	?>	</div> -->
-	<table class="table table-hover  col-12">
+	<table class="table table-hover table-striped col-12">
 		<tbody>
-			<tr><th scope="row" class="text-center table-success">Função:</th><td class="table-success"></td></tr>
+			<tr><th scope="row" class="text-center table-dark">Função:</th><td class="table-dark"></td></tr>
 			<tr><th scope="row">Perfil/Cargo:</th><td><?php echo $Perfil_cargo_obr; ?></td></tr>
 		</tbody>
 	  <tbody>
-			<tr><th scope="row" class="text-center table-success">Dados pesoais:</th><td class="table-success"></td></tr>
+			<tr><th scope="row" class="text-center table-dark">Dados pesoais:</th><td class="table-dark"></td></tr>
 	    <tr><th scope="row">Identificador:</th><td><?php echo $id; ?></td></tr>
 	    <tr><th scope="row">Nome:</th><td><?php echo $nome_obr .' '. $sobrenome_obr; ?></td></tr>
 	    <tr><th scope="row">CPF:</th><td><?php echo $cpf_obr; ?></td></tr>
@@ -86,13 +86,13 @@ while($rowc = mysqli_fetch_assoc($result_tipocargo_obr))
 	    <tr><th scope="row">Cadastrado em:</th><td><?php echo $datacad_obr; ?></td></tr>
 	  </tbody>
 	  <tbody>
-	    <tr><th scope="row" class="text-center table-success">Contatos:</th><td class="table-success"></td></tr>
+	    <tr><th scope="row" class="text-center table-dark">Contatos:</th><td class="table-dark"></td></tr>
 	    <tr><th scope="row">Celular:</th><td><?php echo $tel_cel; ?></td></tr>
 	    <tr><th scope="row">Tel Residencial:</th><td><?php echo $tel_resid; ?></td></tr>
 	    <tr><th scope="row">WatZap:</th><td><?php echo $tel_watzap; ?></td></tr>
 	  </tbody>
 	  <tbody>
-	    <tr><th scope="row" class="text-center table-success">Endereço:</th><td class="table-success"></td></tr>
+	    <tr><th scope="row" class="text-center table-dark">Endereço:</th><td class="table-dark"></td></tr>
 	    <tr><th scope="row">CEP:</th><td><?php echo $cep_end; ?></td></tr>
 	    <tr><th scope="row">Estado:</th><td><?php echo $estado_end; ?></td></tr>
 	    <tr><th scope="row">Cidade:</th><td><?php echo $cidade_end; ?></td></tr>

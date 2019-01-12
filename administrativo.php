@@ -22,15 +22,16 @@
 
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="css/bootstrap.min.css" >
-		<link rel="stylesheet" href="css/style.css" >
+		<!-- <link rel="stylesheet" href="css/style.css" > -->
+		<link rel="stylesheet" href="style.css" >
     <link rel="shortcut icon" type="image/png" href="img/logo_favicon.ico">
 	</head>
 
 	<body>
 		<!-- Menu -->
+    <div class="bg_adm">
 		<?php	include 'includes/menu_adm.inc.php'; ?>
 		<div class="container">
-      <div class="editar">
 
 	      <?php
           @$link = $_GET['link'];

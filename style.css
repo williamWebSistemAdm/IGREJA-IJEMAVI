@@ -1,6 +1,7 @@
 * {
 	padding: 0px;
 	margin: 0px;
+	color: white;
 	/* Efeitos e Transição */
 	text-decoration: none;
 	-webkit-transition: all 500ms ease-in-out;
@@ -35,4 +36,43 @@
 #link_area_restrita a {
 	color: red;
 	font-size: 15px;
+}
+
+/* Fundo area adm */
+
+.bg_adm {
+	width: 100vw;
+	min-height: 670px;
+	background-image: url("img/bgescuro.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+/* cor dos inputs */
+
+input[type=text], select, optgroup, option, textarea {
+	color: black;
+}
+
+/* fundo dos inputs */
+
+.form-control {
+	background-color: #d1d3d3;
+}
+
+/* Botao sair  */
+
+.btn-sm {
+	margin-right: 15px;
+}
+
+.dropdown-item, .nav-item {
+	color: white;
+	background-color: #007bff;
+}
+
+.link {
+	color: white;
 }

@@ -10,10 +10,10 @@
 	transition: all 500ms ease-in-out;
 }
 
-#fundoTransparente {
+/* #fundoTransparente {
 	background: rgba(0, 0, 0, 0.5);
 	min-height: 860px;
-}
+} */
 
 /********Logo***********/
 
@@ -40,13 +40,4 @@
 #link_area_restrita a {
 	color: red;
 	font-size: 15px;
-}
-
-/* Ver perfil obreiro */
-
-.editar {
-	background-color: #a5b7b5;
-	min-height: 600px;
-	padding: 10px;
-	border-radius: 5px;
 }
