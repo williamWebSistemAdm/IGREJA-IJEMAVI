@@ -14,19 +14,28 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css" >
-    <link rel="stylesheet" href="css/style.css" >
+    <!-- <link rel="stylesheet" href="css/fontawesome.min.css" > -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" >
     <link rel="shortcut icon" type="image/png" href="img/logo_favicon.ico">
 	</head>
 
-	<body>
+	<body class="bg_index">
 		<div class="container-fluid">
 			<!-- Menu -->
 			<?php	include 'includes/menu_index.inc.php'; ?>
 
 			<!-- Carroussel -->
-			<?php	include 'carroussel_banner.inc.php'; ?>
 
+				<?php	include 'carroussel_banner.inc.php'; ?>
+
+				<div class="social-icons">
+				<a href="#"> <i class="fab fa-facebook-square"></i></a>
+				<a href="#"> <i class="fab fa-twitter-square"></i></a>
+				<a href="#"> <i class="fab fa-instagram"></i></a>
+				<a href="#"> <i class="fab fa-google-plus-square"></i></a>
+				<a href="#"> <i class="fa fa-envelope"></i></a>
+					</div>
 
 			<!-- galeria foto -->
 			 <?php
@@ -60,10 +69,18 @@
 
 		 ?>
 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
-
-
-		<script src="js\jquery-3.3.1.slim.min.js" ></script>
+		 <div id="footer">
+	   	<?php include 'includes/footer.inc.php'; ?>
+	   </div>
+		<script src="js/jquery-3.3.1.slim.min.js" ></script>
 		<script src="js/bootstrap.min.js" ></script>
 	</body>
 

@@ -49,7 +49,3 @@ while($row = mysqli_fetch_assoc($result_dev))
 
   			<br> <input class="btn btn-success" type="submit" name="submit" value="Atualizar">
   		</form>
-
-		<div>
-		<?php include 'includes/footer.inc.php'; ?>
-		</div>

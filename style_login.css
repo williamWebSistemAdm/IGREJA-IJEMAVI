@@ -134,6 +134,11 @@ body:before {
 	text-decoration: none;
 }
 
+.dropdown-item {
+	color: white;
+	background-color: #007bff;
+}
+
 /*
 #fundoTransparente {
 	background-color: rgba(8, 89, 86, .85);
