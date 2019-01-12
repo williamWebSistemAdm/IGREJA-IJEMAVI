@@ -1,4 +1,4 @@
-	<div class="text-center"><h3>Lista de fotos</h3></div><br>
+	<div class="text-center"><h3>Lista de fotos</h3></div>
 	 <div class="table-responsive">
   	<table class="table table-striped table-sm table-dark table-hover">
   		<tr class="bg-primary">

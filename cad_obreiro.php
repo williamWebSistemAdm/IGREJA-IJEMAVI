@@ -6,7 +6,6 @@
                 <label>Perfil/Cargo: </label>
                 <select class="form-control" name="tipocargo_obr" required autofocus>
                   <optgroup value="pastor" label="Pastor">
-                    <option value="pr_presidente">Pastor Presidente</option>
                     <option value="pr_dir_congregacional">Pastor Dirigente Congregacional</option>
                     <option value="pr_evanglista">Pastor Evangelista</option>
                     <option value="pr_missionario">Pastor Missionário</option>

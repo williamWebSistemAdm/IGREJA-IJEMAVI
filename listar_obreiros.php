@@ -6,13 +6,6 @@
 			<th>Perfil/Cargo</th>
 			<th>Nome</th>
 			<th class="text-center">Ações</th>
-			<!-- <th>E-mail</th> -->
-			<!-- <th>Sobrenome</th> -->
-			<!-- <th>CPF</th> -->
-			<!-- <th>Telefone</th> -->
-			<!-- <th>Sexo</th> -->
-			<!-- <th>Endereço</th> -->
-			<!-- <th>Data nascimento</th> -->
 		</tr>
 		<?php
 			// Selecionando obr
@@ -22,20 +15,11 @@
 			while($row = $result_obr->fetch_assoc())
 			{
 				$id = $row['id_obreiros'];
-				// $Perfil_cargo_obr = $row['Perfil_cargo_obr'];
+
 				echo "<tr>";
 				echo "<td>" . $row['Perfil_cargo_obr'] . "</td>";
 				echo "<td>" . $row['nome_obr'] ." ". $row['sobrenome_obr'] .  "</td>";
 
-				// echo "<td>" . $row['email_obr'] . "</td>";
-				// echo "<td>" . $row['foto_obreiro'] . "</td>";
-				// echo "<td>" . $row['id_obreiros'] ." ". $row['sobrenome_obr'] .  "</td>";
-				// echo "<td>" . $row['sobrenome_obr'] . "</td>";
-				// echo "<td>" . $row['cpf_obr'] . "</td>";
-				// echo "<td>" . $row['telefone_obr'] . "</td>";
-				// echo "<td>" . $row['sexo_obr'] . "</td>";
-				// echo "<td>" . $row['nascimento_obr'] . "</td>";
-				// echo "<td>" . $row['foto_obreiro'] . "</td>";
 				?>
 				<td>
 				<div class="text-center">
@@ -52,16 +36,6 @@
 			 echo "<tr>";
 			 echo "<td>" . "Sem Dados" . "</td>";
 			 echo "<td>" . "Sem Dados" . "</td>";
-
-			 // echo "<td>" . $row['foto_obreiro'] . "</td>";
-			 // echo "<td>" . "Sem Dados" . "</td>";
-			 // echo "<td>" . "Sem Dados" . "</td>";
-			 // echo "<td>" . "Sem Dados" . "</td>";
-			 // echo "<td>" . "Sem Dados" . "</td>";
-			 // echo "<td>" . "Sem Dados" . "</td>";
-			 // echo "<td>" . "Sem Dados" . "</td>";
-			 // echo "<td>" . "Sem Dados" . "</td>";
-			 // echo "<td>" . "Sem Dados" . "</td>";
 
 				echo "</tr>";
 
