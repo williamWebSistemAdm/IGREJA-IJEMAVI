@@ -19,7 +19,7 @@
 	  date_default_timezone_set( 'America/Sao_Paulo' );
 	  $dia = strftime( '%e-%m-%Y ');
 	  $hora = strftime( ' %T');
-	  echo "Dia: " . $dia . "Hora: ".$hora;
+	  // echo "Dia: " . $dia . "Hora: ".$hora;
 
 
 		//Tamanho máximo do arquivo em Bytes
@@ -45,12 +45,12 @@
 		$extensao					= explode('.', $foto_dev);
 		$extensao					= end($extensao);
 		if(array_search($extensao, $_UP['extensoes'])=== false){
-			echo "<script>alert('A extensão .".$extensao." NÃO é permitida! Extensões permitidas .jpg, .bmp, .gif, .jpeg e .png '); window.location.href='administrativo.php?link=7';</script>";
+			echo "<script>alert('A extensão .".$extensao." NÃO é permitida! Extensões permitidas .jpg, .bmp, .gif, .jpeg e .png '); window.location.href='administrativo.php?link=6';</script>";
 		}
 
 		//Faz a verificação do tamanho do arquivo
 		else if ($_UP['tamanho'] < $_FILES['foto_dev']['size']){
-			echo "<script>alert('Arquivo muito grande.'); window.location.href='administrativo.php?link=7';</script>";
+			echo "<script>alert('Arquivo muito grande.'); window.location.href='administrativo.php?link=6';</script>";
 		}
 
 		//O arquivo passou em todas as verificações, hora de tentar move-lo para a pasta foto
@@ -66,14 +66,14 @@
 				//Upload efetuado com sucesso, exibe a mensagem
 				$query_dev = mysqli_query($conexao, "INSERT INTO devocional (titulo_dev, resumo_dev, texto_dev, autor_dev, usuario_logado_dev, foto_dev, data_dev, id_obreiro_dev_fk) VALUES('$titulo_dev', '$resumo_dev', '$texto_dev', '$autor_dev', '$usuario_logado_dev', '$novo_nome', current_timestamp, NULL)");
 				if($result_dev->num_rows > 0){
-     				echo "<script>alert('Devocional cadastrado com sucesso!.'); window.location.href='administrativo.php?link=7';</script>";
+     				echo "<script>alert('Devocional cadastrado com sucesso!.'); window.location.href='administrativo.php?link=6';</script>";
 	 				}else {
-						echo "<script>alert('Salvou a imagem, mas nao iseriu no banco de dados. Algum erro de SQL.'); window.location.href='administrativo.php?link=7';</script>";
+						echo "<script>alert('Salvou a imagem, mas nao iseriu no banco de dados. Algum erro de SQL.'); window.location.href='administrativo.php?link=6';</script>";
 					};
 
 			}else{
 				//Upload não efetuado com sucesso, exibe a mensagem
-				echo "<script>alert('Devocional NÃO foi cadastrado com sucesso!.'); window.location.href='administrativo.php?link=7';</script>";
+				echo "<script>alert('Devocional NÃO foi cadastrado com sucesso!.'); window.location.href='administrativo.php?link=6';</script>";
 			}
 		}
 

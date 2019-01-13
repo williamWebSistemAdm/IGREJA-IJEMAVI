@@ -43,12 +43,12 @@
 			$extensao					= explode('.', $img_galeria);
 			$extensao					= end($extensao);
 			if(array_search($extensao, $_UP['extensoes'])=== false){
-				echo "<script>alert('A extensão .".$extensao." NÃO é permitida! Extensões permitidas .jpg, .jpeg e .png '); window.location.href='administrativo.php?link=14';</script>";
+				echo "<script>alert('A extensão .".$extensao." NÃO é permitida! Extensões permitidas .jpg, .jpeg e .png '); window.location.href='administrativo.php?link=13';</script>";
 			}
 
 			//Faz a verificação do tamanho do arquivo
 			else if ($_UP['tamanho'] < $_FILES['img_galeria']['size']){
-				echo "<script>alert('Arquivo muito grande.'); window.location.href='administrativo.php?link=14';</script>";
+				echo "<script>alert('Arquivo muito grande.'); window.location.href='administrativo.php?link=13';</script>";
 			}
 
 			//O arquivo passou em todas as verificações, hora de tentar move-lo para a pasta foto
@@ -65,15 +65,15 @@
 					// $query_galeria = mysqli_query($conexao, "INSERT INTO galeria (img_galeria) VALUES('$img_galeria')");
 					$query_galeria = mysqli_query($conexao, "INSERT INTO galeria (img_galeria, nome_img_galeria, postador_img, data_post_img) VALUES('$img_galeria', '$nome_img_galeria', '$postador_img', now())");
 					if($result_galeria->num_rows > 0){
-       				echo "<script>alert('Imagem adicionada com sucesso!.'); window.location.href='administrativo.php?link=14';</script>";
+       				echo "<script>alert('Imagem adicionada com sucesso!.'); window.location.href='administrativo.php?link=13';</script>";
 							exit;
 		 				}else {
-							echo "<script>alert('Salvou a imagem, mas nao iseriu no banco de dados. Algum erro de SQL.'); window.location.href='administrativo.php?link=14';</script>";
+							echo "<script>alert('Salvou a imagem, mas nao iseriu no banco de dados. Algum erro de SQL.'); window.location.href='administrativo.php?link=13';</script>";
 		 				};
 
 				}else{
 					//Upload não efetuado com sucesso, exibe a mensagem
-					echo "<script>alert('Banner NÃO foi cadastrado com suceso!.'); window.location.href='administrativo.php?link=14';</script>";
+					echo "<script>alert('Banner NÃO foi cadastrado com suceso!.'); window.location.href='administrativo.php?link=13';</script>";
 				}
 			};
 

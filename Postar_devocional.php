@@ -1,11 +1,14 @@
 
-      <div class="text-center"><h3>Postar Devocional</h3></div>
+      <div class="text-center"><h3>Postagem Devocional</h3></div>
+      <div class="text-right">
+				<a href="administrativo.php?link=6" ><button type="button" class="btn btn-sm btn-primary"> Listar </button></a>
+      </div>
 
 		<div id="formulario" >
   		<form action="proc_postar_devoc.php" method="post" enctype="multipart/form-data">
 
   			<label >Título</label>
-  			<input class="form-control" type="text" id="fname" name="titulo_dev" required>
+  			<input class="form-control" type="text" id="fname" name="titulo_dev" required autofocus>
 
   			<label for="subject">Resumo</label>
   			<textarea class="form-control" maxlength="300" id="subject" name="resumo_dev" placeholder="300 caracteres" style="height:100px" required></textarea>

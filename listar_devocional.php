@@ -1,13 +1,18 @@
 
 	<div class="text-center"><h3>Lista de Devocional</h3></div>
+	<div class="text-right">
+		<a href="administrativo.php?link=7" ><button type="button" class="btn btn-sm btn-info">Postar</button></a>
+	</div>
 
 	<h2></h2>
 	 <div class="table-responsive">
   	<table class="table table-striped table-sm table-dark table-hover">
   		<tr class="bg-primary">
+				<th>Id</th>
 				<th>Titulo</th>
 				<th>Autor</th>
         <th>Data postagem</th>
+        <th>Ações</th>
   			<!-- <th> imagem</th> -->
   			<!-- <th>Postador</th> -->
   		</tr>
@@ -22,6 +27,7 @@
 					$id_dev = $row['id_devocional'];
   				echo "<tr>";
 
+          echo "<td>" . $row['id_devocional'] . "</td>";
           echo "<td>" . $row['titulo_dev'] . "</td>";
           echo "<td>" . $row['autor_dev'] . "</td>";
   				echo "<td>" . $row['data_dev'] . "</td>";
@@ -30,9 +36,11 @@
 
 					<td>
 					<div class="text-center">
-						<!-- <a href="administrativo.php?link=6&id_obreiros=<?php echo $id_dev; ?>" ><button type="button" class="btn btn-sm btn-info">Visualizar</button></a> -->
+						<!-- <a href="administrativo.php?link=7&id_obreiros=<?php echo $id_dev; ?>" ><button type="button" class="btn btn-sm btn-info">Postar</button></a> -->
+						<?php if (($id_dev !=1) and ($id_dev !=2)): ?>
 						<a href="administrativo.php?link=8&id_devocional=<?php echo $id_dev; ?>" ><button type="button" class="btn btn-sm btn-warning"> Editar </button></a>
-						<a href="administrativo.php?link=9&id_devocional=<?php echo $id_dev; ?>" ><button type="button" class="btn btn-sm btn-danger">Excluir</button></a>
+						<a href="proc_apagar_devocional.php?id_devocional=<?php echo $id_dev; ?>" ><button type="button" class="btn btn-sm btn-danger">Excluir</button></a>
+						<?php endif; ?>
 					</div>
 					</td>
 
