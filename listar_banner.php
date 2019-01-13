@@ -1,6 +1,8 @@
 
 
 	<div class="text-center"><h3>Lista de Banner</h3></div>
+	<div class="text-right"><a href="administrativo.php?link=11&id=<?php echo $id; ?>" ><button type="button" class="btn btn-sm btn-success"> Adicionar </button></a></div>
+
 	 <div class="table-responsive">
   	<table class="table table-striped table-sm table-dark table-hover">
   		<tr class="bg-primary">
@@ -34,7 +36,6 @@
 					<div class="text-center">
 				    <a href="administrativo.php?link=20&id=<?php echo $id; ?>" ><button type="button" class="btn btn-sm btn-info">Visualizar</button></a>
 						<?php if (($id !=1) and ($id !=2)): ?>
-				    <a href="administrativo.php?link=11&id=<?php echo $id; ?>" ><button type="button" class="btn btn-sm btn-success"> Adicionar </button></a>
 				    <a href="proc_apagar_banner.php?id=<?php echo $id; ?>" ><button type="button" class="btn btn-sm btn-danger">Desativar</button></a>
 						<?php endif; ?>
 					</div>

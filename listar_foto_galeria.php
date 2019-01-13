@@ -33,8 +33,8 @@
 					<td>
 					<div class="text-center">
 						<!-- <a href="administrativo.php?link=7&id_obreiros=<?php echo $id_dev; ?>" ><button type="button" class="btn btn-sm btn-info">Postar</button></a> -->
+						<a href="administrativo.php?link=21&id_galeria=<?php echo $id_foto; ?>" ><button type="button" class="btn btn-sm btn-primary"> Visualizar </button></a>
 						<?php if (($id_foto !=1) and ($id_foto !=2)): ?>
-						<!-- <a href="administrativo.php?link=8&id_devocional=<?php echo $id_foto; ?>" ><button type="button" class="btn btn-sm btn-warning"> Editar </button></a> -->
 						<a href="proc_apagar_foto_gal.php?id_galeria=<?php echo $id_foto; ?>" ><button type="button" class="btn btn-sm btn-danger">Excluir</button></a>
 						<?php endif; ?>
 					</div>

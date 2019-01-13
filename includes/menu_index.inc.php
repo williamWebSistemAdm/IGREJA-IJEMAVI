@@ -33,10 +33,15 @@
 		      <li class="nav-item">
 		        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabilitado</a>
 		      </li> -->
-					<li id="link_area_restrita" class="nav-item">
-						<a class="nav-link" href="restrito.php">Área Restrita</a>
+
+					<li>
+						<a href="doacoes.php" ><button type="button" class="btn btn-sm btn-light"> Doações </button></a>
 					</li>
+
 		    </ul>
+				<div class="text-right">
+					<a href="restrito.php" ><button type="button" class="btn btn-sm btn-dark"> Área Restrita </button></a>
+				</div>
 
 		    <!-- <form class="form-inline my-2 my-lg-0">
 		      <input class="form-control mr-sm-2" type="search" placeholder="Digite a pesquisa" aria-label="Search">

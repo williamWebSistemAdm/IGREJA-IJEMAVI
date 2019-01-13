@@ -28,9 +28,9 @@
 			$salvar = mysqli_query($conexao, $sql);
 
 			if($result_end_igj->num_rows > 0){
-					echo "<script>alert('Localização atualizada com suceso!.'); window.location.href='administrativo.php?link=16';</script>";
+					echo "<script>alert('Localização atualizada com sucesso!.'); window.location.href='administrativo.php?link=16';</script>";
 				}else {
-					echo "<script>alert('Erro ao atualizar dados.'); window.location.href='administrativo.php?link=16';</script>";
+					echo "<script>alert('Erro ao atualizar dados, O BAIRRO PRECISA SER PREENCHIDO.'); window.location.href='administrativo.php?link=16';</script>";
 				}
 		}
 
