@@ -3,6 +3,7 @@
 	<div class="table-responsive">
 		<table class="table table-striped table-sm table-dark table-hover">
 		<tr class="bg-primary">
+			<th>Id</th>
 			<th>Perfil/Cargo</th>
 			<th>Nome</th>
 			<th class="text-center">Ações</th>
@@ -17,17 +18,26 @@
 				$id = $row['id_obreiros'];
 
 				echo "<tr>";
+				echo "<td>" . $row['id_obreiros'] . "</td>";
 				echo "<td>" . $row['Perfil_cargo_obr'] . "</td>";
 				echo "<td>" . $row['nome_obr'] ." ". $row['sobrenome_obr'] .  "</td>";
 
 				?>
+
+
+
 				<td>
 				<div class="text-center">
 			    <a href="administrativo.php?link=2&id_obreiros=<?php echo $id; ?>" ><button type="button" class="btn btn-sm btn-info">Visualizar</button></a>
+					<?php if (($id !=1)): ?>
 			    <a href="administrativo.php?link=4&id_obreiros=<?php echo $id; ?>" ><button type="button" class="btn btn-sm btn-warning"> Editar </button></a>
-			    <a href="administrativo.php?link=5&id_obreiros=<?php echo $id; ?>" ><button type="button" class="btn btn-sm btn-danger">Desativar</button></a>
+					<?php endif; ?>
+					<?php if (($id !=1) and ($id !=2)): ?>
+			    <a href="proc_apagar_obr.php?id_obreiros=<?php echo $id; ?>" ><button type="button" class="btn btn-sm btn-danger">Desativar</button></a>
+					<?php endif; ?>
 				</div>
 		    </td>
+
 				<?php
 				 echo "</tr>";
 			 }

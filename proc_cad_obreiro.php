@@ -76,8 +76,8 @@
 	while($row = mysqli_fetch_row($result_id_enderecos))
 	{
 		$id_enderecos = $row[0];
-		echo "id endereço: ".$id_enderecos;
-    echo "<br>";
+		// echo "id endereço: ".$id_enderecos;
+    // echo "<br>";
 	}
 
 	//Pegar o maior e ultimo id_telefones cadastrado
@@ -86,8 +86,8 @@
 	while($row = mysqli_fetch_row($result_id_telefones))
 	{
 		$id_telefones = $row[0];
-		echo "id telefone: ".$id_telefones;
-    echo "<br>";
+		// echo "id telefone: ".$id_telefones;
+    // echo "<br>";
 	}
 
 	//Pegar o maior e ultimo id_obreiros cadastrado
@@ -96,8 +96,8 @@
 	while($row = mysqli_fetch_row($result_id_obreiros))
 	{
 		$id_obreiros = $row[0];
-		echo "id obreiros: ".$id_obreiros;
-    echo "<br>";
+		// echo "id obreiros: ".$id_obreiros;
+    // echo "<br>";
 	}
 
 	//Pegar o maior e ultimo id_tipocargo_obr cadastrado
@@ -106,7 +106,7 @@
 	while($row = mysqli_fetch_row($result_id_tipocargo_obr))
 	{
 		$id_tipocargo = $row[0];
-		echo "id tipocargo: ".$id_tipocargo;
+		// echo "id tipocargo: ".$id_tipocargo;
 	}
 
 	$sql1 = "UPDATE obreiros SET endereco='$id_enderecos', tipocargo_obr='$id_obreiros' WHERE id_obreiros='$id_obreiros'";

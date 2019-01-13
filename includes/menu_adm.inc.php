@@ -31,7 +31,7 @@
 							<a class="dropdown-item" href="administrativo.php?link=7">Adicionar</a>
 							<!-- <a class="dropdown-item" href="administrativo.php?link=8">Editar</a> -->
 							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="administrativo.php?link=9">Excluir</a>
+							<a class="dropdown-item" href="administrativo.php?link=6">Excluir</a>
 						</div>
 					</li>
 					<li class="nav-item dropdown">
@@ -43,7 +43,7 @@
 							<a class="dropdown-item" href="administrativo.php?link=11">Adicionar</a>
 							<!-- <a class="dropdown-item" href="administrativo.php?link=1">Editar</a> -->
 							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="administrativo.php?link=12">Desativar</a>
+							<a class="dropdown-item" href="administrativo.php?link=10">Desativar</a>
 						</div>
 					</li>
 					<li class="nav-item dropdown">
@@ -55,7 +55,7 @@
 							<a class="dropdown-item" href="administrativo.php?link=14">Adicionar</a>
 							<!-- <a class="dropdown-item" href="administrativo.php?link=1">Editar</a> -->
 							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="administrativo.php?link=15">Desativar</a>
+							<a class="dropdown-item" href="administrativo.php?link=13">Desativar</a>
 						</div>
 					</li>
 					<li class="nav-item dropdown">

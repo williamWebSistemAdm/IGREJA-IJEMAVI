@@ -10,14 +10,14 @@ $result_consulta = $conexao->query($sql_consulta);
 // $resultado_consulta = mysqli_fetch_assoc($result_consulta);
 while($row = mysqli_fetch_assoc($result_consulta))
 {
-	// $id_obreiros = $row['id_obreiros'];
+	$id_obreiros = $row['id_obreiros'];
 	$nome_obr = $row['nome_obr'];
 	$sobrenome_obr = $row['sobrenome_obr'];
 	$cpf_obr = $row['cpf_obr'];
 	$sexo_obr = $row['sexo_obr'];
 	$email_obr = $row['email_obr'];
-	$nascimento_obr = $row['nascimento_obr'];
-	$datacad_obr = $row['datacad_obr'];
+	$nascimento_obr = date('d/m/Y', strtotime($row['nascimento_obr']));
+	$datacad_obr = date('d/m/Y', strtotime($row['datacad_obr']));
 }
 
 // Pegar o id_enderecos
@@ -66,8 +66,12 @@ while($rowc = mysqli_fetch_assoc($result_tipocargo_obr))
 	<div class="text-center "><h3>Perfil Obreiro(a)</h3></div><br>
 	<div class="text-right">
 		<a href="administrativo.php?link=1" ><button type="button" class="btn btn-sm btn-info">Listar</button></a>
+		<?php if (($id !=1)): ?>
 		<a href="administrativo.php?link=4&id_obreiros=<?php echo $id; ?>" ><button type="button" class="btn btn-sm btn-warning"> Editar </button></a>
+		<?php endif; ?>
+		<?php if (($id !=1) and ($id !=2)): ?>
 		<a href="administrativo.php?link=5&id_obreiros=<?php echo $id; ?>" ><button type="button" class="btn btn-sm btn-danger">Desativar</button></a>
+		<?php endif; ?>
 	</div>
 	<!-- <div class="text-right">	<?php	echo "Dia: " . $dia . "Hora: ".$hora;	?>	</div> -->
 	<table class="table table-hover table-striped col-12">
@@ -100,5 +104,6 @@ while($rowc = mysqli_fetch_assoc($result_tipocargo_obr))
 	    <tr><th scope="row">Rua:</th><td><?php echo $rua_end; ?></td></tr>
 	    <tr><th scope="row">Número:</th><td><?php echo $numero_end; ?></td></tr>
 	    <tr><th scope="row">Complemento:</th><td><?php echo $complemento_end; ?></td></tr>
+	    <tr><th scope="row"></th><td></td></tr>
 	  </tbody>
 	</table>

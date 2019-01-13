@@ -1,5 +1,8 @@
 
 	<div class="text-center"><h3>Adiconar Banner</h3></div>
+	<div class="text-right">
+		<a href="administrativo.php?link=10" ><button type="button" class="btn btn-sm btn-info">Listar</button></a>
+  </div>
   <form method="POST" action="proc_upload_banner.php" enctype="multipart/form-data">
 
     <div class="row">

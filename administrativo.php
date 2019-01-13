@@ -40,7 +40,7 @@
           $pag['2'] = 'ver_perfil_obr.php';
           $pag['3'] = 'cad_obreiro.php';
           $pag['4'] = 'editar_obreiro.php';
-          $pag['5'] = 'excluir_obreiro.php';
+          // $pag['5'] = 'excluir_obreiro.php';
           // Devocional
           $pag['6'] = 'Listar_devocional.php';
           $pag['7'] = 'postar_devocional.php';
@@ -60,6 +60,9 @@
           // Dia culto
           $pag['18'] = 'listar_dia_culto.php';
           $pag['19'] = 'editar_dia_culto.php';
+
+          $pag['20'] = 'ver_banner.php';
+          $pag['21'] = '';
 
 
           // validar se apagina existe e redirecionar para ela

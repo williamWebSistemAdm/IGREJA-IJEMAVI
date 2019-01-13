@@ -2,8 +2,7 @@
 include 'includes/conexao.inc.php';//conexao com o banco
 include 'includes/seguranca.inc.php';//seguranca
 
-
-$id = $_GET['id_obreiros'];
+$id = $_GET['id'];
 
 // Consultar obreiros
 $sql_consulta = "SELECT * FROM obreiros WHERE id_obreiros='$id' limit 1";

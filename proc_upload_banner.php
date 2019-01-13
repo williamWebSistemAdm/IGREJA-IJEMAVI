@@ -80,16 +80,16 @@
 				//Verificar se é possivel mover o arquivo para a pasta escolhida
 				if(move_uploaded_file($_FILES['arquivo']['tmp_name'], 'img/img_banner/'. $novo_nome)){
 					//Upload efetuado com sucesso, exibe a mensagem
-					$query = mysqli_query($conexao, "INSERT INTO carrouses (imagen_carousel, nome, data_hora_post) VALUES('$novo_nome', '$novo_nome', current_timestamp)");
+					$query = mysqli_query($conexao, "INSERT INTO carrouses (imagen_carousel, nome, data_hora_post, data_evento) VALUES('$nome', '$novo_nome', current_timestamp, '$data_evento')");
 					if($result->num_rows > 0){
-       				echo "<script>alert('Banner cadastrado com suceso!.'); window.location.href='administrativo.php?link=11';</script>";
+       				echo "<script>alert('Banner cadastrado com suceso!.'); window.location.href='administrativo.php?link=10';</script>";
 		 				}else {
-							echo "<script>alert('Salvou a imagem, mas nao iseriu no banco de dados. Algum erro de SQL.'); window.location.href='administrativo.php?link=11';</script>";
+							echo "<script>alert('Salvou a imagem, mas nao iseriu no banco de dados. Algum erro de SQL.'); window.location.href='administrativo.php?link=10';</script>";
 		 				};
 
 				}else{
 					//Upload não efetuado com sucesso, exibe a mensagem
-					echo "<script>alert('Banner NÃO foi cadastrado com suceso!.'); window.location.href='administrativo.php?link=11';</script>";
+					echo "<script>alert('Banner NÃO foi cadastrado com suceso!.'); window.location.href='administrativo.php?link=10';</script>";
 				}
 			}
 
