@@ -15,7 +15,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css" >
     <!-- <link rel="stylesheet" href="css/fontawesome.min.css" > -->
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+		<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="style.css" >
     <link rel="shortcut icon" type="image/png" href="img/logo_favicon.ico">
 	</head>
@@ -29,13 +29,13 @@
 
 				<?php	include 'carroussel_banner.inc.php'; ?>
 
-				<div class="social-icons">
+				<!-- <div class="social-icons">
 				<a href="#"> <i class="fab fa-facebook-square"></i></a>
 				<a href="#"> <i class="fab fa-twitter-square"></i></a>
 				<a href="#"> <i class="fab fa-instagram"></i></a>
 				<a href="#"> <i class="fab fa-google-plus-square"></i></a>
 				<a href="#"> <i class="fa fa-envelope"></i></a>
-					</div>
+					</div> -->
 
 			<!-- galeria foto -->
 			 <?php
@@ -43,31 +43,7 @@
 
 		</div>
 
-		<?php
-			$result_foto = "SELECT img_galeria, nome_img_galeria FROM galeria ORDER BY id_galeria ASC";
-			$resultado_foto = mysqli_query($conexao, $result_foto);
-			while($row_foto = mysqli_fetch_assoc($resultado_foto)){
-				if($row_foto > 0){  ?>
-					<div class="tz-gallery">
-						<div class="row">
-								<div class="col-sm-6 col-md-3">
-										<a class="lightbox" href="img/img_galeria/<?php echo $row_foto['img_galeria']; ?>">
-											<img src="img/img_galeria/<?php echo $row_foto['img_galeria']; ?>" alt="<?php echo $row_foto['nome_img_galeria']; ?>">
-										</a>
-								</div>
-						</div>
-				</div>
-				<?php }else {   ?>
 
-				<div class="carousel-item">
-				 nao mostra  <img src="img/img_galeria/<?php echo $row_foto['img_galeria']; ?>" alt="<?php echo $row_foto['nome_img_galeria']; ?>">
-			 	</div>  <?php
-					}
-				}
-
-
-
-		 ?>
 
 <br>
 <br>
@@ -78,8 +54,9 @@
 <br>
 
 		 <div id="footer">
-	   	<?php include 'includes/footer.inc.php'; ?>
-	   </div>
+	   	<?php
+			// include 'includes/footer.inc.php'; ?>
+	   <!-- </div> -->
 		<script src="js/jquery-3.3.1.slim.min.js" ></script>
 		<script src="js/bootstrap.min.js" ></script>
 	</body>

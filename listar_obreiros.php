@@ -1,4 +1,4 @@
-
+<br>
 	<div class="text-center"><h3>Lista de Usuarios</h3></div>
 	<div class="text-right">
 		<a href="administrativo.php?link=3" ><button type="button" class="btn btn-sm btn-success">Novo</button></a>

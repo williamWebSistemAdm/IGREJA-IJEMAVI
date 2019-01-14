@@ -14,12 +14,14 @@
     $nome_obr = $_SESSION['nome_obr'];
 
     //mensagem de Boas Vindas
-    if ($_SESSION['tipocargo_obr'] == "adm_padrao"){
+    if ($_SESSION['tipocargo_obr'] == "1"){
         echo "Bem vindo Administrador Padrão!" ;
-    }elseif($_SESSION['tipocargo_obr'] == "pr_presidente"){
+    }elseif($_SESSION['tipocargo_obr'] == "2"){
         echo "Bem vindo Pastor Presidente!";
     }else {
       echo "Bem vindo Ir. ". $nome_obr;
     }
+
+    include 'peench_adm.php';
 
 ?>

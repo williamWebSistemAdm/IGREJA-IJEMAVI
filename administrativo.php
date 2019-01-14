@@ -33,6 +33,8 @@
 		<?php	include 'includes/menu_adm.inc.php'; ?>
 		<div class="container">
 
+
+
 	      <?php
           @$link = $_GET['link'];
           // Obreiro
@@ -74,7 +76,7 @@
           }
           else {
 
-            echo "<div class='text-center'><h3>Bem Vindo!</h3></div><br>";
+            echo 	include 'includes\msg_boas_vindas.inc.php';
           }
           // else {
           //   // Verifica se é administrador ou usuario comum

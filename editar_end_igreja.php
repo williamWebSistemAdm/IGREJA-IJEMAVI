@@ -16,7 +16,7 @@ while($row = mysqli_fetch_assoc($result_end_igj))
 ?>
 
 
-
+<br>
 <div class="container">
   <form method="post" action="proc_editar_end_igj.php">
 		<div class="text-center"><h3>Editar Localização da Igreja</h3></div>

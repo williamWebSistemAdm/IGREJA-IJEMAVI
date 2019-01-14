@@ -31,6 +31,7 @@
   {  $id_sab = $row['id_dia_culto'];  $local_sab = $row['local_culto'];   $tema_sab = $row['nome_culto'];   $hora_sab = $row['hora_culto'];  }
 
 ?>
+<br>
 <div class="text-center "><h3>Dias de Culto</h3></div>
 
 <div class="text-right">

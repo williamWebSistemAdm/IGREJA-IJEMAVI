@@ -1,3 +1,4 @@
+<br>
 	<div class="text-center"><h3>Lista de fotos</h3></div>
 	<div class="text-right">
 		<a href="administrativo.php?link=14" ><button type="button" class="btn btn-sm btn-success">Novo</button></a>

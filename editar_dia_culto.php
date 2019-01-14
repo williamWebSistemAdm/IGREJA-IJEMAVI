@@ -36,7 +36,7 @@
 	}
 
 ?>
-
+<br>
 		  <div class="text-center"><h2 class="h2">Editar dia de culto:</h2></div>
           <form method="post" action="proc_editar_diaculto.php">
 						<h4 class="table-active">Domingo:</h4>

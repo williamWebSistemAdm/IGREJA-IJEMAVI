@@ -1,4 +1,4 @@
-
+<br>
       <div class="text-center"><h3>Postagem Devocional</h3></div>
       <div class="text-right">
 				<a href="administrativo.php?link=6" ><button type="button" class="btn btn-sm btn-primary"> Listar </button></a>
