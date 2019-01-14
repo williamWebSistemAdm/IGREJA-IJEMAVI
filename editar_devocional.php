@@ -19,9 +19,9 @@ while($row = mysqli_fetch_assoc($result_dev))
 
 
 
-
-
 	<div class="text-center"><h3>Editar Devocional</h3></div>
+		<div class="text-right"><a href="administrativo.php?link=6" ><button type="button" class="btn btn-sm btn-info"> Listar </button></a></div>
+
 		<div id="formulario" >
   		<form action="proc_editar_devoc.php" method="post" enctype="multipart/form-data">
 

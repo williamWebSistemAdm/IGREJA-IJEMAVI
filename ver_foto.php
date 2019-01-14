@@ -24,7 +24,7 @@
 	<div class="text-right">
 		<a href="administrativo.php?link=13"><button type="button" class="btn btn-sm btn-info">Listar</button></a>
 		<?php if (($id !=1) and ($id !=2)): ?>
-		<a href="proc_apagar_foto_gal.php?id_galeria=<?php echo $id_foto; ?>" ><button type="button" class="btn btn-sm btn-danger">Apagar</button></a>
+		<a href="permissao_apagar\prm_apag_fotos.php?id_galeria=<?php echo $id_foto; ?>" ><button type="button" class="btn btn-sm btn-danger">Apagar</button></a>
 	<?php endif; ?>
 	</div>
 	<table class="table table-hover table-striped col-12">

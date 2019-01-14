@@ -12,7 +12,7 @@
 		$resultado_banner = mysqli_query($conexao, $result_banner);
 
 		if(mysqli_affected_rows($conexao) != 0){
-			echo "<script>alert('Banner apagado com suceso!.'); window.location.href='administrativo.php?link=10';</script>";
+			echo "<script>alert('Banner apagado com sucesso!.'); window.location.href='administrativo.php?link=10';</script>";
 		}else {
 			echo "<script>alert('Erro ao apagar banner.'); window.location.href='administrativo.php?link=10';</script>";
 		}

@@ -70,7 +70,7 @@ while($rowc = mysqli_fetch_assoc($result_tipocargo_obr))
 		<a href="administrativo.php?link=4&id_obreiros=<?php echo $id; ?>" ><button type="button" class="btn btn-sm btn-warning"> Editar </button></a>
 		<?php endif; ?>
 		<?php if (($id !=1) and ($id !=2)): ?>
-		<a href="administrativo.php?link=5&id_obreiros=<?php echo $id; ?>" ><button type="button" class="btn btn-sm btn-danger">Desativar</button></a>
+		<a href="permissao_apagar\prm_apag_obr.php?id_obreiros=<?php echo $id; ?>" ><button type="button" class="btn btn-sm btn-danger">Excluir</button></a>
 		<?php endif; ?>
 	</div>
 	<!-- <div class="text-right">	<?php	echo "Dia: " . $dia . "Hora: ".$hora;	?>	</div> -->

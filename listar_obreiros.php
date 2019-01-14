@@ -33,7 +33,7 @@
 			    <a href="administrativo.php?link=4&id_obreiros=<?php echo $id; ?>" ><button type="button" class="btn btn-sm btn-warning"> Editar </button></a>
 					<?php endif; ?>
 					<?php if (($id !=1) and ($id !=2)): ?>
-			    <a href="proc_apagar_obr.php?id_obreiros=<?php echo $id; ?>" ><button type="button" class="btn btn-sm btn-danger">Desativar</button></a>
+			    <a href="permissao_apagar\prm_apag_obr.php?id_obreiros=<?php echo $id; ?>" ><button type="button" class="btn btn-sm btn-danger">Excluir</button></a>
 					<?php endif; ?>
 				</div>
 		    </td>
