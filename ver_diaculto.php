@@ -41,37 +41,37 @@
 <table class="table table-hover table-striped col-12">
   <tbody>
     <tr><th scope="row" class="text-center table-dark">Domingo</th><td class="table-dark"></td></tr>
-    <tr><th scope="row">Dia:</th><td><?php echo $local_dom ; ?></td></tr>
+    <tr><th scope="row">Local:</th><td><?php echo $local_dom ; ?></td></tr>
     <tr><th scope="row">Tema do culto:</th><td><?php echo $tema_dom ; ?></td></tr>
     <tr><th scope="row">Hora:</th><td><?php echo $hora_dom; ?></td></tr>
     <tr><th scope="row"></th><td></td></tr>
     <tr><th scope="row" class="text-center table-dark">Segunda</th><td class="table-dark"></td></tr>
-    <tr><th scope="row">Dia:</th><td><?php echo $local_seg ; ?></td></tr>
+    <tr><th scope="row">Local:</th><td><?php echo $local_seg ; ?></td></tr>
     <tr><th scope="row">Tema do culto:</th><td><?php echo $tema_seg ; ?></td></tr>
     <tr><th scope="row">Hora:</th><td><?php echo $hora_seg; ?></td></tr>
     <tr><th scope="row"></th><td></td></tr>
     <tr><th scope="row" class="text-center table-dark">Terça</th><td class="table-dark"></td></tr>
-    <tr><th scope="row">Dia:</th><td><?php echo $local_ter ; ?></td></tr>
+    <tr><th scope="row">Local:</th><td><?php echo $local_ter ; ?></td></tr>
     <tr><th scope="row">Tema do culto:</th><td><?php echo $tema_ter ; ?></td></tr>
     <tr><th scope="row">Hora:</th><td><?php echo $hora_ter; ?></td></tr>
     <tr><th scope="row"></th><td></td></tr>
     <tr><th scope="row" class="text-center table-dark">Quarta</th><td class="table-dark"></td></tr>
-    <tr><th scope="row">Dia:</th><td><?php echo $local_qua ; ?></td></tr>
+    <tr><th scope="row">Local:</th><td><?php echo $local_qua ; ?></td></tr>
     <tr><th scope="row">Tema do culto:</th><td><?php echo $tema_qua ; ?></td></tr>
     <tr><th scope="row">Hora:</th><td><?php echo $hora_qua; ?></td></tr>
     <tr><th scope="row"></th><td></td></tr>
     <tr><th scope="row" class="text-center table-dark">Quinta</th><td class="table-dark"></td></tr>
-    <tr><th scope="row">Dia:</th><td><?php echo $local_qui ; ?></td></tr>
+    <tr><th scope="row">Local:</th><td><?php echo $local_qui ; ?></td></tr>
     <tr><th scope="row">Tema do culto:</th><td><?php echo $tema_qui ; ?></td></tr>
     <tr><th scope="row">Hora:</th><td><?php echo $hora_qui ; ?></td></tr>
     <tr><th scope="row"></th><td></td></tr>
     <tr><th scope="row" class="text-center table-dark">Sexta</th><td class="table-dark"></td></tr>
-    <tr><th scope="row">Dia:</th><td><?php echo $local_sex ; ?></td></tr>
+    <tr><th scope="row">Local:</th><td><?php echo $local_sex ; ?></td></tr>
     <tr><th scope="row">Tema do culto:</th><td><?php echo $tema_sex ; ?></td></tr>
     <tr><th scope="row">Hora:</th><td><?php echo $hora_sex ; ?></td></tr>
     <tr><th scope="row"></th><td></td></tr>
     <tr><th scope="row" class="text-center table-dark">Sabado</th><td class="table-dark"></td></tr>
-    <tr><th scope="row">Dia:</th><td><?php echo $local_sab ; ?></td></tr>
+    <tr><th scope="row">Local:</th><td><?php echo $local_sab ; ?></td></tr>
     <tr><th scope="row">Tema do culto:</th><td><?php echo $tema_sab ; ?></td></tr>
     <tr><th scope="row">Hora:</th><td><?php echo $hora_sab ; ?></td></tr>
     <tr><th scope="row"></th><td></td></tr>

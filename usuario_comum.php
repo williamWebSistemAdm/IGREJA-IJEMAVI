@@ -66,7 +66,7 @@
           }
           else {
 
-            echo "<div class='text-center'><h3>Bem Vindo fernndo!</h3></div><br>";
+            echo include 'includes\msg_boas_vindas.inc.php';
           }
           // else {
           //   // Verifica se é administrador ou usuario comum
