@@ -64,7 +64,7 @@
 			//Verificar se é possivel mover o arquivo para a pasta escolhida
 			if(move_uploaded_file($_FILES['foto_dev']['tmp_name'], 'img/img_devocional/'. $novo_nome)){
 				//Upload efetuado com sucesso, exibe a mensagem
-				$query_dev = mysqli_query($conexao, "INSERT INTO devocional (titulo_dev, resumo_dev, texto_dev, autor_dev, usuario_logado_dev, foto_dev, data_dev, id_obreiro_dev_fk) VALUES('$titulo_dev', '$resumo_dev', '$texto_dev', '$autor_dev', '$usuario_logado_dev', '$novo_nome', current_timestamp, NULL)");
+				$query_dev = mysqli_query($conexao, "INSERT INTO devocional (titulo_dev, resumo_dev, texto_dev, autor_dev, usuario_logado_dev, foto_dev, data_dev) VALUES('$titulo_dev', '$resumo_dev', '$texto_dev', '$autor_dev', '$usuario_logado_dev', '$novo_nome', current_timestamp)");
 				if($result_dev->num_rows > 0){
      				echo "<script>alert('Devocional cadastrado com sucesso!.'); window.location.href='administrativo.php?link=6';</script>";
 	 				}else {
