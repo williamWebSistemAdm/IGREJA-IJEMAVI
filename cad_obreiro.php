@@ -9,20 +9,20 @@
             <label>Perfil/Cargo: </label>
             <select class="form-control" name="tipocargo_obr" required autofocus>
               <optgroup value="pastor" label="Pastor">
-                <option value="pr_dir_congregacional">Pastor Dirigente Congregacional</option>
-                <option value="pr_evanglista">Pastor Evangelista</option>
-                <option value="pr_missionario">Pastor Missionário</option>
+                <option value="Pastor Dirigente Congregacional">Pastor Dirigente Congregacional</option>
+                <option value="Pastor Evangelista">Pastor Evangelista</option>
+                <option value="Pastor Missionário">Pastor Missionário</option>
               </optgroup>
 
-              <option name="missionario" value="presbítero" >Missionário(a)</option>
-              <option name="presbitero" value="presbítero" selected>Presbítero</option>
+              <option name="missionario" value="Missionário(a)" >Missionário(a)</option>
+              <option name="presbitero" value="Presbítero" selected>Presbítero</option>
               <option name="diacono" value="Diácono">Diácono</option>
 
               <optgroup label="Cooperador(a)">
-                <option name="coop_port" value="coop_porteiro">Porteiro(a)</option>
-                <option name="coop_secret" value="coop_secretario">Secretário(a)</option>
-                <option name="coop_teso" value="coop_tesoureiro">Tesoureiro(a)</option>
-                <option name="coop_auxiliar" value="coop_auxiliar">Auxiliar</option>
+                <option name="coop_port" value="Porteiro(a)">Porteiro(a)</option>
+                <option name="coop_secret" value="Secretário(a)">Secretário(a)</option>
+                <option name="coop_teso" value="Tesoureiro(a)">Tesoureiro(a)</option>
+                <option name="coop_auxiliar" value="Auxiliar">Auxiliar</option>
               </optgroup>
             </select>
           </div>

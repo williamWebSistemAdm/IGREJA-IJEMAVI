@@ -1,5 +1,8 @@
 
 	<div class="text-center"><h3>Lista de Usuarios</h3></div>
+	<div class="text-right">
+		<a href="administrativo.php?link=3" ><button type="button" class="btn btn-sm btn-info">Cadastrar</button></a>
+	</div>
 	<div class="table-responsive">
 		<table class="table table-striped table-sm table-dark table-hover">
 		<tr class="bg-primary">

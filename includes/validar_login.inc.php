@@ -7,6 +7,9 @@
     $usuario = $_POST['email_obr'];
     $senha = $_POST['senha_obr'];
 
+    // PROTEÇÃO CONTRA ATAQUE SQL INJECTION  COM addslashes()
+    $usuario = addslashes($_POST['email_obr']);
+    $senha = addslashes($_POST['senha_obr']);
 
     $result = "SELECT * FROM obreiros WHERE email_obr = '$usuario' AND senha_obr = '$senha' limit 1";
     $resultado = $conexao->query($result);

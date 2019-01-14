@@ -3,9 +3,10 @@
   	include 'includes/conexao.inc.php';
     SESSION_START();
 
+
     // $id_enderecos = $_SESSION['id_end'] ;
     // $id_telefones = $_SESSION['id_telefones'];
-    $id_tipocargo_obr = $_SESSION['id_tipocargo'];
+    // $id_tipocargo_obr = $_SESSION['id_tipocargo'];
 
   $tipocargo_obr = $_POST['tipocargo_obr'];
   $nome_obr = $_POST['nome_obr'];
@@ -30,6 +31,11 @@
   $senha_obr = $_POST['senha_obr'];
 	$confsenha_obr = $_POST['confsenha_obr'];
 
+
+  // PROTEÇÃO CONTRA ATAQUE SQL INJECTION  COM addslashes()
+    // foreach ($_POST as $indice => $email_obr) {
+    //   $_POST[$indice] = addslashes($_POST[$indice]);
+    // };
 
   $sql_obr = "SELECT * FROM obreiros";
   $result_obr = $conexao->query($sql_obr);
@@ -126,7 +132,7 @@
 	$salvar6 = mysqli_query($conexao, $sql6);
 
   if($result_obr->num_rows > 0){
-    echo "<script>alert('Usuário Cadastrado com suceso!.'); window.location.href='administrativo.php?link=1';</script>";
+    echo "<script>alert('Usuário Cadastrado com sucesso!.'); window.location.href='administrativo.php?link=1';</script>";
   }else {
     echo "<script>alert('Erro ao Cadastrar Usuário.'); window.location.href='administrativo.php?link=1';</script>";
   }
