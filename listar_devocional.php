@@ -1,7 +1,7 @@
 
 	<div class="text-center"><h3>Lista de Devocional</h3></div>
 	<div class="text-right">
-		<a href="administrativo.php?link=7" ><button type="button" class="btn btn-sm btn-info">Postar</button></a>
+		<a href="administrativo.php?link=7" ><button type="button" class="btn btn-sm btn-success">Novo</button></a>
 	</div>
 
 	<h2></h2>

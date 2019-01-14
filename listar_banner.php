@@ -1,7 +1,10 @@
-
+<?php
+	include 'includes/conexao.inc.php';//conexao com o banco
+	include 'includes/seguranca.inc.php';//seguranca
+	?>
 
 	<div class="text-center"><h3>Lista de Banner</h3></div>
-	<div class="text-right"><a href="administrativo.php?link=11" ><button type="button" class="btn btn-sm btn-success"> Adicionar </button></a></div>
+	<div class="text-right"><a href="administrativo.php?link=11" ><button type="button" class="btn btn-sm btn-success"> Novo </button></a></div>
 
 	 <div class="table-responsive">
   	<table class="table table-striped table-sm table-dark table-hover">

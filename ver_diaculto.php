@@ -36,7 +36,7 @@
 <div class="text-right">
   <a href="administrativo.php"><button type="button" class="btn btn-sm btn-info">Voltar</button></a>
 	<a href="administrativo.php?link=19" ><button type="button" class="btn btn-sm btn-warning">Editar</button></a>
-</div><br>
+</div>
 <table class="table table-hover table-striped col-12">
   <tbody>
     <tr><th scope="row" class="text-center table-dark">Domingo</th><td class="table-dark"></td></tr>
