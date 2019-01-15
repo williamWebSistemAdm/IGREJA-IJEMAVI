@@ -26,7 +26,7 @@
   				echo "<tr>";
 
           echo "<td>" . $row['id_galeria'] . "</td>";
-          echo "<td>" . $row['img_galeria'] . "</td>";
+          echo "<td>" . $row['nome_img_gal'] . "</td>";
           echo "<td>" . $row['postador_img'] . "</td>";
   				echo "<td>" . $row['data_post_img'] . "</td>";
 					?>

@@ -16,6 +16,7 @@ session_start();
 </head>
 
 <body>
+
     <?php
     // Apaga dados do usuario se voltar ao login
         unset($_SESSION['id_obreiros'],
@@ -25,7 +26,7 @@ session_start();
 			        $_SESSION['tipocargo_obr']);
     ?>
 	<div class="contact-form"><br>
-		<img src="img/logo.png" class="avatar">
+		<a href="index.php" title="Voltar"> <img src="img/logo.png" class="avatar"></a>
 		<!-- <h2>IJEMAVI</h2> -->
 		<form method="post" action="includes/validar_login.inc.php">
 			<p>Usuário</p>
@@ -46,7 +47,6 @@ session_start();
             }
          ?>
         </p>
-	</div>
 </body>
 
 </html>

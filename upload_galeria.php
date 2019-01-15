@@ -3,11 +3,11 @@
       <div class="row">
         <div class="col-md-7">
           <label for="exampleFormControlFile1">Nome da imagem:</label>
-          <input type="text" placeholder="Ex: Culto de ensino" name="nome_img_galeria" class="form-control" id="exampleFormControlFile1" required>
+          <input type="text" placeholder="Ex: Culto de ensino" name="nome_escolhido" class="form-control" id="exampleFormControlFile1" required>
         </div>
         <div class="col-md-5">
           <label for="exampleFormControlFile1">Arquivo:</label>
-          <input type="file"  name="img_galeria" class="form-control" id="exampleFormControlFile1" required>
+          <input type="file"  name="nome_img_gal" class="form-control" id="exampleFormControlFile1" required>
         </div>
       </div> <!-- row -->
       <br>

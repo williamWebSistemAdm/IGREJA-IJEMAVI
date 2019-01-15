@@ -13,8 +13,8 @@
 			$id_foto = $row['id_galeria'];
 			echo "<tr>";
 
-	    $nome_original = $row['img_galeria'];
-	    $nome_escolhido = $row['nome_img_galeria'];
+	    $nome_original = $row['nome_img_gal'];
+	    $nome_escolhido = $row['nome_escolhido'];
 	    $postador_img = $row['postador_img'];
 			$data_post_img = 	$row['data_post_img'];
 		}

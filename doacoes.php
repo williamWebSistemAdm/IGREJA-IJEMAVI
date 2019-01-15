@@ -17,24 +17,30 @@
     <link rel="shortcut icon" type="image/png" href="img/logo_favicon.ico">
 	</head>
 
-	<body class="bg_index">
+	<body class="bg_doacoes">
+
+			<!-- Menu -->
+			<?php	include 'includes/menu_index.inc.php'; ?>
 		<div class="container">
-			<div class="text-center"><h3>Doações</h3></div>
+			<div class="text-center col-md-12 table-active"><h2>Doações</h2></div>
 		    <div class="row">
-		    <div class="col-md-16" id="conta">
+		    <div class="col-md-6" id="conta">
 					<img id="doacoes" src="img/caixa.jpeg" alt="banco caixa" title="Banco Caixa"><br><br>
-		      <label> <b>Banco CAIXA Ec. Fed.</b> </label><br>
-		      <label>Ag: 3939</label><br>
-		      <label>Op: 13</label><br>
-		      <label>Conta: 45.215-2</label><br>
-		      <label>Nome: Igreja de Jesus Manacial de Águas Vivas</label><br>
+					<div class="textoconta">
+		      <h4 class="text-center"> <b>Banco CAIXA Ec. Fed.</b> </h4><br>
+		      <label><b> Ag:</b> 3939</label><br>
+		      <label><b>Op: </b>13</label><br>
+		      <label><b>Conta: </b>45.215-2</label><br>
+		      <label><b>Nome: </b>Igreja de Jesus Manacial de Águas Vivas</label><br>
+				</div>
 		    </div>
-		    <div class="col-md-16 " id="fe">
+		    <div class="col-md-6 " id="fe">
 					<img src="img/fe.jpg" alt="Campanha prova de fé" title="Campanha prova de fé"><br><br>
 		    </div>
 			</div>
 		</div>
 
+<br><br><br><br><br>
 	  <div id="footer">
     	<?php include 'includes/footer.inc.php'; ?>
     </div>

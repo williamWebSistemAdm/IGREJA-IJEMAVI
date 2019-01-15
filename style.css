@@ -9,6 +9,7 @@
 	-ms-transition: all 500ms ease-in-out;
 	-o-transition: all 500ms ease-in-out;
 	transition: all 500ms ease-in-out;
+	font-family: "lovelyFont";
 }
 
 /********Logo***********/
@@ -33,15 +34,52 @@
 	}
 }
 
-/* Limitacao do banner index */
+/* icon  do menu tamanho de celular*/
 
-/* .carroussel {
+@media screen and (max-width: 995px) {
+	.navbar-toggler-icon {
+		font-size: 20px;
+		padding: 12px;
+		margin-left: 35px;
+		background-color: white;
+	}
+}
+
+@media screen and (max-width: 995px) {
+	.navbar-toggler {
+		padding-right: 22px;
+		margin-left: 35px;
+		background-color: white;
+	}
+}
+
+/* Linha do menu */
+
+@media screen and (max-width: 990px) {
+	#linhamenu {
+		border-bottom: 1px solid white;
+	}
+}
+
+/*  banner index */
+
+.banner {
+	margin-top: -20px;
 	max-height: 400px;
-} */
+	width: 100%;
+}
 
-#link_area_restrita a {
-	color: #ffdd00;
+/* Botão área restrita do index */
+
+#link_area_restrita a button {
+	color: red;
 	font-size: 14px;
+}
+
+#link_area_restrita a button:hover {
+	color: #ffdd00;
+	font-size: 15px;
+	-webkit-transition: all 500ms ease-in-out;
 }
 
 /* Fundo area adm */
@@ -59,9 +97,21 @@
 /* Fundo area index */
 
 .bg_index {
+	background-image: url("img/mv2.jpg");
 	width: 100vw;
 	min-height: 670px;
-	background-image: url("img/mv2.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+/* Fundo area doações */
+
+.bg_doacoes {
+	background-image: url("img/doe.jpg");
+	width: 100vw;
+	min-height: 670px;
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -101,7 +151,7 @@ input[type=text], select, optgroup, option, textarea {
 	background-color: #222;
 	padding: 14px;
 	text-decoration: none;
-	/* position: fixed; */
+	position: fixed;
 	bottom: 0;
 	width: 100%;
 	height: 100px;
@@ -111,16 +161,28 @@ input[type=text], select, optgroup, option, textarea {
 
 #doacoes {
 	padding: 10px;
-	margin: 35px;
-	width: 250px;
+	/* margin: 35px; */
+	/* width: 250px; */
 	border-radius: 15px;
 }
 
 #conta {
-	padding: 10px;
-	margin-left: 30px;
+	font-size: 20px;
+	padding: 20px;
+	/* margin-left: 30px; */
 	border-radius: 10px;
 	background-color: rgba(0, 4, 100, 0.5);
+}
+
+.textoconta {
+	margin-left: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+	#btn-doacoes {
+		margin-left: 7px;
+		margin-bottom: 6px;
+	}
 }
 
 @media screen and (max-width: 1200px) {
@@ -134,19 +196,26 @@ input[type=text], select, optgroup, option, textarea {
 }
 
 #fe img {
-	margin-top: 30px;
-	margin-left: 30px;
-	max-width: 95%;
+	margin-top: 20px;
+	/* margin-left: 30px; */
+	max-width: 100%;
 	border-radius: 5px;
 }
 
-@media screen and (min-width: 1201px) {
+@media screen and (max-width: 1000px) {
 	#fe {
-		margin-top: 30px;
-		margin-left: 30px;
+		margin-top: 60px;
+		/* margin-left: 30px; */
 		width: 650px;
 		border-radius: 5px;
 	}
+}
+
+/* Dia cultos */
+
+.diaculto {
+	font-size: 20px;
+	margin-left: 30px;
 }
 
 /* Preenchimento area princp. adm  */
@@ -181,7 +250,7 @@ input[type=text], select, optgroup, option, textarea {
 	padding: 10px;
 	font-family: "lovelyFont";
 	font-size: 16px;
-	color: blue;
+	color: #4a5356;
 	border: 2px white;
 }
 

@@ -154,8 +154,8 @@ INSERT INTO `enderecos` (`id_end`, `cep_end`, `estado_end`, `cidade_end`, `bairr
 
 CREATE TABLE `galeria` (
   `id_galeria` int(11) NOT NULL AUTO_INCREMENT,
-  `img_galeria` varchar(100) DEFAULT NULL,
-  `nome_img_galeria` varchar(100) DEFAULT NULL,
+  `nome_img_gal` varchar(100) DEFAULT NULL,
+  `nome_escolhido` varchar(100) DEFAULT NULL,
   `postador_img` varchar(70) DEFAULT NULL,
   `data_post_img` varchar(20) DEFAULT NULL,
   PRIMARY KEY (`id_galeria`)
