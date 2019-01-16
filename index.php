@@ -15,25 +15,25 @@
         <link rel="stylesheet" href="style.css" >
 				<link rel="shortcut icon" type="image/png" href="img/logo_favicon.ico">
     </head>
-    <body>
-			<div class="bg_index">
+    <body class="bg_index">
 				<!-- Menu -->
 				<?php	include 'includes/menu_index.inc.php'; ?>
-				<div class="banner">
-					<!-- Banner Slides-->
-					<?php include 'banner.inc.php'; ?>
-				</div>
+
+      <div class="banner">
+        <!-- Banner Slides-->
+        <?php include 'banner.inc.php'; ?>
+      </div>
 
 	<br><br><br><br><br><br><br><br>
-
-				</div>
-
-			<div>
-				<?php	include 'includes/footer.inc.php'; ?>
+	<br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br>
+<script>	$('[data-toggle="tooltip"]').tooltip();	</script> <!-- Tooltip  -->
+<script src="js/jquery-3.3.1.slim.min.js"></script>
+<script src="js/bootstrap.banner.js"></script> <!-- funcionar menu -->
+<script src="js/popper.min.js" ></script> 	<!-- talvez nao precisa desta biblioteca -->
+			<div id="footer">
+				<?php        	include 'includes/footer.inc.php'; ?>
 			</div>
-			<script src="js/jquery-3.3.1.slim.min.js"></script>
-      <script src="js/bootstrap.banner.js"></script> <!-- funcionar menu -->
-		  <script src="js/popper.min.js" ></script> 	<!-- talvez nao precisa desta biblioteca -->
-			<script>	$('[data-toggle="tooltip"]').tooltip();	</script> <!-- Tooltip  -->
+
     </body>
 </html>

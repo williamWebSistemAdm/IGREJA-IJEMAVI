@@ -1,4 +1,6 @@
-
+<?php
+	include_once("includes/conexao.inc.php");
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 	<head>
@@ -35,7 +37,7 @@
 
         <div class="container gallery-container">
       <?php
-        $result_foto = "SELECT img_galeria, nome_img_galeria FROM galeria ORDER BY id_galeria ASC";
+        $result_foto = "SELECT nome_img_gal, nome_escolhido FROM galeria ORDER BY id_galeria ASC";
         $resultado_foto = mysqli_query($conexao, $result_foto);
         while($row_foto = mysqli_fetch_assoc($resultado_foto)){
           if($row_foto > 0){  ?>
@@ -43,8 +45,8 @@
             <div class="tz-gallery">
                 <div class="row">
                     <div class="col-sm-6 col-md-3">
-                        <a class="lightbox" href="img/img_galeria/<?php echo $row_foto['img_galeria']; ?>">
-                          <img src="img/img_galeria/<?php echo $row_foto['img_galeria']; ?>" alt="<?php echo $row_foto['nome_img_galeria']; ?>">
+                        <a class="lightbox" href="img/img_galeria/<?php echo $row_foto['nome_img_gal']; ?>">
+                          <img src="img/img_galeria/<?php echo $row_foto['nome_img_gal']; ?>" alt="<?php echo $row_foto['nome_escolhido']; ?>">
                         </a>
                     </div>
                 </div>
@@ -52,7 +54,7 @@
             <?php }else {   ?>
 
             <div class="carousel-item">
-             nao mostra  <img src="img/img_galeria/<?php echo $row_foto['img_galeria']; ?>" alt="<?php echo $row_foto['nome_img_galeria']; ?>">
+             nao mostra  <img src="img/img_galeria/teste.jpg" alt="<?php echo $row_foto['nome_escolhido']; ?>">
             </div>  <?php
             }
           }

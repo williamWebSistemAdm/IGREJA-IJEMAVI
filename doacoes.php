@@ -22,7 +22,7 @@
 			<!-- Menu -->
 			<?php	include 'includes/menu_index.inc.php'; ?>
 		<div class="container">
-			<div class="text-center col-md-12 table-active"><h2>Doações</h2></div>
+			<div class="text-center col-md-12 table-active" id="Doa"><h2>Doações</h2></div>
 		    <div class="row">
 		    <div class="col-md-6" id="conta">
 					<img id="doacoes" src="img/caixa.jpeg" alt="banco caixa" title="Banco Caixa"><br><br>

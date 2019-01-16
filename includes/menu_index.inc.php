@@ -12,19 +12,18 @@
 		        <a class="nav-link" href="#"> <label class="link">Galeria Imagens </label></a>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link" href="#"><label class="link">Devocional</label></a>
+		        <a class="nav-link" href="devocional.php"><label class="link">Devocional</label></a>
 		      </li>
 		      <li class="nav-item">
 		        <a class="nav-link" href="#"><label class="link">Contato</label></a>
 		      </li>
 
-					<li id="btn-doacoes" >
-						<a href="doacoes.php"><button type="button" class="btn btn-sm btn-light"> Doações </button></a>
+					<li class="nav-item">
+						<a  class="nav-link" href="doacoes.php#Doa"> Doações </a>
 					</li>
-
-					<div>
-						<a href="diaculto.php" ><button type="button" class="btn btn-sm btn-light"> Dias de culto </button></a>
-					</div>
+					<li class="nav-item">
+						<a  class="nav-link" href="diaculto.php" > Dias de culto </a>
+					</li>
 
 		    </ul>
 

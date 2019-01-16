@@ -1,3 +1,5 @@
+
+
 	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 	<!-- Indicators -->
 		<ol class="carousel-indicators">
@@ -27,26 +29,29 @@
 				while($row_carousel = mysqli_fetch_assoc($resultado_carousel)){
 					if($controle_ativo == 2){ ?>
 						<div class="item active">
-							<img src="img/img_banner/<?php echo $row_carousel['imagen_carousel']; ?>" alt="<?php echo $row_carousel['nome']; ?>">
+							<img src="img/img_banner/<?php echo $row_carousel['imagen_carousel']; ?>" alt="<?php echo $row_carousel['nome']; ?>" title="<?php echo $row_carousel['nome']; ?>">
 						</div><?php
 						$controle_ativo = 1;
 					}else{ ?>
 						<div class="item">
-							<img src="img/img_banner/<?php echo $row_carousel['imagen_carousel']; ?>" alt="<?php echo $row_carousel['nome']; ?>">
+							<img src="img/img_banner/<?php echo $row_carousel['imagen_carousel']; ?>" alt="<?php echo $row_carousel['nome']; ?>" title="<?php echo $row_carousel['nome']; ?>">
 						</div> <?php
 					}
 				}
 			?>
 		</div>
 
+
 		<!-- Controls -->
 		<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
 			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-			<span class="sr-only">Previous</span>
+			<span class="sr-only">Voltar</span>
 		</a>
 		<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
 			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-			<span class="sr-only">Next</span>
+			<span class="sr-only">Avançar</span>
 		</a>
 	</div>
+
+
 <hr>
