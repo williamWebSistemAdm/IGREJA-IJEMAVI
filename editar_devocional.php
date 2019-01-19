@@ -34,7 +34,7 @@ while($row = mysqli_fetch_assoc($result_dev))
   			<label >Texto</label>
   			<textarea class="form-control" id="subject" name="texto_dev" style="height:200px" required><?php echo $texto_dev; ?></textarea>
 
-        <?php include 'includes/select_obreiros.inc.php';//Selecionando Obreiro?>
+        <?php include 'select_obreiros.inc.php';//Selecionando Obreiro?>
 
         <!-- Autor escolhido pelo usuario -->
         <label >Autor</label><br>

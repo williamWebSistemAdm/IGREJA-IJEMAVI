@@ -2,7 +2,7 @@
 
 		// Iniciando Sessão
 		session_start();
-		include 'includes/conexao.inc.php';//conexao com o banco
+		include 'conexao.inc.php';//conexao com o banco
 		$id_devocional = $_SESSION['id_devocional'];
 
 
@@ -26,7 +26,7 @@
 			$salvar = mysqli_query($conexao, $sql);
 
 			if($result_dev->num_rows > 0){
-					echo "<script>alert('Devocional atualizado com suceso!.'); window.location.href='administrativo.php?link=6';</script>";
+					echo "<script>alert('Devocional atualizado com sucesso!.'); window.location.href='administrativo.php?link=6';</script>";
 				}else {
 					echo "<script>alert('Erro ao atualizar dados.'); window.location.href='administrativo.php?link=6';</script>";
 				}

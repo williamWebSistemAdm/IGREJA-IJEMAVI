@@ -3,7 +3,7 @@
 		<?php
 			// Iniciando Sessão
 			session_start();
-			include 'includes/conexao.inc.php';//conexao com o banco
+			include 'conexao.inc.php';//conexao com o banco
 
 
 			// Tazendo nome usuário sessao

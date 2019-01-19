@@ -2,7 +2,7 @@
 
 		// Iniciando Sessão
 		session_start();
-		include 'includes/conexao.inc.php';//conexao com o banco
+		include 'conexao.inc.php';//conexao com o banco
 		// Data e hora
 		date_default_timezone_set( 'America/Sao_Paulo' );
 		$data = date('d-m-Y--H-i-s');

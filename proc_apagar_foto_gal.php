@@ -1,6 +1,6 @@
 <?php
 //Conexão com Banco
-	include 'includes/conexao.inc.php';
+	include 'conexao.inc.php';
 
 	$id = filter_input(INPUT_GET, 'id_galeria');
 	if(!empty($id)){

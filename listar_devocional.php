@@ -39,7 +39,7 @@
 						<a href="administrativo.php?link=22&id_devocional=<?php echo $id_dev; ?>" ><button type="button" class="btn btn-sm btn-info">Visualizar</button></a>
 						<?php if (($id_dev !=1) and ($id_dev !=2)): ?>
 						<a href="administrativo.php?link=8&id_devocional=<?php echo $id_dev; ?>" ><button type="button" class="btn btn-sm btn-warning"> Editar </button></a>
-						<a href="permissao_apagar\prm_apag_devocional.php?id_devocional=<?php echo $id_dev; ?>" ><button type="button" class="btn btn-sm btn-danger">Excluir</button></a>
+						<a href="prm_apag_devocional.php?id_devocional=<?php echo $id_dev; ?>" ><button type="button" class="btn btn-sm btn-danger">Excluir</button></a>
 						<?php endif; ?>
 					</div>
 					</td>

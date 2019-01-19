@@ -1,6 +1,6 @@
 <?php
 	// Iniciando Sessão
-	include 'includes/conexao.inc.php';//conexao com o banco
+	include 'conexao.inc.php';//conexao com o banco
 
 
 	// Domingo

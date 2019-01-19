@@ -1,4 +1,4 @@
-<?php	include 'includes/conexao.inc.php';  ?>
+<?php	include 'conexao.inc.php';  ?>
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
@@ -19,10 +19,10 @@
 		<div class="bg_index">
 
 				<!-- Menu -->
-				<?php	include 'includes/menu_index.inc.php'; ?>
+				<?php	include 'menu_index.inc.php'; ?>
         <div class="diaculto">
 
-<?php					include 'includes/conexao.inc.php';//Conexão com Banco
+<?php					include 'conexao.inc.php';//Conexão com Banco
 
 						  $sql_dia_dom  = "SELECT * FROM dia_culto  WHERE id_dia_culto=1 LIMIT 1";  $result_dia_dom  = $conexao->query($sql_dia_dom );
 						  while($row = $result_dia_dom->fetch_assoc())
@@ -92,7 +92,7 @@
 
 
         <div>
-          <?php	include 'includes/footer.inc.php'; ?>
+          <?php	include 'footer.inc.php'; ?>
         </div>
 		<script src="js/jquery-3.3.1.slim.min.js"></script>
     <script src="js/bootstrap.banner.js"></script>

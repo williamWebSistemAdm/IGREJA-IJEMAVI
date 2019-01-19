@@ -1,4 +1,4 @@
-<?php	include 'includes/conexao.inc.php';  ?>
+<?php	include 'conexao.inc.php';  ?>
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -17,7 +17,7 @@
     </head>
     <body class="bg_index">
 				<!-- Menu -->
-				<?php	include 'includes/menu_index.inc.php'; ?>
+				<?php	include 'menu_index.inc.php'; ?>
 
       <div class="banner">
         <!-- Banner Slides-->
@@ -32,7 +32,7 @@
 <script src="js/bootstrap.banner.js"></script> <!-- funcionar menu -->
 <script src="js/popper.min.js" ></script> 	<!-- talvez nao precisa desta biblioteca -->
 			<div id="footer">
-				<?php        	include 'includes/footer.inc.php'; ?>
+				<?php        	include 'footer.inc.php'; ?>
 			</div>
 
     </body>

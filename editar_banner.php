@@ -1,6 +1,6 @@
 <?php
-include 'includes/conexao.inc.php';//conexao com o banco
-include 'includes/seguranca.inc.php';//seguranca
+include 'conexao.inc.php';//conexao com o banco
+include 'seguranca.inc.php';//seguranca
 
 $id = $_GET['id'];
 

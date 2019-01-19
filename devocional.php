@@ -20,7 +20,7 @@
 	<body class="bg_doacoes">
 
 			<!-- Menu -->
-			<?php	include 'includes/menu_index.inc.php'; ?><br>
+			<?php	include 'menu_index.inc.php'; ?><br>
 		<div class="container">
 			<div class="row">
 
@@ -71,7 +71,7 @@
 
 <br><br><br><br><br>
 	  <div id="footer">
-    	<?php include 'includes/footer.inc.php'; ?>
+    	<?php include 'footer.inc.php'; ?>
     </div>
 		<script src="js/jquery-3.3.1.slim.min.js" ></script>
 		<script src="js/bootstrap.min.js" ></script>

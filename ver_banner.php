@@ -1,6 +1,6 @@
 <?php
-	include 'includes/conexao.inc.php';//conexao com o banco
-	include 'includes/seguranca.inc.php';//seguranca
+	include 'conexao.inc.php';//conexao com o banco
+	include 'seguranca.inc.php';//seguranca
 
 	$id = $_GET['id'];
 
@@ -25,7 +25,7 @@
 	<div class="text-right">
 		<a href="administrativo.php?link=10"><button type="button" class="btn btn-sm btn-info">Listar</button></a>
 		<?php if (($id !=1) and ($id !=2)): ?>
-		<a href="permissao_apagar\prm_apag_banner.php?id=<?php echo $id; ?>" ><button type="button" class="btn btn-sm btn-danger">Desativar</button></a>
+		<a href="prm_apag_banner.php?id=<?php echo $id; ?>" ><button type="button" class="btn btn-sm btn-danger">Desativar</button></a>
 	<?php endif; ?>
 	</div>
 	<!-- <div class="text-right">	<?php	echo "Dia: " . $dia . "Hora: ".$hora;	?>	</div> -->

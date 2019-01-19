@@ -1,8 +1,8 @@
 <?php
-	include 'includes/conexao.inc.php';//conexao com o banco
-	include 'includes/seguranca.inc.php';//seguranca
+	include 'conexao.inc.php';//conexao com o banco
+	include 'seguranca.inc.php';//seguranca
 	?>
-
+<br>
 	<div class="text-center"><h3>Lista de Banner</h3></div>
 	<div class="text-right"><a href="administrativo.php?link=11" ><button type="button" class="btn btn-sm btn-success"> Novo </button></a></div>
 

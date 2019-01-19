@@ -1,5 +1,5 @@
 <?php
-	include_once("includes/conexao.inc.php");
+	include 'conexao.inc.php' ;
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -9,8 +9,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>testebanner</title>
         <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
-				<link href="css/bootstrap.css" rel="stylesheet"><!-- não Retirar esta linha aqui do bootstrap.css -->
-        <link href="css/personalizado.css" rel="stylesheet">
+		<link href="css/bootstrap.css" rel="stylesheet"><!-- não Retirar esta linha aqui do bootstrap.css -->
+        <!-- <link href="css/personalizado.css" rel="stylesheet"> -->
     </head>
     <body>
 

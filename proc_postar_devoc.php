@@ -2,7 +2,7 @@
 
 		// Iniciando Sessão
 		session_start();
-		include 'includes/conexao.inc.php';//conexao com o banco
+		include 'conexao.inc.php';//conexao com o banco
 
 		$titulo_dev = $_POST["titulo_dev"];
 		$resumo_dev = $_POST["resumo_dev"];

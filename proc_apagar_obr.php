@@ -1,6 +1,6 @@
 <?php
 //Conexão com Banco
-	include 'includes/conexao.inc.php';
+	include 'conexao.inc.php';
 
   // $id_obr = $_GET['id_obreiros'] ;
 
@@ -36,7 +36,7 @@
 
 
 	if(mysqli_affected_rows($conexao) != 0){
-		echo "<script>alert('Usuário apagado com suceso!.'); window.location.href='administrativo.php?link=1';</script>";
+		echo "<script>alert('Usuário apagado com sucesso!.'); window.location.href='administrativo.php?link=1';</script>";
 	}else {
 		echo "<script>alert('Erro ao apagar Usuário.'); window.location.href='administrativo.php?link=1';</script>";
 	}

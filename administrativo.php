@@ -2,8 +2,8 @@
   // Iniciando Sessao
   session_start();
   //Conecxao com Banco
-  include 'includes/conexao.inc.php';//conexao com o banco
-  include 'includes/seguranca.inc.php';//seguranca
+  include 'conexao.inc.php';//conexao com o banco
+  include 'seguranca.inc.php';//seguranca
   // include 'msg_boas_vindas.inc.php';//mensagem de boas vindas
  ?>
 <!DOCTYPE html>
@@ -30,7 +30,7 @@
 	<body>
 		<!-- Menu -->
     <div class="bg_adm">
-		<?php	include 'includes/menu_adm.inc.php'; ?>
+		<?php	include 'menu_adm.inc.php'; ?>
 		<div class="container">
 
 
@@ -76,7 +76,7 @@
           }
           else {
 
-            echo 	include 'includes\msg_boas_vindas.inc.php';
+            echo 	include 'msg_boas_vindas.inc.php';
           }
           // else {
           //   // Verifica se é administrador ou usuario comum
@@ -96,7 +96,7 @@
 	  </div>
 	</div>
   <div id="footer">
-  <?php include 'includes/footer.inc.php'; ?>
+  <?php include 'footer.inc.php'; ?>
   </div>
     <script src="js/jquery-3.3.1.slim.min.js" ></script>
     <script src="js/bootstrap.min.js" ></script>

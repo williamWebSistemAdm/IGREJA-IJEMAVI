@@ -21,7 +21,7 @@ while($row = mysqli_fetch_assoc($result_end_igj))
   <form method="post" action="proc_editar_end_igj.php">
 		<div class="text-center"><h3>Editar Localização da Igreja</h3></div>
 		<div class="text-right">
-			<a href="administrativo.php?link=16" ><button type="button" class="btn btn-sm btn-info">Visualizar</button></a>
+      <a href="administrativo.php"><button type="button" class="btn btn-sm btn-info">Voltar</button></a>
 		</div>
       <div class="row">
       <div class="col-md-3">

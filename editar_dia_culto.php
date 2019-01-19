@@ -38,6 +38,9 @@
 ?>
 <br>
 		  <div class="text-center"><h2 class="h2">Editar dia de culto:</h2></div>
+      		<div class="text-right">
+	      		<a href="administrativo.php"><button type="button" class="btn btn-sm btn-info">Voltar</button></a>
+			</div>
           <form method="post" action="proc_editar_diaculto.php">
 						<h4 class="table-active">Domingo:</h4>
              <div class="row domingo">
@@ -48,7 +51,7 @@
                 <label>Local:</label>
               	<input class="form-control" type="text" name="local_dom" placeholder="Ex: Templo Sede" required value="<?php echo $local_culto_dom; ?>" >
 							</div>
-							<div class="col-md-5">
+							<div class="col-md-6">
                 <label>Tema do Culto:</label>
               	<input class="form-control" type="text" name="tema_dom" placeholder="Ex: Culto da Faília" required value="<?php echo $nome_culto_dom; ?>" >
 							</div>
@@ -67,7 +70,7 @@
                 <label>Local:</label>
               	<input class="form-control" type="text" name="local_seg" placeholder="Ex: Templo Sede" required value="<?php echo $local_culto_seg; ?>" >
 							</div>
-							<div class="col-md-5">
+							<div class="col-md-6">
                 <label>Tema do Culto:</label>
               	<input class="form-control" type="text" name="tema_seg" placeholder="Ex: Culto Evangelístico" required value="<?php echo $nome_culto_seg; ?>"  >
 							</div>
@@ -86,7 +89,7 @@
                 <label>Local:</label>
               	<input class="form-control" type="text" name="local_ter" placeholder="Ex: Templo Sede" required value="<?php echo $local_culto_ter; ?>" >
 							</div>
-							<div class="col-md-5">
+							<div class="col-md-6">
                 <label>Tema do Culto:</label>
               	<input class="form-control" type="text" name="tema_ter" placeholder="Ex: Culto de Ação Social" required value="<?php echo $nome_culto_ter; ?>" >
 							</div>
@@ -105,7 +108,7 @@
                 <label>Local:</label>
               	<input class="form-control" type="text" name="local_qua" placeholder="Ex: Templo Sede" required value="<?php echo $local_culto_qua; ?>" >
 							</div>
-							<div class="col-md-5">
+							<div class="col-md-6">
                 <label>Tema do Culto:</label>
               	<input class="form-control" type="text" name="tema_qua" placeholder="Ex: Livre" required value="<?php echo $nome_culto_qua; ?>" >
 							</div>
@@ -124,7 +127,7 @@
                 <label>Local:</label>
               	<input class="form-control" type="text" name="local_qui" placeholder="Ex: Templo Sede" required value="<?php echo $local_culto_qui; ?>" >
 							</div>
-							<div class="col-md-5">
+							<div class="col-md-6">
                 <label>Tema do Culto:</label>
               	<input class="form-control" type="text" name="tema_qui" placeholder="Ex: Culto da Vitória" required value="<?php echo $nome_culto_qui; ?>" >
 							</div>
@@ -143,7 +146,7 @@
                 <label>Local:</label>
               	<input class="form-control" type="text" name="local_sex" placeholder="Ex: Templo Sede" required value="<?php echo $local_culto_sex; ?>" >
 							</div>
-							<div class="col-md-5">
+							<div class="col-md-6">
                 <label>Tema do Culto:</label>
               	<input class="form-control" type="text" name="tema_sex" placeholder="Ex: Culto das Rebecas" required value="<?php echo $nome_culto_sex; ?>" >
 							</div>
@@ -162,7 +165,7 @@
                 <label>Local:</label>
               	<input class="form-control" type="text" name="local_sab" placeholder="Ex: Templo Sede" required value="<?php echo $local_culto_sab; ?>" >
 							</div>
-							<div class="col-md-5">
+							<div class="col-md-6">
                 <label>Tema do Culto:</label>
               	<input class="form-control" type="text" name="tema_sab" placeholder="Ex: Culto dos Jovens" required value="<?php echo $nome_culto_sab; ?>" >
 							</div>

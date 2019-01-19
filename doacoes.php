@@ -11,16 +11,16 @@
 		<meta http-equiv="refresh" content="300">
 		<title>Doações - IJEMAVI</title>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" >
-    <link rel="stylesheet" href="style.css" >
-    <link rel="shortcut icon" type="image/png" href="img/logo_favicon.ico">
-	</head>
+	    <!-- Bootstrap CSS -->
+	    <link rel="stylesheet" href="css/bootstrap.min.css" >
+	    <link rel="stylesheet" href="style.css" >
+	    <link rel="shortcut icon" type="image/png" href="img/logo_favicon.ico">
+		</head>
 
 	<body class="bg_doacoes">
 
 			<!-- Menu -->
-			<?php	include 'includes/menu_index.inc.php'; ?>
+			<?php	include 'menu_index.inc.php'; ?>
 		<div class="container">
 			<div class="text-center col-md-12 table-active" id="Doa"><h2>Doações</h2></div>
 		    <div class="row">
@@ -42,7 +42,7 @@
 
 <br><br><br><br><br>
 	  <div id="footer">
-    	<?php include 'includes/footer.inc.php'; ?>
+    	<?php include 'footer.inc.php'; ?>
     </div>
 		<script src="js/jquery-3.3.1.slim.min.js" ></script>
 		<script src="js/bootstrap.min.js" ></script>

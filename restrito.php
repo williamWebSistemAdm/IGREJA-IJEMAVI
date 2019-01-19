@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 session_start();
 ?>
 <!doctype html>
@@ -9,9 +9,7 @@ session_start();
 	<title>login</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="shortcut icon" type="image/png" href="img/logo_favicon.ico">
-		<!-- <link rel="stylesheet" href="css/style.css" > -->
-		<!-- <link rel="stylesheet" href="style.css" > -->
-		<link rel="stylesheet" href="style_login.css" >
+	<link rel="stylesheet" href="style_login.css" >
 
 </head>
 
@@ -28,14 +26,14 @@ session_start();
 	<div class="contact-form"><br>
 		<a href="index.php" title="Voltar"> <img src="img/logo.png" class="avatar"></a>
 		<!-- <h2>IJEMAVI</h2> -->
-		<form method="post" action="includes/validar_login.inc.php">
+		<form method="post" action="validar_login.inc.php">
 			<p>Usuário</p>
 			<input type="text" name="email_obr" placeholder="Seu E-Mail" required autofocus>
 			<p>Senha</p>
 			<input type="password" name="senha_obr" placeholder="Sua Senha" required>
 			<input type="submit" name="entrar" value="Login">
 		</form>
-        <p class="text-center text-danger">
+        <p class="text-center text-warning">
         <?php
          // Mensagem de erro
         if (isset($_SESSION['erro_login'])){

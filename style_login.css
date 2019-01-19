@@ -111,6 +111,7 @@ body:before {
 	background: transparent;
 	outline: none;
 	height: 40px;
+	 color: #fff; 
 	/* color: #a2a5aa; */
 	font-size: 16px;
 }

@@ -1,7 +1,7 @@
 <?php
 	// Iniciando Sessão
-	include 'includes/conexao.inc.php';//conexao com o banco
-	include 'includes/seguranca.inc.php';//seguranca
+	include 'conexao.inc.php';//conexao com o banco
+	include 'seguranca.inc.php';//seguranca
 
 	$sql_end_igj = "SELECT * FROM endereco_igreja";
 	$result_end_igj = $conexao->query($sql_end_igj );
@@ -18,6 +18,7 @@
 	}
 
 ?>
+<br>
 	<div class="text-center "><h3>Endereço da igreja</h3></div>
 	<div class="text-right">
 		<a href="administrativo.php"><button type="button" class="btn btn-sm btn-info">Voltar</button></a>

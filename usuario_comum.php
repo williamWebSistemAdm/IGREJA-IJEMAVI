@@ -1,8 +1,8 @@
 <?php
 
   session_start();// Iniciando Sessao
-  include 'includes/conexao.inc.php';//conexao com o banco
-  include 'includes/seguranca.inc.php';//seguranca
+  include 'conexao.inc.php';//conexao com o banco
+  include 'seguranca.inc.php';//seguranca
  ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -26,7 +26,7 @@
 	<body>
 		<!-- Menu -->
     <div class="bg_adm">
-		<?php	include 'includes/menu_user_comum.php'; ?>
+		<?php	include 'menu_user_comum.php'; ?>
 		<div class="container">
 
 	      <?php
@@ -66,7 +66,7 @@
           }
           else {
 
-            echo include 'includes\msg_boas_vindas.inc.php';
+            echo include 'msg_boas_vindas.inc.php';
           }
           // else {
           //   // Verifica se é administrador ou usuario comum
@@ -86,7 +86,7 @@
 	  </div>
 	</div>
   <div id="footer">
-  <?php include 'includes/footer.inc.php'; ?>
+  <?php include 'footer.inc.php'; ?>
   </div>
     <script src="js/jquery-3.3.1.slim.min.js" ></script>
     <script src="js/bootstrap.min.js" ></script>

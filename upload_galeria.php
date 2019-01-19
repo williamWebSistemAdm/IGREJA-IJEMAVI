@@ -1,3 +1,4 @@
+<br>
 <div class="text-center"><h3>Adiconar imagem</h3></div><br>
   <form method="POST" action="proc_upload_galeria.php" enctype="multipart/form-data">
       <div class="row">

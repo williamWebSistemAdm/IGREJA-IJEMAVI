@@ -1,6 +1,6 @@
 <?php
 //Conexão com Banco
-  	include 'includes/conexao.inc.php';
+  	include 'conexao.inc.php';
     SESSION_START();
 
 
@@ -132,9 +132,9 @@
 	$salvar6 = mysqli_query($conexao, $sql6);
 
   if($result_obr->num_rows > 0){
-    echo "<script>alert('Usuário Cadastrado com sucesso!.'); window.location.href='administrativo.php?link=1';</script>";
+    echo "<script>alert('Usuário cadastrado com sucesso!.'); window.location.href='administrativo.php?link=1';</script>";
   }else {
-    echo "<script>alert('Erro ao Cadastrar Usuário.'); window.location.href='administrativo.php?link=1';</script>";
+    echo "<script>alert('Erro ao cadastrar usuário.'); window.location.href='administrativo.php?link=1';</script>";
   }
 
   } else {
