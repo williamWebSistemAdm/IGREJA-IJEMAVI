@@ -24,7 +24,7 @@
 		<?php
 			// Iniciando Sessão
 			session_start();
-			include 'includes/conexao.inc.php';//conexao com o banco
+			include 'conexao.inc.php';//conexao com o banco
 
 			// nome original do arquivo
 			$nome 	= $_FILES['arquivo']['name'];
@@ -71,8 +71,15 @@
 
 			//O arquivo passou em todas as verificações, hora de tentar move-lo para a pasta foto
 			else{
+				// Pegar o maior id do Banner
+				$pegar_id__carrouses = "SELECT max(id) FROM carrouses";
+				$result_carrouses =  mysqli_query($conexao, $pegar_id__carrouses);
+				 while($row = mysqli_fetch_row($result_carrouses))
+				 {
+					 $max_id	= $row[0]+1;
+				 }
 				// Cria um novo nome para o arquivo
-				$novo_nome = $nome_escolhido . '-' . $data . '.' . $extensao;
+				$novo_nome = 'banner' . $max_id . '.jpg' ;
 
 				$sql = "SELECT * FROM carrouses";
 				$result = $conexao->query($sql);
@@ -80,7 +87,7 @@
 				//Verificar se é possivel mover o arquivo para a pasta escolhida
 				if(move_uploaded_file($_FILES['arquivo']['tmp_name'], 'img/img_banner/'. $novo_nome)){
 					//Upload efetuado com sucesso, exibe a mensagem
-					$query = mysqli_query($conexao, "INSERT INTO carrouses (imagen_carousel, nome, data_hora_post, data_evento) VALUES('$nome', '$novo_nome', current_timestamp, '$data_evento')");
+					$query = mysqli_query($conexao, "INSERT INTO carrouses (imagen_carousel, nome, data_hora_post, data_evento) VALUES('$nome_escolhido', '$novo_nome', current_timestamp, '$data_evento')");
 					if($result->num_rows > 0){
        				echo "<script>alert('Banner cadastrado com suceso!.'); window.location.href='administrativo.php?link=10';</script>";
 		 				}else {
