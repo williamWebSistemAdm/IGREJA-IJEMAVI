@@ -24,10 +24,9 @@
         <!-- Banner Slides-->
         <?php include 'banner.inc.php'; ?>
       </div>
-      <!-- <div class="devocional"> -->
-        <!-- Banner Slides-->
-        <!-- <?php //include 'devocional.php'; ?> -->
-      <!-- </div> -->
+      <div class="devocional">
+         <?php include 'devocional.php'; ?> 
+      </div>
 
       	<br><br><br><br><br><br><br><br>
       	<br><br><br><br><br><br><br><br>
