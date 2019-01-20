@@ -15,7 +15,8 @@
         <link rel="stylesheet" href="style.css" >
 				<link rel="shortcut icon" type="image/png" href="img/logo_favicon.ico">
     </head>
-    <body class="bg_index">
+    <body>
+      <div class="bg_index">
 				<!-- Menu -->
 				<?php	include 'menu_index.inc.php'; ?>
 
@@ -24,16 +25,17 @@
         <?php include 'banner.inc.php'; ?>
       </div>
 
-	<br><br><br><br><br><br><br><br>
-	<br><br><br><br><br><br><br><br>
-	<br><br><br><br><br><br><br><br>
-<script>	$('[data-toggle="tooltip"]').tooltip();	</script> <!-- Tooltip  -->
-<script src="js/jquery-3.3.1.slim.min.js"></script>
-<script src="js/bootstrap.banner.js"></script> <!-- funcionar menu -->
-<script src="js/popper.min.js" ></script> 	<!-- talvez nao precisa desta biblioteca -->
-			<div id="footer">
-				<?php        	include 'footer.inc.php'; ?>
-			</div>
+      	<br><br><br><br><br><br><br><br>
+      	<br><br><br><br><br><br><br><br>
+      	<br><br><br><br><br><br><br><br>
+      </div>
+      <div id="rodape">
+        <?php include 'footer.inc.php'; ?>
+      </div>
+      <script>	$('[data-toggle="tooltip"]').tooltip();	</script> <!-- Tooltip  -->
+      <script src="js/jquery-3.3.1.slim.min.js"></script>
+      <script src="js/bootstrap.banner.js"></script> <!-- funcionar menu -->
+      <script src="js/popper.min.js" ></script> 	<!-- talvez nao precisa desta biblioteca -->
 
     </body>
 </html>

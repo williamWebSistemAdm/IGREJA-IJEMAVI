@@ -84,25 +84,27 @@
 /* Fundo area adm */
 
 .bg_adm {
-	width: 100vw;
+	/* width: 100vw; */
 	min-height: 670px;
-	background-image: url("img/bgescuro.png");
-	background-position: center center;
+	background-color: #1C1C1C;
+	/* background-image: url("img/bgescuro.png"); */
+	/* background-position: center center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	background-size: cover;
+	background-size: cover; */
 }
 
 /* Fundo area index */
 
 .bg_index {
-	background-image: url("img/mv2.jpg");
+	background-color: #3104B4;
+	/* background-image: url("img/mv2.jpg");
 	width: 100vw;
 	min-height: 670px;
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	background-size: cover;
+	background-size: cover; */
 }
 
 /* Fundo area doações */
@@ -146,7 +148,7 @@ input[type=text], select, optgroup, option, textarea {
 
 /* Rodapé */
 
-#footer {
+#rodape {
 	background-color: #222;
 	/* padding: 14px; */
 	text-decoration: none;

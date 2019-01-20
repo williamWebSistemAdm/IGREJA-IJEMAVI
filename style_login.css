@@ -44,8 +44,9 @@ body {
 	padding: 0;
 }
 
-body:before {
-	content: '';
+body {
+	background-color: #29088A;
+	/* content: '';
 	position: fixed;
 	width: 100vw;
 	height: 100vh;
@@ -58,7 +59,7 @@ body:before {
 	-moz-filter: blur(10px);
 	-o-filter: blur(10px);
 	-ms-filter: blur(10px);
-	filter: blur(10px);
+	filter: blur(10px); */
 }
 
 .contact-form {
@@ -111,7 +112,7 @@ body:before {
 	background: transparent;
 	outline: none;
 	height: 40px;
-	 color: #fff; 
+	color: #fff;
 	/* color: #a2a5aa; */
 	font-size: 16px;
 }
