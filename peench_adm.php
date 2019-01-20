@@ -1,3 +1,4 @@
+<?php include 'seguranca.inc.php';//seguranca  ?>
 <div class="container">
   <div class="row">
     <div class="container" id="container">

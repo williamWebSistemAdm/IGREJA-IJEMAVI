@@ -3,7 +3,7 @@
     // session_start();
     //Conec��o com Banco
     include 'conexao.inc.php';//conex�o com o banco
-
+ include 'seguranca.inc.php';//seguranca 
     //mensagem de Boas Vindas
 
    //Trazendo perfil do administrador padrao e atribuindo a uma vari�vel

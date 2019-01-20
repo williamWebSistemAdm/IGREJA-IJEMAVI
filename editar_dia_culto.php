@@ -1,4 +1,5 @@
 <?php
+ include 'seguranca.inc.php';//seguranca 
 	// Pegando dados para exibir nos inputs ( DOMINGO )
 	$sql_dia_culto_dom = "SELECT * FROM dia_culto WHERE id_dia_culto=1"; $result_dia_culto_dom = $conexao->query($sql_dia_culto_dom );
 	while($row = mysqli_fetch_assoc($result_dia_culto_dom)){

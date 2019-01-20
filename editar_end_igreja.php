@@ -1,4 +1,5 @@
 <?php
+ include 'seguranca.inc.php';//seguranca 
 // Pegando dados para exibir nos inputs
 $sql_end_igj = "SELECT * FROM endereco_igreja";
 $result_end_igj = $conexao->query($sql_end_igj );

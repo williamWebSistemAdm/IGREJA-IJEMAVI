@@ -1,6 +1,7 @@
 <?php
 
 	include 'conexao.inc.php';//Conexão com Banco
+ 	include 'seguranca.inc.php';//seguranca 
 
   $sql_dia_dom  = "SELECT * FROM dia_culto  WHERE id_dia_culto=1 LIMIT 1";  $result_dia_dom  = $conexao->query($sql_dia_dom );
   while($row = $result_dia_dom->fetch_assoc())

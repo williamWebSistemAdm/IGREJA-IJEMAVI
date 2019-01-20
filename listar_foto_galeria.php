@@ -1,3 +1,4 @@
+<?php include 'seguranca.inc.php';//seguranca ?>
 <br>
 	<div class="text-center"><h3>Lista de fotos</h3></div>
 	<div class="text-right">

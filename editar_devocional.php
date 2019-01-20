@@ -1,4 +1,6 @@
 <?php
+ include 'seguranca.inc.php';//seguranca
+ 
 $id_dev = $_GET['id_devocional'];
 $_SESSION['id_devocional'] = $_GET['id_devocional'];
 
