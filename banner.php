@@ -32,9 +32,9 @@
             </div>
           </div>
 
-      
+
       <script>
-   
+
 </script>
 ﻿<?php
 				$controle_ativo = 2;
@@ -42,6 +42,6 @@
 				$result_carousel = "SELECT * FROM carrouses ORDER BY id ASC";
 				$resultado_carousel = mysqli_query($conexao, $result_carousel);
 				while($row_carousel = mysqli_fetch_assoc($resultado_carousel)){
-			
+
 				}
 			?>

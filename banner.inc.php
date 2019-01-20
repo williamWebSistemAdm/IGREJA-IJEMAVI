@@ -1,6 +1,5 @@
 <?php
 	include 'conexao.inc.php';
-
  ?>
 
 	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
