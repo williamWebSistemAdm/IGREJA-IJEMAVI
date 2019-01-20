@@ -38,7 +38,7 @@
 						{
 							$id_dev = $row['id_devocional'];
 							// $img = "img/img_banner/"."banner".$id_dev.".jpg";
-							$img = "img/img_devocional/"."Devocional-13-01-2019--21-50-50.jpg";
+							$img = "img/img_devocional/"."Devocional".$id_dev.".jpg";
 
 							// echo  $row['id_devocional'] ;
 							$titulo = $row['titulo_dev'] ;

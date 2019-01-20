@@ -55,8 +55,20 @@
 
 		//O arquivo passou em todas as verificações, hora de tentar move-lo para a pasta foto
 		else{
+
+			// Pegar o maior id do devocional
+			$pegar_id__dev = "SELECT max(id_devocional) FROM devocional";
+			$result_dev =  mysqli_query($conexao, $pegar_id__dev);
+			 while($row = mysqli_fetch_row($result_dev))
+			 {
+				 $max_id_dev	= $row[0]+1;
+			 }
 			// Cria um novo nome para o arquivo
-			$novo_nome = 'Devocional' . '-' . $data . '.' . $extensao;
+			$novo_nome = 'Devocional' . $max_id_dev . '.jpg' ;
+
+
+			// Cria um novo nome para o arquivo
+			// $novo_nome = 'Devocional' . '-' . $data . '.' . $extensao;
 
 			$sql_dev = "SELECT * FROM devocional";
 			$result_dev = $conexao->query($sql_dev);
