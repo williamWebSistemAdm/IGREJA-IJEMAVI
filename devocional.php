@@ -9,7 +9,7 @@
 		<meta name="keywords" content="Igreja, Jesus, Manancial, Águas, Vivas, Pastor, Família, Adoradores, IJEMAVI, ijemavi">
 		<meta name="author" content="José Ribeiro">
 		<meta http-equiv="refresh" content="300">
-		<title>Doações - IJEMAVI</title>
+		<title>Devocional - IJEMAVI</title>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css" >
@@ -24,7 +24,7 @@
 
 				<main role="main">
 		<div class="container">
-			<h3 class="text-center col-md-12 table-active">Imagens</h3>
+			<h3 class="text-center col-md-12 table-active">Devocional</h3>
 
 	      <div class="row">
 					<?php
@@ -52,16 +52,18 @@
 						?>
 	        <div class="col-md-4">
 	          <div class="card mb-4 shadow-sm">
-							<img  width="100%" src="<?php echo $img; ?> " alt="<?php echo $titulo; ?> ">
+							<div class="card-text text-center" id="img_dev">
+								<a href="#">	<img  src="<?php echo $img; ?> " alt="<?php echo $titulo; ?>" title="<?php echo $titulo; ?>"></a>
+							</div><hr>
 	            <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect fill="#55595c" width="100%" height="100%"/><text fill="#eceeef" dy=".3em" x="50%" y="50%">Thumbnail</text></svg> -->
 	            <div class="card-body">
-	              <p class="card-text text-center"> <?php  echo  $titulo . "<br>" ; ?></p>
-	              <p class="card-text"> <?php  echo  $resumo; ?></p>
+	              <p id="titulo_dev" class="card-text text-center"> <?php  echo  $titulo . "<br>" ; ?></p>
+	              <p id="resumo_dev" class="card-text"> <?php  echo  $resumo; ?></p>
 	              <div class="d-flex justify-content-between align-items-center">
 	                <div class="btn-group">
 	                  <a href="#"> <button type="button" class="btn btn-sm btn-outline-secondary">Mais</button></a>
 	                </div>
-	                <small class="card-text"> <?php  echo  $data; ?></small>
+	                <small id="data_dev"  class="card-text"><em> <?php  echo  $data; ?></em></small>
 	              </div>
 	            </div>
 	          </div>
