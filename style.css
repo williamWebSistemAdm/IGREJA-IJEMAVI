@@ -61,6 +61,12 @@
 	}
 }
 
+/* transição delink menu index */
+
+.nav-link label {
+	transition-delay: 2s;
+}
+
 /*  banner index */
 
 .banner {

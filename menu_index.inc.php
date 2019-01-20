@@ -8,21 +8,20 @@
 
 		  <div class="collapse navbar-collapse" id="navbarSupportedContent"><div  id="linhamenu"></div>
 		    <ul class="navbar-nav mr-auto">
-		      <li  class="nav-item active">
-		        <a class="nav-link" href="#"> <label class="link">Galeria Imagens </label></a>
-		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link" href="devocional.php"><label class="link">Devocional</label></a>
+		        <a class="nav-link active" href="devocional.php"><label class="link">Devocional</label></a>
 		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="#"><label class="link">Contato</label></a>
-		      </li>
-
-					<li class="nav-item">
-						<a  class="nav-link" href="doacoes.php#Doa"> Doações </a>
+					<li  class="nav-item">
+						<a class="nav-link" href="#"> <label class="link">Galeria Imagens </label></a>
 					</li>
 					<li class="nav-item">
-						<a  class="nav-link" href="diaculto.php" > Dias de culto </a>
+						<a  class="nav-link" href="doacoes.php#Doa"><label class="link"> Doações </label></a>
+					</li>
+					<li class="nav-item">
+						<a  class="nav-link" href="diaculto.php" ><label class="link"> Dias de culto </label></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#"><label class="link">Contato</label></a>
 					</li>
 
 		    </ul>
