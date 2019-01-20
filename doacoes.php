@@ -24,6 +24,9 @@
 		<div class="container">
 			<div class="text-center col-md-12 table-active" id="Doa"><h2>Doações</h2></div>
 		    <div class="row">
+					<div class="col-md-6 " id="fe">
+						<a href="img/fe.jpg" target="_blank"><img src="img/fe.jpg" alt="Campanha prova de fé" title="Campanha prova de fé"></a> <br><br>
+					</div>
 		    <div class="col-md-6" id="conta">
 					<img id="doacoes" src="img/caixa.jpeg" alt="banco caixa" title="Banco Caixa"><br><br>
 					<div class="textoconta">
@@ -33,9 +36,6 @@
 		      <label><b>Conta: </b>45.215-2</label><br>
 		      <label><b>Nome: </b>Igreja de Jesus Manacial de Águas Vivas</label><br>
 				</div>
-		    </div>
-		    <div class="col-md-6 " id="fe">
-					<img src="img/fe.jpg" alt="Campanha prova de fé" title="Campanha prova de fé"><br><br>
 		    </div>
 			</div>
 		</div>

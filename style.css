@@ -158,6 +158,12 @@ input[type=text], select, optgroup, option, textarea {
 	height: 100px;
 }
 
+/* Devocional */
+
+.card-text, .text-muted {
+	color: #380B61;
+}
+
 /* Doações */
 
 #doacoes {

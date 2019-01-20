@@ -21,53 +21,60 @@
 
 			<!-- Menu -->
 			<?php	include 'menu_index.inc.php'; ?><br>
+
+				<main role="main">
 		<div class="container">
-			<div class="row">
+			<h3 class="text-center col-md-12 table-active">Imagens</h3>
 
-			<div class=".col-lg-4 .col-md-6 .col-sm-12">
-				<div class="card" style="width: 18rem;">
-				  <img src="..." class="card-img-top" alt="...">
-				  <div class="card-body">
-				    <h5 class="card-title">Card title</h5>
-				    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-				    <a href="#" class="btn btn-primary">Go somewhere</a>
-				  </div>
-				</div>
-			</div>
+	      <div class="row">
+					<?php
+					include 'conexao.inc.php';
 
-			<div class=".col-lg-4 .col-md-6 .col-sm-12">
-				<div class="card" style="width: 18rem;">
-				  <img src="..." class="card-img-top" alt="...">
-				  <div class="card-body">
-				    <h5 class="card-title">Card title</h5>
-				    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-				    <a href="#" class="btn btn-primary">Go somewhere</a>
-				  </div>
-				</div>
-			</div>
+					 $sql_dev = "SELECT * FROM devocional";
+					 $result_dev = $conexao->query($sql_dev);
 
-			<div class=".col-lg-4 .col-md-6 .col-sm-12">
-				<div class="card" style="width: 18rem;">
-				  <img src="..." class="card-img-top" alt="...">
-				  <div class="card-body">
-				    <h5 class="card-title">Card title</h5>
-				    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-				    <a href="#" class="btn btn-primary">Go somewhere</a>
-				  </div>
-				</div>
-			</div>
+					 if($result_dev->num_rows > 0){
+						while($row = $result_dev->fetch_assoc())
+						{
+							$id_dev = $row['id_devocional'];
+							// $img = "img/img_banner/"."banner".$id_dev.".jpg";
+							$img = "img/img_devocional/"."Devocional-13-01-2019--21-50-50.jpg";
 
-		</div>
-		<div class="row">
-			<div class="jumbotron">
-		  <h1 class="display-4">Hello, world!</h1>
-		  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-		  <hr class="my-4">
-		  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-		  <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-		</div>
-		</div>
-		</div>
+							// echo  $row['id_devocional'] ;
+							$titulo = $row['titulo_dev'] ;
+							$resumo = $row['resumo_dev'] ;
+							$texto = $row['texto_dev'] ;
+							$autor = $row['autor_dev'] ;
+							$data = $row['data_dev'] ;
+							$foto = $row['foto_dev'] ;
+
+
+						?>
+	        <div class="col-md-4">
+	          <div class="card mb-4 shadow-sm">
+							<img  width="100%" src="<?php echo $img; ?> " alt="<?php echo $titulo; ?> ">
+	            <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect fill="#55595c" width="100%" height="100%"/><text fill="#eceeef" dy=".3em" x="50%" y="50%">Thumbnail</text></svg> -->
+	            <div class="card-body">
+	              <p class="card-text text-center"> <?php  echo  $titulo . "<br>" ; ?></p>
+	              <p class="card-text"> <?php  echo  $resumo; ?></p>
+	              <div class="d-flex justify-content-between align-items-center">
+	                <div class="btn-group">
+	                  <a href="#"> <button type="button" class="btn btn-sm btn-outline-secondary">Mais</button></a>
+	                </div>
+	                <small class="card-text"> <?php  echo  $data; ?></small>
+	              </div>
+	            </div>
+	          </div>
+	        </div>
+	<?php	}}	?>
+
+
+	      </div>
+	    </div>
+
+	</main>
+
+
 
 <br><br><br><br><br>
 	  <div id="footer">
