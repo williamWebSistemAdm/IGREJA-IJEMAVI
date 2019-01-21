@@ -25,8 +25,8 @@
 
 
 						?>
-	        <div class="col-md-4">
-	          <div class="card mb-4 shadow-sm">
+	        <div class=" col-sm-6 col-md-4 col-lg-3   ">
+	          <div class="card shadow-sm devocional">
 							<div class="card-text text-center" id="img_dev">
 								<a href="#">	<img  src="<?php echo $img; ?> " alt="<?php echo $titulo; ?>" title="<?php echo $titulo; ?>"></a>
 							</div><hr>

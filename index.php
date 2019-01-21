@@ -10,12 +10,13 @@
 			<meta name="author" content="José Ribeiro">
 			<meta http-equiv="refresh" content="300">
 			<title>IJEMAVI- Igreja de Jesus Manancial de Águas Vivas</title>
-			<link href="css/bootstrap.min.css" rel="stylesheet">
+			<!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
 				<link href="css/bootstrap.css" rel="stylesheet">
         <link rel="stylesheet" href="style.css" >
 				<link rel="shortcut icon" type="image/png" href="img/logo_favicon.ico">
     </head>
     <body>
+      <div class="container-fluid">
       <div class="bg_index">
 				<!-- Menu -->
 				<?php	include 'menu_index.inc.php'; ?>
@@ -34,6 +35,7 @@
       </div>
       <div id="rodape">
         <?php include 'footer.inc.php'; ?>
+      </div>
       </div>
       <script>	$('[data-toggle="tooltip"]').tooltip();	</script> <!-- Tooltip  -->
       <script src="js/jquery-3.3.1.slim.min.js"></script>

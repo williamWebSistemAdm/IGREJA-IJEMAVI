@@ -1,7 +1,8 @@
 <?php
 	include 'conexao.inc.php';
  ?>
-
+<div class="container-fluid">
+	
 	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 	<!-- Indicators -->
 		<ol class="carousel-indicators">
@@ -71,6 +72,7 @@
 			<span class="carousel-control-next-icon" aria-hidden="true"></span>
 			<span class="sr-only">Avançar</span>
 		</a>
+	</div>
 	</div>
 
 

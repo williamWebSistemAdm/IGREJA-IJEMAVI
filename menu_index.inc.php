@@ -1,11 +1,13 @@
 <header id="header">
 
-	 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" id="linhamenu">
+	 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary" id="linhamenu">
 	 	<a class="logo" href="index.php"> <img src="img/logo.png" alt="logo IJEMAVI"></a>	
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
          <span class="navbar-toggler-icon"></span>
-        </button>
+        </button><label class="label">.............................................................</label>
+	 	<a class="logod" href="index.php"> <img src="img/logo.png" alt="logo IJEMAVI">
+	 	 <label class="label">..............................................................................</label></a>	
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
@@ -28,12 +30,12 @@
             </li>
 
           </ul>
-		<div id="link_area_restrita" class="text-right">
+		<div id="link_area_restrita" class="text-center">
 			<a href="restrito.php" ><button type="button"  class="btn btn-sm btn-dark"> Área Restrita </button></a>
 		</div>
         </div>
       </nav>
- -->
+
 
 		  <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent"><div  id="linhamenu"></div>
 		    <ul class="navbar-nav mr-auto">

@@ -26,34 +26,74 @@
 
 @media screen and (max-width: 780px) {
 	.logo img {
-		width: 60px;
+		display: none;
 		/*margin-left: 22px;*/
+		width: 60px;
 	}
 }
 
 @media screen and (max-width: 580px) {
 	.logo img {
 		width: 50px;
+		/*margin-left: 22px;	*/	
+	}
+}
+
+	.label{
+	opacity: 0;
+}
+
+	.label{
+		opacity: 0;
+}
+
+@media screen and (min-width: 770px) {
+
+	.label{
+		display: none;
+}
+}
+
+@media screen and (min-width: 780px) {
+	.logod img {
+		display: none;
 		/*margin-left: 22px;*/
 	}
+
+}
+@media screen and (max-width: 780px) {
+	.logod img {
+		width: 60px;
+		margin-left: 5px;
+	}
+}
+@media screen and (max-width: 580px) {
+	.logod img {
+		width: 50px;
+		margin-left: 5px;
+	}
+	
 }
 
 /* icon  do menu tamanho de celular*/
 
 @media screen and (max-width: 995px) {
-	#navbar-toggler-icon {
+	.navbar-toggler-icon {
 		/*font-size: 20px;
 		margin-right: 5px;
 		padding: 12px;*/
-		background-color: white;
+		background-color: silver;
+	}
+	.navbar button {
+		background-color: silver;
 	}
 }
 
 @media screen and (max-width: 995px) {
-	#navbar-toggler-icon {
+	.navbar-toggler-icon {
 		/*padding-right: 22px;
 		margin-left: 35px;*/
-		background-color: red;
+		background-color: silver;
 	}
 }
 
@@ -70,9 +110,9 @@
 /*  banner index */
 
 .banner {
-	margin-top: -18px;
+	/*margin-top: -18px;*/
 	/*margin-left: 8px;*/
-	max-height: 400px;
+	/*max-height: 400px;*/
 }
 
 /* Botão área restrita do index */
@@ -88,6 +128,16 @@
 	color: red;
 	font-size: 15px;
 	-webkit-transition: all 500ms ease-in-out;
+}
+
+@media screen and (max-width: 990px) {
+	#link_area_restrita a button {
+	margin-right: 0;
+}
+
+#link_area_restrita a button:hover {
+margin-right: 0;
+}
 }
 
 /* Fundo area adm */
@@ -168,6 +218,18 @@ input[type=text], select, optgroup, option, textarea {
 }
 
 /* Devocional */
+
+
+.devocional {
+	margin-bottom: 14px;
+}
+/*
+@media screen and (max-width: 200px) {
+		.devocional  {
+		margin-left: 35px;
+		margin-right: 35px;
+	}
+}*/
 
 .card-text, .card-text em {
 	color: #380B61;
