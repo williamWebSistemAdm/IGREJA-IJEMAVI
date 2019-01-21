@@ -11,7 +11,7 @@
 			<meta http-equiv="refresh" content="300">
 			<title>IJEMAVI- Igreja de Jesus Manancial de Águas Vivas</title>
 			<link href="css/bootstrap.min.css" rel="stylesheet">
-				<link href="css/bootstrap.css" rel="stylesheet"><!-- não Retirar esta linha aqui do bootstrap.css -->
+				<link href="css/bootstrap.css" rel="stylesheet">
         <link rel="stylesheet" href="style.css" >
 				<link rel="shortcut icon" type="image/png" href="img/logo_favicon.ico">
     </head>
@@ -25,7 +25,7 @@
         <?php include 'banner.inc.php'; ?>
       </div>
       <div class="devocional">
-         <?php include 'devocional.php'; ?> 
+         <?php include 'devocional_index.php'; ?> 
       </div>
 
       	<br><br><br><br><br><br><br><br>

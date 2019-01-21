@@ -14,42 +14,46 @@
 
 /********Logo***********/
 
+#logo img {
+	/*margin-left: 0;*/
+	margin-right: 0;
+}
 .logo img {
 	width: 80px;
-	margin-bottom: 10px;
+	/*margin-bottom: 10px;*/margin-left: 0;
 	margin-right: 10px;
 }
 
 @media screen and (max-width: 780px) {
 	.logo img {
 		width: 60px;
-		margin-left: 22px;
+		/*margin-left: 22px;*/
 	}
 }
 
 @media screen and (max-width: 580px) {
 	.logo img {
 		width: 50px;
-		margin-left: 22px;
+		/*margin-left: 22px;*/
 	}
 }
 
 /* icon  do menu tamanho de celular*/
 
 @media screen and (max-width: 995px) {
-	.navbar-toggler-icon {
-		font-size: 20px;
-		padding: 12px;
-		margin-left: 35px;
+	#navbar-toggler-icon {
+		/*font-size: 20px;
+		margin-right: 5px;
+		padding: 12px;*/
 		background-color: white;
 	}
 }
 
 @media screen and (max-width: 995px) {
-	.navbar-toggler {
-		padding-right: 22px;
-		margin-left: 35px;
-		background-color: white;
+	#navbar-toggler-icon {
+		/*padding-right: 22px;
+		margin-left: 35px;*/
+		background-color: red;
 	}
 }
 
@@ -61,29 +65,27 @@
 	}
 }
 
-/* transição delink menu index */
 
-.nav-link label {
-	transition-delay: 2s;
-}
 
 /*  banner index */
 
 .banner {
 	margin-top: -18px;
-	margin-left: 8px;
+	/*margin-left: 8px;*/
 	max-height: 400px;
 }
 
 /* Botão área restrita do index */
 
 #link_area_restrita a button {
-	color: red;
+	margin-top: 8px;
+	background-color: #ddd;
+	color: #000;
 	font-size: 14px;
 }
 
 #link_area_restrita a button:hover {
-	color: #ffdd00;
+	color: red;
 	font-size: 15px;
 	-webkit-transition: all 500ms ease-in-out;
 }
