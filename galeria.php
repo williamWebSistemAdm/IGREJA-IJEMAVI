@@ -17,19 +17,39 @@
 
 
 
-					<?php
+        <h1>Galeria de Imagens</h1>
 
-						$result_foto = "SELECT * FROM galeria ORDER BY id_galeria ASC";
-						$resultado_foto = mysqli_query($conexao, $result_foto);
-						while($row_foto = mysqli_fetch_assoc($resultado_foto)){
-						 $imagem = $row_foto['nome_img_gal']."<br>";
-						 echo $imagem;
-						 // echo $row_foto['nome_escolhido'];
-						}
-					?>
+        <div class="container gallery-container">
+      <?php
 
-						<img  type="image" src="img/img_galeria/<?php $row_foto['nome_img_gal']; ?>" alt="<?php echo $row_foto['nome_img_gal']; ?>">
+      $sql_img = "SELECT * FROM galeria";
+           $result_img = $conexao->query($sql_img);
 
+           if($result_img->num_rows > 0){
+            while($row = $result_img->fetch_assoc())
+            {
+              $id_img = $row['id_galeria'];
+              $img = "img/img_galeria/"."foto".$id_img.".jpg";
+
+              $id_img = $row['id_galeria'] ;
+              $nome_img = $row['nome_img_gal'] ;
+              $nome_escolhido = $row['nome_escolhido'] ;
+              $autor = $row['postador_img'] ;
+              $data = $row['data_post_img'] ;
+        ?>
+
+     <img  type="image" src="img/img_galeria/<?php  $img; ?>" alt="<?php echo  $nome_img; ?>">
+            <?php }}?>
+
+						
+<div class="row">
+  <div class="col-xs-6 col-md-3">
+    <a href="#" class="thumbnail">
+      <img src="..." alt="...">
+    </a>
+  </div>
+  ...
+</div>
 						<script src="js/jquery-3.3.1.slim.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="js/bootstrap.banner.js"></script>

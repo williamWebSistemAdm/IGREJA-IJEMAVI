@@ -37,27 +37,41 @@
 
         <div class="container gallery-container">
       <?php
-        $result_foto = "SELECT nome_img_gal, nome_escolhido FROM galeria ORDER BY id_galeria ASC";
-        $resultado_foto = mysqli_query($conexao, $result_foto);
-        while($row_foto = mysqli_fetch_assoc($resultado_foto)){
-          if($row_foto > 0){  ?>
+
+      $sql_img = "SELECT * FROM galeria";
+           $result_img = $conexao->query($sql_img);
+
+           if($result_img->num_rows > 0){
+            while($row = $result_img->fetch_assoc())
+            {
+              $id_img = $row['id_galeria'];
+              $img = "img/img_galeria/"."foto".$id_img.".jpg";
+
+              $id_img = $row['id_galeria'] ;
+              $nome_img = $row['nome_img_gal'] ;
+              $nome_escolhido = $row['nome_escolhido'] ;
+              $autor = $row['postador_img'] ;
+              $data = $row['data_post_img'] ;
+  ?>
 
             <div class="tz-gallery">
                 <div class="row">
                     <div class="col-sm-6 col-md-3">
-                        <a class="lightbox" href="img/img_galeria/<?php echo $row_foto['nome_img_gal']; ?>">
-                          <img src="img/img_galeria/<?php echo $row_foto['nome_img_gal']; ?>" alt="<?php echo $row_foto['nome_escolhido']; ?>">
+                        <a class="lightbox" href="img/img_galeria/<?php echo $img; ?>">
+                          <img src="img/img_galeria/<?php echo  $img; ?>" alt="<?php echo $nome_escolhido; ?>">
                         </a>
                     </div>
                 </div>
             </div>
-            <?php }else {   ?>
+            <?php }}
+            // else {   ?>
 
-            <div class="carousel-item">
-             nao mostra  <img src="img/img_galeria/teste.jpg" alt="<?php echo $row_foto['nome_escolhido']; ?>">
-            </div>  <?php
-            }
-          }
+            <!-- <div class="carousel-item"> -->
+             <!-- nao mostra  <img src="img/img_galeria/foto.jpg" alt="<?php echo $row_foto['nome_escolhido']; ?>"> -->
+            <!-- </div>  -->
+             <?php
+          //   }
+          // }
        ?>
 
 
