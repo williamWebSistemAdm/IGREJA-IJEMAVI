@@ -1,6 +1,5 @@
-
-		<div class="container">
-			<h3 class="text-center col-md-12 table-active">Devocional</h3>
+<h3 class="text-center col-md-12 table-active">Devocional</h3>
+		<div class="container container-dev-index">
 
 	      <div class="row">
 					<?php
@@ -25,19 +24,19 @@
 
 
 						?>
-	        <div class=" col-sm-6 col-md-4 col-lg-3   ">
-	          <div class="card shadow-sm devocional">
-							<div class="card-text text-center" id="img_dev">
-								<a href="#">	<img  src="<?php echo $img; ?> " alt="<?php echo $titulo; ?>" title="<?php echo $titulo; ?>"></a>
-							</div><hr>
+	        <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3   ">
+	          <div id="devocional" class="card shadow-sm devocional">
+				<div class="card-text text-center" id="img_dev">
+					<a href="#">	<img  src="<?php echo $img; ?> " alt="<?php echo $titulo; ?>" title="<?php echo $titulo; ?>"></a>
+				</div>
 	            <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect fill="#55595c" width="100%" height="100%"/><text fill="#eceeef" dy=".3em" x="50%" y="50%">Thumbnail</text></svg> -->
+                <div class="btn-group text-right">
+                  <a href="#"> <button type="button" class="btn btn-sm btn-outline-secondary">Mais</button></a>
+                </div>
 	            <div class="card-body">
 	              <p id="titulo_dev" class="card-text text-center"> <?php  echo  $titulo . "<br>" ; ?></p>
 	              <p id="resumo_dev" class="card-text"> <?php  echo  $resumo; ?></p>
 	              <div class="d-flex justify-content-between align-items-center">
-	                <div class="btn-group">
-	                  <a href="#"> <button type="button" class="btn btn-sm btn-outline-secondary">Mais</button></a>
-	                </div>
 	                <small id="data_dev"  class="card-text"><em> <?php  echo  $data; ?></em></small>
 	              </div>
 	            </div>
