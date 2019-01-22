@@ -5,9 +5,9 @@
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
          <span class="navbar-toggler-icon"></span>
-        </button><label class="label">.............................................................</label>
+        </button><label class="label">.................</label>
 	 	<a class="logod" href="index.php"> <img src="img/logo.png" alt="logo IJEMAVI">
-	 	 <label class="label">..............................................................................</label></a>	
+	 	 <label class="label">......................................................</label></a>	
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">

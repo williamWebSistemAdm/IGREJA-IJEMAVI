@@ -29,12 +29,10 @@
          <?php include 'devocional_index.php'; ?> 
       </div>
 
-      	<br><br><br><br><br><br><br><br>
-      	<br><br><br><br><br><br><br><br>
-      	<br><br><br><br><br><br><br><br>
-      </div>
-      <div id="rodape">
+
+      <footer>
         <?php include 'footer.inc.php'; ?>
+      </footer>
       </div>
       </div>
       <script>	$('[data-toggle="tooltip"]').tooltip();	</script> <!-- Tooltip  -->
