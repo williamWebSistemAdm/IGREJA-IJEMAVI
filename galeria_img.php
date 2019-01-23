@@ -1,6 +1,6 @@
 <div class="container"><hr>
 <h3 id="galeria" class="page-description text-center">Galeria de Imagens</h3>
- <div class="container gallery-container">
+ <div  id="tamanho"  class="container gallery-container text-center">
     <div class="tz-gallery">
         <div class="row">
 <?php
@@ -18,7 +18,7 @@
 		$data_post_img = 	$row['data_post_img'];
 	
 ?>
-       		<div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
+       		<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
 				<a class="lightbox" href="<?php echo $img; ?> "><img src="<?php echo $img; ?> " alt="<?php echo $nome_escolhido; ?>" title="<?php echo $nome_escolhido; ?>"></a>
 			</div>
 		<?php	}	?>

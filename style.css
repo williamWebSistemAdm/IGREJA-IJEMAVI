@@ -262,7 +262,7 @@ input[type=text], select, optgroup, option, textarea {
 
 #img_dev img {
 	margin-bottom: 5px;
-	border: 2px solid silver;
+	border: 1px solid silver;
 	width: 100%;
 	border-radius: 3px;
 }
