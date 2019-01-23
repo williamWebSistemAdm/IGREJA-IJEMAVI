@@ -208,9 +208,23 @@ input[type=text], select, optgroup, option, textarea {
 
 /* Devocional */
 
+.img_dev_width img{
+	width: 85%;
+	border-radius: 8px;
+}
+
+.dev_justificado{
+	border-radius: 15px;
+	font-size: 20px;
+	text-align: justify;
+	padding: 20px 60px 20px 60px;
+	background-color: #7996c1;
+}
+
 .container-dev{
 	max-height: 900px;
 	overflow: auto;
+	border-radius: 10px;
 }
 
 .container-dev-index{
@@ -268,13 +282,13 @@ input[type=text], select, optgroup, option, textarea {
 	.container-dev-index{
 		/*width: 100%;*/
 		margin-left: 10px;
-		margin-right: 50px;
+		margin-right: 30px;
 	}
 }
 
 @media screen and (max-width: 400px) {
 	.bg_index{
-		margin-right: 50px;
+		margin-right: 10px;
 	}
 }
 
@@ -289,7 +303,7 @@ input[type=text], select, optgroup, option, textarea {
 
 @media screen and (max-width: 470px) {
 		#devocional, .devocional, #titulo_dev, #resumo_dev {
-		max-height: 250px;
+		max-height: 220px;
 		font-size: 13px;
 	}
 }

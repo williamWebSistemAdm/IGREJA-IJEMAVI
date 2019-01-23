@@ -22,16 +22,14 @@
 							$data = $row['data_dev'] ;
 							$foto = $row['foto_dev'] ;
 
-
 						?>
 	        <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3   ">
 	          <div id="devocional" class="card shadow-sm devocional">
 				<div class="card-text text-center" id="img_dev">
-					<a href="#">	<img  src="<?php echo $img; ?> " alt="<?php echo $titulo; ?>" title="<?php echo $titulo; ?>"></a>
+					<a href="devocional_view.php?id_devocional=<?php echo $id_dev; ?>" > <img  src="<?php echo $img; ?> " alt="<?php echo $titulo; ?>" title="<?php echo $titulo; ?>"></a>
 				</div>
-	            <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect fill="#55595c" width="100%" height="100%"/><text fill="#eceeef" dy=".3em" x="50%" y="50%">Thumbnail</text></svg> -->
                 <div class="btn-group text-right">
-                  <a href="#"> <button type="button" class="btn btn-sm btn-outline-secondary">Mais</button></a>
+                  <a href="devocional_view.php?id_devocional=<?php echo $id_dev; ?>" > <button type="button" class="btn btn-sm btn-outline-secondary">Mais</button></a>
                 </div>
 	            <div class="card-body">
 	              <p id="titulo_dev" class="card-text text-center"> <?php  echo  $titulo . "<br>" ; ?></p>
