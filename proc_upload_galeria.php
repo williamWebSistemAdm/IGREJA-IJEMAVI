@@ -54,38 +54,36 @@
 			//O arquivo passou em todas as verificações, hora de tentar move-lo para a pasta foto
 			else{
 
-			// Pegar o maior id do devocional
-			$pegar_id__dev = "SELECT max(id_devocional) FROM devocional";
-			$result_dev =  mysqli_query($conexao, $pegar_id__dev);
-			 while($row = mysqli_fetch_row($result_dev))
+			// Pegar o maior id do galeria
+			$pegar_id__gal = "SELECT max(id_galeria) FROM galeria";
+			$result_gal =  mysqli_query($conexao, $pegar_id__gal);
+			 while($row = mysqli_fetch_row($result_gal))
 			 {
-				 $max_id_dev	= $row[0]+1;
+				 $max_id_gal	= $row[0]+1;
 			 }
 			// Cria um novo nome para o arquivo
-			$novo_nome = 'Devocional' . $max_id_dev . '.jpg' ;
+			$novo_nome = 'foto' . $max_id_gal . '.jpg' ;
 
 
 				// Cria um novo nome para o arquivo
-				// $novo_nome = $nome_img_gal . '-' . $segundos . '.' . $extensao;
 
 				$sql_galeria = "SELECT * FROM galeria";
 				$result_galeria = $conexao->query($sql_galeria);
 
 				//Verificar se é possivel mover o arquivo para a pasta escolhida
 				if(move_uploaded_file($_FILES['nome_img_gal']['tmp_name'], 'img/img_galeria/'. $novo_nome)){
-					//Upload efetuado com sucesso, exibe a mensagem
-					// $query_galeria = mysqli_query($conexao, "INSERT INTO galeria (img_galeria) VALUES('$img_galeria')");
+					// Upload efetuado com sucesso, exibe a mensagem
 					$query_galeria = mysqli_query($conexao, "INSERT INTO galeria (nome_img_gal, nome_escolhido, postador_img, data_post_img) VALUES('$novo_nome', '$nome_escolhido', '$postador_img', now())");
 					if($result_galeria->num_rows > 0){
-       				// echo "<script>alert('Imagem adicionada com sucesso!.'); window.location.href='administrativo.php?link=13';</script>";
+       				echo "<script>alert('Imagem adicionada com sucesso!.'); window.location.href='administrativo.php?link=13';</script>";
 							exit;
 		 				}else {
-							// echo "<script>alert('Salvou a imagem, mas nao iseriu no banco de dados. Algum erro de SQL.'); window.location.href='administrativo.php?link=13';</script>";
+							echo "<script>alert('Salvou a imagem, mas nao iseriu no banco de dados. Algum erro de SQL.'); window.location.href='administrativo.php?link=13';</script>";
 		 				};
 
 				}else{
-					//Upload não efetuado com sucesso, exibe a mensagem
-					// echo "<script>alert('Imagem NÃO foi cadastrado com suceso!.'); window.location.href='administrativo.php?link=13';</script>";
+					// Upload não efetuado com sucesso, exibe a mensagem
+					echo "<script>alert('Imagem NÃO foi cadastrado com suceso!.'); window.location.href='administrativo.php?link=13';</script>";
 				}
 			};
 
