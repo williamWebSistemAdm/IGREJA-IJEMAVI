@@ -213,6 +213,12 @@ input[type=text], select, optgroup, option, textarea {
 	border-radius: 8px;
 }
 
+@media screen and (max-width: 400px) {
+	.img_dev_width img{
+		width: 100%;
+	}
+}
+
 .dev_justificado{
 	border-radius: 15px;
 	font-size: 20px;
