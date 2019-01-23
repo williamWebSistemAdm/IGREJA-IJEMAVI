@@ -1,7 +1,7 @@
-<div class="container container-dev-index">
-	<div  class="titulo_dev" >
-		<h3 class="text-center col-md-12">Devocional</h3>
-	</div>
+<div  class="titulo_dev" >
+	<h3 class="text-center col-md-12">Devocional</h3>
+</div>
+	<div class="container container-dev-index">
 
       <div class="row">
 				<?php
