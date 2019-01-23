@@ -20,7 +20,7 @@
 				<!-- Menu -->
 				<?php	include 'menu_index.inc.php'; ?>
 
-		<h3 class="text-center col-md-12 table-active">Devocional</h3>
+		<h3 class="titulo_dev text-center col-md-12 table-active">Devocional</h3>
 		<div class="container container-dev">
 
 	      <div class="row">

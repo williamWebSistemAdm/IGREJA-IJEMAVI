@@ -1,5 +1,5 @@
 <div class="container"><hr>
-<h3 id="galeria" class="page-description text-center">Galeria de Imagens</h3>
+<h3 id="galeria" class="text-center">Galeria de Imagens</h3>
  <div  id="tamanho"  class="container gallery-container text-center">
     <div class="tz-gallery">
         <div class="row">

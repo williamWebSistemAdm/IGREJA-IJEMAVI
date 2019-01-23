@@ -41,22 +41,22 @@
 		?>
 		<div class="container">
   		<div class="dev_justificado">
-		<h3 class="text-center col-md-12">Devocional</h3>
-	    		<h4 class="card-title"> <?php  echo  $titulo . "<br>" ; ?></h4>
+		<h3 class="titulo_dev text-center col-md-12">Devocional</h3>
+	    		<h4 class="card-title text-center"> <?php  echo  $titulo . "<br>" ; ?></h4>
 		  	<div class="text-center col-md-12 img_dev_width">
 				<img  src="<?php echo $img; ?> " alt="<?php echo $titulo; ?>" title="<?php echo $titulo; ?>"><br><br>
 			</div>
-		    	<p><?php  echo  $texto; ?></p>
+		    	<p class="texto_dev"><?php  echo  $texto; ?></p>
             	<small id="data_dev"  class="card-text"><em>Postado em: <?php  echo  $data; ?></em></small><br>
             	<small id="data_dev"  class="card-text text-left"><em>Por: <?php  echo  $autor; ?></em></small>
   	    </div>
 
 		<?php	}}	?>
 
+	</div>
       <footer>
         <?php include 'footer.inc.php'; ?>
       </footer>
-	</div>
 	<script src="js/jquery-3.3.1.slim.min.js" ></script>
 	<script src="js/bootstrap.min.js" ></script>
 </body>

@@ -13,19 +13,18 @@
 			<link href="css/bootstrap.css" rel="stylesheet">
       <link rel="shortcut icon" type="image/png" href="img/logo_favicon.ico">
       <!-- Galeria img index -->
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-      <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+      <link rel="stylesheet" href="css/gallery-grid-fonts" >
+      <link rel="stylesheet" href="css/gallery-grid-baguetteBox.min.css">
       <link rel="stylesheet" href="css/gallery-grid.css">
       <!-- estilo normal -->
       <link rel="stylesheet" href="style.css" >
       </head>
     <body>
-      <div class="container-fluid">
       <div class="bg_index">
-				<!-- Menu -->
-				<?php	include 'menu_index.inc.php'; ?>
+        <!-- Menu -->
+        <?php include 'menu_index.inc.php'; ?>
 
+      <div class="container-fluid">
       <div class="banner">
         <!-- Banner Slides-->
         <?php include 'banner.inc.php'; ?>
@@ -36,19 +35,18 @@
       <div class="img_galeria">
          <?php include 'galeria_img.php'; ?> 
       </div>
-
+      </div>
 
       <footer>
         <?php include 'footer.inc.php'; ?>
       </footer>
-      </div>
       </div>
       <script>	$('[data-toggle="tooltip"]').tooltip();	</script> <!-- Tooltip  -->
       <script src="js/jquery-3.3.1.slim.min.js"></script>
       <script src="js/bootstrap.banner.js"></script> <!-- funcionar menu -->
       <script src="js/popper.min.js" ></script> 	<!-- talvez nao precisa desta biblioteca -->
        <!-- Galeria img index -->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+      <script src="js/gallery-grid-baguetteBox.min.js"></script>
       <script> baguetteBox.run('.tz-gallery'); </script>
     </body>
 </html>

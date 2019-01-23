@@ -156,7 +156,7 @@ margin-right: 0;
 /* Fundo area index */
 
 .bg_index {
-	background-color: #7890c1;
+	background-color: #eeece3;
 	/* background-image: url("img/mv2.jpg");
 	width: 100vw;
 	min-height: 670px;
@@ -260,6 +260,13 @@ input[type=text], select, optgroup, option, textarea {
 	max-height: 200px;
 }
 
+@media screen and (max-width: 670px) {
+	.card-body {
+		height: 200px;
+
+	}
+}
+
 #img_dev img {
 	margin-bottom: 5px;
 	border: 1px solid silver;
@@ -270,13 +277,22 @@ input[type=text], select, optgroup, option, textarea {
 #titulo_dev {
 	font-size: 18px;
 	font-weight: bold;
+	color: #070f4c;
+}
+
+.titulo_dev {
+	color: black;
 }
 
 #resumo_dev {
 	font-size: 18px;
 	text-align: justify;
+	color: #070f4c;
 }
 
+.texto_dev{
+	color: #070f4c;
+}
 
 @media screen and (max-width: 970px) {
 	.container-dev-index{
@@ -316,7 +332,9 @@ input[type=text], select, optgroup, option, textarea {
 
 /*Imagens Galeria*/
 
-
+#galeria{
+	color: black;
+}
 
 
 /* Doações */
