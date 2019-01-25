@@ -216,6 +216,47 @@ input[type=text], select, optgroup, option, textarea {
 
 /* Devocional */
 
+.redes_sociais_banner{
+	margin-right: 17%;
+}
+
+.redes_sociais_banner img{
+	margin-top: -120px;
+	width: 35px;
+	padding: 1px;
+	opacity: .5;
+}
+
+.redes_sociais_banner img:hover{
+	opacity: 1;
+}
+
+.redes_sociais img{
+	width: 30px;
+	opacity: .7;
+	margin-top: -100px;
+	margin-left: 20px;
+	padding: 5px;
+}
+.redes_sociais img:hover{
+	opacity: 1;
+}
+
+@media screen and (max-width: 650px) {
+	.redes_sociais_banner{
+		margin-right: 16%;
+	}
+
+	.redes_sociais_banner img{
+		margin-top: -90px;
+		width: 25px;
+		padding: 2px;
+		opacity: .3;
+	}
+}
+
+
+
 .img_dev_width img{
 	width: 85%;
 	border-radius: 8px;

@@ -22,7 +22,7 @@
 		<meta name="description" content="Com o Devocional Diário Você pode estreitar seu relacionamento com o Senhor. Deus se revelará através da Sua Palavra, por isso leia e ore. Veja o que Deus tem para você hoje">
 		<meta name="keywords" content="Igreja, Jesus, Manancial, Águas, Vivas, Pastor, Família, Adoradores, IJEMAVI, ijemavi">
 		<meta name="author" content="José Ribeiro">
-		<meta http-equiv="refresh" content="300">
+		<meta http-equiv="refresh" content="700">
 		<title>IJEMAVI- Igreja de Jesus Manancial de Águas Vivas</title>
 		<!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
 		<link href="css/bootstrap.css" rel="stylesheet"><!-- não Retirar esta linha aqui do bootstrap.css -->
@@ -55,12 +55,15 @@
   		<div class="dev_justificado">
 		<h3 class="titulo_dev text-center col-md-12">Devocional</h3>
 
+		<!-- Compartilhar nasredes Sociais -->
+	<div class="text-right redes_sociais">
+
 		<?php
 		if ($iphone || $ipad || $android || $palmpre || $ipod || $berry || $symbian == true): /*Se este dispositivo for portátil, faça/escreva o seguinte */ ?>
 			 <a href="http://api.whatsapp.com/send?text=Devocional:%20<?php echo $titulo; ?>%20Site:%20http://igrejaijemavi.com.br/devocional_view.php?id_devocional=<?php echo $id_dev; ?>
-				 "><img  src="img/whatsapp1.png" alt="Compartilhar no Whatsapp" title="Compartilhar no Whatsapp"></a>
+				 " target="_blank" ><img  src="img/whatsapp1.png" alt="Compartilhar Devocional <?php echo $titulo; ?> no Whatsapp" title="Compartilhar Devocional <?php echo $titulo; ?> no Whatsapp"></a>
 		<?php else : /* Caso contrário, faça/escreva o seguinte */ ?>
-			<a href="http://api.whatsapp.com/send?text=Devocional:%20<?php echo $titulo; ?>%20Site:%20http://igrejaijemavi.com.br/devocional_view.php"><img  src="img/whatsapp1.png" alt="Compartilhar no Whatsapp" title="Compartilhar no Whatsapp"></a>
+			<a href="http://api.whatsapp.com/send?text=Devocional:%20<?php echo $titulo; ?>%20Site:%20http://igrejaijemavi.com.br/devocional_view.php"><img  src="img/whatsapp1.png" alt="Compartilhar no Whatsapp" title="Compartilhar no Whatsapp" target="_blank" ></a>
 		<?php endif; ?>
 
 
@@ -83,10 +86,10 @@
 				<img  src="img/google+.png" alt="Compartilhar Devocional <?php echo $titulo; ?> no Google+" title="Compartilhar Devocional <?php echo $titulo; ?> no Google+">
 			</a>
 			<!-- pinterest -->
-			<a href="http://pinterest.com/pin/create/button/?url=https://forum.imasters.com.br/topic/515672-identificar-browser-sem-vers%25C3%25A3o/&amp;media=https://forum.imasters.com.br/uploads/monthly_2018_07/21476000_10154939376626964_2146870704_n.png.fb63829f950f97636ab094a268b269f4.png" class="cShareLink cShareLink_pinterest" target="_blank" data-role="shareLink" data-ipstooltip="" rel="noopener" _title="Share on Pinterest">
-				<i class="fa fa-pinterest"></i>
+			<a href="http://pinterest.com/pin/create/button/?url=http://igrejaijemavi.com.br/devocional_view.php?id_devocional=<?php echo $id_dev; ?>&amp;media=http://igrejaijemavi.com.br/devocional_view.php?id_devocional=<?php echo $id_dev; ?>" class="cShareLink cShareLink_pinterest" target="_blank" data-role="shareLink" data-ipstooltip="" rel="noopener" _title="Share on Pinterest">
+				<img  src="img/pinterest.png" alt="Compartilhar Devocional <?php echo $titulo; ?> no Pinterest" title="Compartilhar Devocional <?php echo $titulo; ?> no Pinterest">
 			</a>
-
+		</div>
 
 			<!-- Compartilhar via e-mail -->
 <!-- 			<a href="http://igrejaijemavi.com.br/devocional_view.php?id_devocional=<?php echo $id_dev; ?>" rel="nofollow" class="cShareLink cShareLink_email" data-ipsdialog="" data-ipsdialog-title="Enviar Devocional <?php echo $titulo; ?> por e-mail" data-ipsdialog-remotesubmit="" data-ipsdialog-flashmessage="O e-mail foi enviado" data-ipstooltip="" _title="Compartilhar Devocional <?php echo $titulo; ?> via e-mail">
