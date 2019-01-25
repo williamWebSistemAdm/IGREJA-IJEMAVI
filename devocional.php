@@ -53,7 +53,7 @@
 	<div class="text-right redes_sociais">
 
 			<!-- Whatsapp -->
-			 <a href="http://api.whatsapp.com/send?text=Devocionais Igreja IJEMAVI%20Site:%20http://igrejaijemavi.com.br/devocional.php
+			 <a href="http://api.whatsapp.com/send?text=Devocionais Igreja IJEMAVI%20Site:%20&u=http://igrejaijemavi.com.br/devocional.php
 				 "><img  src="img/whatsapp1.png" alt="Compartilhar página no Whatsapp" title="Compartilhar página no Whatsapp"></a>
 		
 			<!-- facebook -->
@@ -108,7 +108,6 @@
 				<div class="card-text text-center" id="img_dev">
 					<a href="devocional_view.php?id_devocional=<?php echo $id_dev; ?>" ><img  src="<?php echo $img; ?> " alt="<?php echo $titulo; ?>" title="<?php echo $titulo; ?>"></a>
 				</div>
-	            <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect fill="#55595c" width="100%" height="100%"/><text fill="#eceeef" dy=".3em" x="50%" y="50%">Thumbnail</text></svg> -->
                 <div class="btn-group text-right">
                   <a href="devocional_view.php?id_devocional=<?php echo $id_dev; ?>" ><button type="button" class="btn btn-sm btn-outline-secondary">Mais</button></a>
                 </div>

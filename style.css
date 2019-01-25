@@ -231,17 +231,6 @@ input[type=text], select, optgroup, option, textarea {
 	opacity: 1;
 }
 
-.redes_sociais img{
-	width: 30px;
-	opacity: .7;
-	margin-top: -100px;
-	margin-left: 20px;
-	padding: 5px;
-}
-.redes_sociais img:hover{
-	opacity: 1;
-}
-
 @media screen and (max-width: 650px) {
 	.redes_sociais_banner{
 		margin-right: 16%;
@@ -255,7 +244,23 @@ input[type=text], select, optgroup, option, textarea {
 	}
 }
 
+.redes_sociais img{
+	width: 28px;
+	opacity: .5;
+}
+.redes_sociais img:hover{
+	opacity: 1;
+	text-decoration: none;
+}
 
+
+@media screen and (max-width: 650px) {
+	.redes_sociais img{
+		width: 23px;
+		text-decoration: none;
+
+	}
+}
 
 .img_dev_width img{
 	width: 85%;

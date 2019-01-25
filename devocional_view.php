@@ -63,7 +63,7 @@
 			 <a href="http://api.whatsapp.com/send?text=Devocional:%20<?php echo $titulo; ?>%20Site:%20http://igrejaijemavi.com.br/devocional_view.php?id_devocional=<?php echo $id_dev; ?>
 				 " target="_blank" ><img  src="img/whatsapp1.png" alt="Compartilhar Devocional <?php echo $titulo; ?> no Whatsapp" title="Compartilhar Devocional <?php echo $titulo; ?> no Whatsapp"></a>
 		<?php else : /* Caso contrário, faça/escreva o seguinte */ ?>
-			<a href="http://api.whatsapp.com/send?text=Devocional:%20<?php echo $titulo; ?>%20Site:%20http://igrejaijemavi.com.br/devocional_view.php"><img  src="img/whatsapp1.png" alt="Compartilhar no Whatsapp" title="Compartilhar no Whatsapp" target="_blank" ></a>
+			<a href="http://api.whatsapp.com/send?text=Devocional:%20<?php echo $titulo; ?>%20Site:%20http://igrejaijemavi.com.br/devocional_view.php"><img  src="img/whatsapp1.png" alt="Compartilhar no Whatsapp" title="Compartilhar Devocional <?php echo $titulo; ?> no Whatsapp" target="_blank" ></a>
 		<?php endif; ?>
 
 
