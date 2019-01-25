@@ -31,7 +31,8 @@
 				<a href="devocional_view.php?id_devocional=<?php echo $id_dev; ?>" > <img  src="<?php echo $img; ?> " alt="<?php echo $titulo; ?>" title="<?php echo $titulo; ?>"></a>
 			</div>
             <div class="btn-group text-right">
-              <a href="devocional_view.php?id_devocional=<?php echo $id_dev; ?>" > <button type="button" class="btn btn-sm btn-outline-secondary">Mais</button></a>
+              <a href="devocional_view.php?id_devocional=<?php echo $id_dev; ?>" > <button type="button" class="btn btn-sm btn-outline-secondary">Mais</button></a>       
+
             </div>
             <div class="card-body">
               <p id="titulo_dev" class="card-text text-center"> <?php  echo  $titulo . "<br>" ; ?></p>

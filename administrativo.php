@@ -13,7 +13,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="IJEMAVI - Igreja de Jesus Manacial de Águas Vivas, ijemavi">
+		<meta name="description" content="IJEMAVI - Igreja de Jesus Manacial de Águas Vivas">
 		<meta name="keywords" content="Igreja, Jesus, Manancial, Águas, Vivas, Pastor, Família, Adoradores, IJEMAVI, ijemavi">
 		<meta name="author" content="Igreja IJEMAVI">
     <link rel="shortcut icon" type="image/png" href="img/logo_favicon.ico">
@@ -41,10 +41,10 @@
           $pag['1'] = 'listar_obreiros.php';
           $pag['2'] = 'ver_perfil_obr.php';
           $pag['3'] = 'cad_obreiro.php';
-          $pag['4'] = 'editar_obreiro.php';
+          $pag['4'] = 'Editar_obreiro.php';
           // $pag['5'] = 'excluir_obreiro.php';
           // Devocional
-          $pag['6'] = 'Listar_devocional.php';
+          $pag['6'] = 'listar_devocional.php';
           $pag['7'] = 'postar_devocional.php';
           $pag['8'] = 'editar_devocional.php';
           $pag['9'] = 'excluir_devocional.php';
@@ -95,9 +95,7 @@
 
 	  </div>
 	</div>
-  <div id="footer">
-  <?php include 'footer.inc.php'; ?>
-  </div>
+
     <script src="js/jquery-3.3.1.slim.min.js" ></script>
     <script src="js/bootstrap.min.js" ></script>
   </body>

@@ -1,4 +1,4 @@
-<?php include 'seguranca.inc.php';//seguranca ?>
+<?php include 'seguranca.inc.php';//seguranca  ?>
 <br>
 	<div class="text-center"><h3>Cadastro de Obreiros(as)</h3></div>
 	<div class="text-right">

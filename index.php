@@ -24,11 +24,11 @@
         <!-- Menu -->
         <?php include 'menu_index.inc.php'; ?>
 
-      <div class="container-fluid">
       <div class="banner">
         <!-- Banner Slides-->
         <?php include 'banner.inc.php'; ?>
       </div>
+      <div class="container-fluid">
       <div class="devocional">
          <?php include 'devocional_index.php'; ?> 
       </div><br>

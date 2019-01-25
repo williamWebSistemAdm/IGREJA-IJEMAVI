@@ -5,9 +5,9 @@
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
          <span class="navbar-toggler-icon"></span>
-        </button><label class="label">.................</label>
+        </button><label class="label">..............</label>
 	 	<a class="logod" href="index.php"> <img src="img/logo.png" alt="logo IJEMAVI">
-	 	 <label class="label">......................................................</label></a>	
+	 	 <label class="label">................................................</label></a>
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
@@ -17,7 +17,7 @@
               <a class="nav-link" href="devocional.php">Devocional <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="#">Galeria Imagens</a>
+              <a class="nav-link" href="index.php#galeria">Galeria Imagens</a>
             </li>
 			<li class="nav-item active">
               <a class="nav-link" href="doacoes.php">Doações</a>
@@ -26,7 +26,7 @@
               <a class="nav-link" href="diaculto.php">Dias de culto</a>
             </li>
 			<li class="nav-item active">
-              <a class="nav-link" href="#">Contatos</a>
+              <a class="nav-link" href="#footer">Contatos</a>
             </li>
 
           </ul>

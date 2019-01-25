@@ -12,6 +12,7 @@
 	font-family: "lovelyFont";
 }
 
+
 /********Logo***********/
 
 #logo img {
@@ -110,7 +111,7 @@
 /*  banner index */
 
 .banner {
-	/*margin-top: -18px;*/
+	margin-top: -19px;
 	/*margin-left: 8px;*/
 	/*max-height: 400px;*/
 }
@@ -172,11 +173,17 @@ margin-right: 0;
 .bg_doacoes {
 	background-image: url("img/doe.jpg");
 	width: 100vw;
-	min-height: 670px;
+	min-height: 470px;
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
+}
+
+/* Fundo area doações */
+.bg_diaculto {
+	background-color: #e2eeec;
+	min-height: 370px;
 }
 
 /* cor dos inputs */
@@ -339,7 +346,10 @@ input[type=text], select, optgroup, option, textarea {
 
 
 /* Doações */
-
+#doa {
+	/*margin-top: 10px;
+	margin-botton: 10px;*/
+}
 #doacoes {
 	padding: 10px;
 	/* margin: 35px; */
@@ -377,7 +387,7 @@ input[type=text], select, optgroup, option, textarea {
 }
 
 #fe img {
-	margin-top: 20px;
+	margin-top: 5px;
 	/* margin-left: 30px; */
 	max-width: 100%;
 	border-radius: 5px;
@@ -385,7 +395,7 @@ input[type=text], select, optgroup, option, textarea {
 
 @media screen and (max-width: 1000px) {
 	#fe {
-		margin-top: 60px;
+		margin-top: 5px;
 		/* margin-left: 30px; */
 		width: 650px;
 		border-radius: 5px;
@@ -394,10 +404,15 @@ input[type=text], select, optgroup, option, textarea {
 
 /* Dia cultos */
 
-.diaculto {
-	font-size: 20px;
-	margin-left: 30px;
+#thead {
+	color: #ffdd35;
 }
+
+
+#dia_culto {
+	color: #fcd514;
+}
+
 
 /* Preenchimento area princp. adm  */
 
@@ -451,7 +466,7 @@ input[type=text], select, optgroup, option, textarea {
 /* Rodapé */
 
 footer {
-	margin-top: 250px;
+	margin-top: 150px;
 	background-color: #222;
 	/* padding: 14px; */
 	text-decoration: none;

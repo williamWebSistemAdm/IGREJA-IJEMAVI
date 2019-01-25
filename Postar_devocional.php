@@ -1,4 +1,5 @@
-<?php include 'seguranca.inc.php';//seguranca ?>
+<?php include 'seguranca.inc.php';//seguranca  ?>
+
 <br>
       <div class="text-center"><h3>Postagem Devocional</h3></div>
       <div class="text-right">
@@ -35,6 +36,8 @@
   		</form>
 
   </div>
-		<div>
-		<?php include 'footer.inc.php'; ?>
-		</div>
+		
+
+
+
+
