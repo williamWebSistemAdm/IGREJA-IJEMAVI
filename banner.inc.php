@@ -69,7 +69,7 @@
 
 		<?php
 		if ($iphone || $ipad || $android || $palmpre || $ipod || $berry || $symbian == true): /*Se este dispositivo for portátil, faça/escreva o seguinte */ ?>
-			 <a href="http://api.whatsapp.com/send?text=Banner:%20<?php echo $img_carousel; ?>%20Site:%20http://igrejaijemavi.com.br?id=<?php echo $id; ?>
+			 <a href="http://api.whatsapp.com/send?text=Banner:%20<?php echo $img_carousel; ?>%20Site:%20http://igrejaijemavi.com.br?<?php echo $img; ?>
 				 " target="_blank" ><img  src="img/whatsapp1.png" alt="Compartilhar Banner <?php echo $img_carousel; ?> no Whatsapp" title="Compartilhar Banner <?php echo $img_carousel; ?> no Whatsapp"></a>
 		<?php else : /* Caso contrário, faça/escreva o seguinte */ ?>
 			<a href="http://api.whatsapp.com/send?text=Banner:%20<?php echo $img_carousel; ?>%20Site:%20http://igrejaijemavi.com.br?<?php echo $img; ?>"><img  src="img/whatsapp1.png" alt="Compartilhar Banner <?php echo $img_carousel; ?> no Whatsapp" title="Compartilhar Banner <?php echo $img_carousel; ?> no Whatsapp" target="_blank" ></a>
@@ -77,15 +77,15 @@
 
 
 			<!-- facebook -->
-			<a href="https://www.facebook.com/sharer/sharer.php?text=Banner:%20<?php echo $img_carousel; ?>%20Site:%20http://igrejaijemavi.com.br?id=<?php echo $id; ?>" class="cShareLink cShareLink_facebook" target="_blank" data-role="shareLink" data-ipstooltip="" rel="noopener" _title="Compartilhar Banner <?php echo $img_carousel; ?> no Facebook">
+			<a href="https://www.facebook.com/sharer/sharer.php?text=Banner:%20<?php echo $img_carousel; ?>%20Site:%20http://igrejaijemavi.com.br?<?php echo $img; ?>" class="cShareLink cShareLink_facebook" target="_blank" data-role="shareLink" data-ipstooltip="" rel="noopener" _title="Compartilhar Banner <?php echo $img_carousel; ?> no Facebook">
 				<img  src="img/facebook_3.png" alt="Compartilhar Banner <?php echo $img_carousel; ?> no facebook" title="Compartilhar Banner <?php echo $img_carousel; ?> no facebook">
 			</a>
 			<!-- twitter -->
-			<a href="http://twitter.com/share?text=Banner:%20<?php echo $img_carousel; ?>%20Site:%20&amp;url=http://igrejaijemavi.com.br?id=<?php echo $id; ?>" class="cShareLink cShareLink_twitter" target="_blank" data-role="shareLink" title="Compartilhar Banner <?php echo $img_carousel; ?> no Twitter" data-ipstooltip="" rel="noopener">
+			<a href="http://twitter.com/share?text=Banner:%20<?php echo $img_carousel; ?>%20Site:%20&amp;url=http://igrejaijemavi.com.br?<?php echo $img; ?>" class="cShareLink cShareLink_twitter" target="_blank" data-role="shareLink" title="Compartilhar Banner <?php echo $img_carousel; ?> no Twitter" data-ipstooltip="" rel="noopener">
 				<img  src="img/twitter.png" alt="Compartilhar Banner <?php echo $img_carousel; ?> no Twitter" title="Compartilhar Banner <?php echo $img_carousel; ?> no Twitter">
 			</a>
 			<!-- linkedin -->
-			<a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http://igrejaijemavi.com.br?id=<?php echo $id; ?>&amp;title=Banner+<?php echo $img_carousel; ?>+Igreja+IJEMAVI" class="cShareLink cShareLink_linkedin" target="_blank" data-role="shareLink" title="Compartilhar Banner <?php echo $img_carousel; ?> no LinkedIn" data-ipstooltip="" rel="noopener">
+			<a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http://igrejaijemavi.com.br?<?php echo $img; ?>&amp;title=Banner+<?php echo $img_carousel; ?>+Igreja+IJEMAVI" class="cShareLink cShareLink_linkedin" target="_blank" data-role="shareLink" title="Compartilhar Banner <?php echo $img_carousel; ?> no LinkedIn" data-ipstooltip="" rel="noopener">
 				<img  src="img/linkedin.png" alt="Compartilhar Banner <?php echo $img_carousel; ?> no LinkedIn" title="Compartilhar Banner <?php echo $img_carousel; ?> no LinkedIn">
 			</a>
 		</div>
@@ -102,7 +102,7 @@
 
 		<?php
 		if ($iphone || $ipad || $android || $palmpre || $ipod || $berry || $symbian == true): /*Se este dispositivo for portátil, faça/escreva o seguinte */ ?>
-			 <a href="http://api.whatsapp.com/send?text=Banner:%20<?php echo $img_carousel; ?>%20Site:%20http://igrejaijemavi.com.br?id=<?php echo $id; ?>
+			 <a href="http://api.whatsapp.com/send?text=Banner:%20<?php echo $img_carousel; ?>%20Site:%20http://igrejaijemavi.com.br?<?php echo $img; ?>
 				 " target="_blank" ><img  src="img/whatsapp1.png" alt="Compartilhar Banner <?php echo $img_carousel; ?> no Whatsapp" title="Compartilhar Banner <?php echo $img_carousel; ?> no Whatsapp"></a>
 		<?php else : /* Caso contrário, faça/escreva o seguinte */ ?>
 			<a href="http://api.whatsapp.com/send?text=Banner:%20<?php echo $img_carousel; ?>%20Site:%20http://igrejaijemavi.com.br?<?php echo $img; ?>"><img  src="img/whatsapp1.png" alt="Compartilhar Banner <?php echo $img_carousel; ?> no Whatsapp" title="Compartilhar Banner <?php echo $img_carousel; ?> no Whatsapp" target="_blank" ></a>
@@ -110,15 +110,15 @@
 
 
 			<!-- facebook -->
-			<a href="https://www.facebook.com/sharer/sharer.php?text=Banner:%20<?php echo $img_carousel; ?>%20Site:%20http://igrejaijemavi.com.br?id=<?php echo $id; ?>" class="cShareLink cShareLink_facebook" target="_blank" data-role="shareLink" data-ipstooltip="" rel="noopener" _title="Compartilhar Banner <?php echo $img_carousel; ?> no Facebook">
+			<a href="https://www.facebook.com/sharer/sharer.php?text=Banner:%20<?php echo $img_carousel; ?>%20Site:%20http://igrejaijemavi.com.br?<?php echo $img; ?>" class="cShareLink cShareLink_facebook" target="_blank" data-role="shareLink" data-ipstooltip="" rel="noopener" _title="Compartilhar Banner <?php echo $img_carousel; ?> no Facebook">
 				<img  src="img/facebook_3.png" alt="Compartilhar Banner <?php echo $img_carousel; ?> no facebook" title="Compartilhar Banner <?php echo $img_carousel; ?> no facebook">
 			</a>
 			<!-- twitter -->
-			<a href="http://twitter.com/share?text=Banner:%20<?php echo $img_carousel; ?>%20Site:%20&amp;url=http://igrejaijemavi.com.br?id=<?php echo $id; ?>" class="cShareLink cShareLink_twitter" target="_blank" data-role="shareLink" title="Compartilhar Banner <?php echo $img_carousel; ?> no Twitter" data-ipstooltip="" rel="noopener">
+			<a href="http://twitter.com/share?text=Banner:%20<?php echo $img_carousel; ?>%20Site:%20&amp;url=http://igrejaijemavi.com.br?<?php echo $img; ?>" class="cShareLink cShareLink_twitter" target="_blank" data-role="shareLink" title="Compartilhar Banner <?php echo $img_carousel; ?> no Twitter" data-ipstooltip="" rel="noopener">
 				<img  src="img/twitter.png" alt="Compartilhar Banner <?php echo $img_carousel; ?> no Twitter" title="Compartilhar Banner <?php echo $img_carousel; ?> no Twitter">
 			</a>
 			<!-- linkedin -->
-			<a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http://igrejaijemavi.com.br?id=<?php echo $id; ?>&amp;title=Banner+<?php echo $img_carousel; ?>+Igreja+IJEMAVI" class="cShareLink cShareLink_linkedin" target="_blank" data-role="shareLink" title="Compartilhar Banner <?php echo $img_carousel; ?> no LinkedIn" data-ipstooltip="" rel="noopener">
+			<a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http://igrejaijemavi.com.br?<?php echo $img; ?>&amp;title=Banner+<?php echo $img_carousel; ?>+Igreja+IJEMAVI" class="cShareLink cShareLink_linkedin" target="_blank" data-role="shareLink" title="Compartilhar Banner <?php echo $img_carousel; ?> no LinkedIn" data-ipstooltip="" rel="noopener">
 				<img  src="img/linkedin.png" alt="Compartilhar Banner <?php echo $img_carousel; ?> no LinkedIn" title="Compartilhar Banner <?php echo $img_carousel; ?> no LinkedIn">
 			</a>
 		</div>
@@ -144,3 +144,4 @@
 
 
 <hr>
+<a href="https://www.facebook.com/sharer/sharer.php?text=Banner:%20<?php echo $img_carousel; ?>%20Site:%20http://igrejaijemavi.com.br?<?php echo $img; ?>" onclick="open('http://www.linkedin.com/shareArticle?mini=true','http://igrejaijemavi.com.br?<?php echo $img; ?>','status=no,Width=320,Height=285');">Abrir nova pagina</a>
