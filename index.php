@@ -8,7 +8,7 @@
 			<meta name="description" content="IJEMAVI - Igreja de Jesus Manacial de Águas Vivas, ijemavi">
 			<meta name="keywords" content="Igreja, Jesus, Manancial, Águas, Vivas, Pastor, Família, Adoradores, IJEMAVI, ijemavi">
 			<meta name="author" content="José Ribeiro">
-			<meta http-equiv="refresh" content="300">
+			<meta http-equiv="refresh" content="900">
 			<title>IJEMAVI- Igreja de Jesus Manancial de Águas Vivas</title>
 			<link href="css/bootstrap.css" rel="stylesheet">
       <link rel="shortcut icon" type="image/png" href="img/logo_favicon.ico">
