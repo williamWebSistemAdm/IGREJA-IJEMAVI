@@ -131,6 +131,23 @@
 	$sql6 = "UPDATE tipocargo_obr SET	id_tipocargo_obr_fk='$id_tipocargo' WHERE id_tipocargo='$id_obreiros'";
 	$salvar6 = mysqli_query($conexao, $sql6);
 
+
+// Enviar email com a senha
+
+  // $para = "williamtec.inf.int@gmail.com";
+  // $para = "williampalmas2015@hotmail.com";
+  // $assunto = "Senha de acesso ao Site da Igreja IJEMAVi";
+
+  // $corpo ="<strong>Esta é sua senha de acesso ao site da igreja IJEMAVI<br><br>Você precisará do Email e da senha para acessar o site.</strong>";
+  // $corpo .="<strong>Nome: </strong> $nome_obr $sobrenome_obr.";
+  // $corpo .="<strong>Usuário: </strong>É o seu próprio Email; $email_obr";
+  // $corpo .="<strong>Senha de acesso: </strong> $senha_obr";
+
+  // $header = "Content-type: text/html; charset = utf-8\n";
+  // $header .= "From: $email_obr Replay-to: $email_obr\n";
+
+  // @mail($para, $assunto, $corpo, $header);
+
   if($result_obr->num_rows > 0){
     echo "<script>alert('Usuário cadastrado com sucesso!.'); window.location.href='administrativo.php?link=1';</script>";
   }else {
