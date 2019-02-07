@@ -21,6 +21,11 @@
         <label for="exampleFormControlFile1">Arquivo:</label>
         <input type="file"  name="arquivo" class="form-control" id="exampleFormControlFile1" required>
       </div>
-    </div>
+    </div><br>
 		  <input class="btn btn-primary" type="submit" value="Adicionar">
-	</form>
+	</form><br>
+
+      <div class="container text-center text-warning modelobanner">
+        <h4>Tamanho padrao do Banner:</h4><br>
+        <img src="img/1400x600.jpg" alt="Modelo do Banner">
+      </div><br>

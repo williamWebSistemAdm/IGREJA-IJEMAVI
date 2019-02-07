@@ -32,7 +32,7 @@
 			<meta name="keywords" content="Igreja, Jesus, Manancial, Águas, Vivas, Pastor, Família, Adoradores, IJEMAVI, ijemavi">
 			<meta name="author" content="José Ribeiro">
 			<meta http-equiv="refresh" content="700">
-			<title>IJEMAVI- Igreja de Jesus Manancial de Águas Vivas</title>
+			<title>Devocional - Igreja IJEMAVI</title>
 			<!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
 				<link href="css/bootstrap.css" rel="stylesheet"><!-- não Retirar esta linha aqui do bootstrap.css -->
         <link rel="stylesheet" href="style.css" >

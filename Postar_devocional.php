@@ -29,14 +29,19 @@
 
   			<!-- <label>Imagem</label><br /><br />
   			<input type="file" name="foto_dev"><br /> -->
+        <?php //include 'img_padrao_dev.php';?>
+
         <br> <label >Imagem:</label>
-        <input type="file"  name="foto_dev" class="form-control" required><br>
+        <input type="file"  name="foto_dev" class="form-control"><br>
 
-  			<input class="btn btn-primary" type="submit" name="submit" value="Postar">
+  			<input class="btn btn-primary" type="submit" name="submit" value="Postar"><br>
   		</form>
+      <div class="container text-center text-warning modelobanner">
+        <h4>Tamanho padrao da imagem:</h4><br>
+        <img src="img/600x250.jpg" alt="tamanho da imagem">
+      </div>
+  </div><br>
 
-  </div>
-		
 
 
 

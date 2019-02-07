@@ -55,8 +55,8 @@
 			else{
 
 			// Pegar o maior id do galeria
-			$pegar_id__gal = "SELECT max(id_galeria) FROM galeria";
-			$result_gal =  mysqli_query($conexao, $pegar_id__gal);
+			$pegar_id_gal = "SELECT max(id_galeria) FROM galeria";
+			$result_gal =  mysqli_query($conexao, $pegar_id_gal);
 			 while($row = mysqli_fetch_row($result_gal))
 			 {
 				 $max_id_gal	= $row[0]+1;
