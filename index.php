@@ -11,7 +11,7 @@
 			<meta http-equiv="refresh" content="900">
 			<title>IJEMAVI- Igreja de Jesus Manancial de Águas Vivas</title>
 			<link href="css/bootstrap.css" rel="stylesheet">
-      <link rel="shortcut icon" type="image/png" href="img/logo_favicon.ico">
+      <link rel="shortcut icon" type="image/png" href="img/logo1.png">
       <!-- Galeria img index -->
       <link rel="stylesheet" href="css/gallery-grid-fonts" >
       <link rel="stylesheet" href="css/gallery-grid-baguetteBox.min.css">

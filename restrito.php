@@ -8,7 +8,7 @@ session_start();
 	<meta charset="UTF-8">
 	<title>login</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="shortcut icon" type="image/png" href="img/logo_favicon.ico">
+    <link rel="shortcut icon" type="image/png" href="img/logo1.png">
 	<link rel="stylesheet" href="style_login.css" >
 
 </head>

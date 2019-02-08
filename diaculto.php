@@ -14,7 +14,7 @@
       			<link href="css/bootstrap.min.css" rel="stylesheet">
 			<link href="css/bootstrap.css" rel="stylesheet"><!-- não Retirar esta linha aqui do bootstrap.css -->
       <link rel="stylesheet" href="style.css" >
-			<link rel="shortcut icon" type="image/png" href="img/logo_favicon.ico">
+			<link rel="shortcut icon" type="image/png" href="img/logo1.png">
   </head>
   <body>
 		<div class="bg_diaculto">

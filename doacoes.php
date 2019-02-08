@@ -15,7 +15,7 @@
 	    <link rel="stylesheet" href="css/bootstrap.min.css" >
 	    <link rel="stylesheet" href="css/bootstrap.css" >
 	    <link rel="stylesheet" href="style.css" >
-	    <link rel="shortcut icon" type="image/png" href="img/logo_favicon.ico">
+	    <link rel="shortcut icon" type="image/png" href="img/logo1.png">
 		</head>
 
 	<body>

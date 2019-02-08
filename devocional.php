@@ -28,7 +28,7 @@
 			<meta charset="utf-8">
 			<meta http-equiv="X-UA-Compatible" content="IE=edge">
 			<meta name="viewport" content="width=device-width, initial-scale=1">
-			<meta name="description" content="Com o Devocional Diário Você pode estreitar seu relacionamento com o Senhor. Deus se revelará através da Sua Palavra, por isso leia e ore. Veja o que Deus tem para você hoje">
+			<meta name="description" content="<?php echo  $titulo;?> Com este devocional Você pode estreitar seu relacionamento com o Senhor. Deus se revelará através da Sua Palavra, por isso leia e ore. Veja o que Deus tem para você hoje">
 			<meta name="keywords" content="Igreja, Jesus, Manancial, Águas, Vivas, Pastor, Família, Adoradores, IJEMAVI, ijemavi">
 			<meta name="author" content="José Ribeiro">
 			<meta http-equiv="refresh" content="700">
@@ -36,7 +36,7 @@
 			<!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
 				<link href="css/bootstrap.css" rel="stylesheet"><!-- não Retirar esta linha aqui do bootstrap.css -->
         <link rel="stylesheet" href="style.css" >
-				<link rel="shortcut icon" type="image/png" href="img/logo_favicon.ico">
+				<link rel="shortcut icon" type="image/png" href="img/logo1.png">
     </head>
     <body>
       <div class="bg_index">

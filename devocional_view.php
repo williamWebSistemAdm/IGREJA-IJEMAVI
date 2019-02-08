@@ -19,7 +19,26 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="Com o Devocional Diário Você pode estreitar seu relacionamento com o Senhor. Deus se revelará através da Sua Palavra, por isso leia e ore. Veja o que Deus tem para você hoje">
+		<?php
+		 $sql_dev = "SELECT * FROM devocional where id_devocional= '$id_dev_get'";
+		 $result_dev = $conexao->query($sql_dev);
+
+		 if($result_dev->num_rows > 0){
+			while($row = $result_dev->fetch_assoc())
+			{
+				$id_dev = $row['id_devocional'];
+				// $img = "img/img_banner/"."banner".$id_dev.".jpg";
+				$img = "img/img_devocional/"."Devocional".$id_dev.".jpg";
+
+				$titulo = $row['titulo_dev'] ;
+				$resumo = $row['resumo_dev'] ;
+				$texto = $row['texto_dev'] ;
+				$autor = $row['autor_dev'] ;
+				$data = $row['data_dev'] ;
+				$foto = $row['foto_dev'] ;
+			}}
+		?>
+		<meta name="description" content="<?php echo  $titulo;?> Com este devocional Você pode estreitar seu relacionamento com o Senhor. Deus se revelará através da Sua Palavra, por isso leia e ore. Veja o que Deus tem para você hoje">
 		<meta name="keywords" content="Igreja, Jesus, Manancial, Águas, Vivas, Pastor, Família, Adoradores, IJEMAVI, ijemavi">
 		<meta name="author" content="José Ribeiro">
 		<meta http-equiv="refresh" content="700">
@@ -27,7 +46,7 @@
 		<!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
 		<link href="css/bootstrap.css" rel="stylesheet"><!-- não Retirar esta linha aqui do bootstrap.css -->
         <link rel="stylesheet" href="style.css" >
-		<link rel="shortcut icon" type="image/png" href="img/logo_favicon.ico">
+		<link rel="shortcut icon" type="image/png" href="img/logo1.png">
     </head>
     <body>
       <div class="bg_index">
@@ -95,6 +114,19 @@
 <!-- 			<a href="http://igrejaijemavi.com.br/devocional_view.php?id_devocional=<?php echo $id_dev; ?>" rel="nofollow" class="cShareLink cShareLink_email" data-ipsdialog="" data-ipsdialog-title="Enviar Devocional <?php echo $titulo; ?> por e-mail" data-ipsdialog-remotesubmit="" data-ipsdialog-flashmessage="O e-mail foi enviado" data-ipstooltip="" _title="Compartilhar Devocional <?php echo $titulo; ?> via e-mail">
 				<img  src="img/email.png" alt="Enviar Devocional <?php echo $titulo; ?> via e-mail" title="Enviar Devocional <?php echo $titulo; ?> via e-mail">
 			</a> -->
+
+
+			<script type="text/template" class="blogger_addtoany_html"></script>
+			<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+			    <a class="a2a_button_print"></a>
+			    <a class="a2a_button_twitter"></a>
+			    <a class="a2a_button_google_plus"></a>
+			    <a class="a2a_button_facebook"></a>
+			    <a class="a2a_button_facebook_messenger"></a>
+			    <a class="a2a_button_whatsapp"></a>
+			</div>
+			
+			<script async src="https://static.addtoany.com/js/blogger.js"></script>
 
 
 	    		<h4 class="card-title text-center"> <?php  echo  $titulo . "<br>" ; ?></h4>

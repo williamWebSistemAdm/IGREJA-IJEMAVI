@@ -14,7 +14,7 @@
 		<meta name="description" content="IJEMAVI - Igreja de Jesus Manacial de Águas Vivas, ijemavi">
 		<meta name="keywords" content="Igreja, Jesus, Manancial, Águas, Vivas, Pastor, Família, Adoradores, IJEMAVI, ijemavi">
 		<meta name="author" content="Igreja IJEMAVI">
-    <link rel="shortcut icon" type="image/png" href="img/logo_favicon.ico">
+    <link rel="shortcut icon" type="image/png" href="img/logo1.png">
 		<title>Administrativo</title>
 
 		<!-- Bootstrap CSS -->
