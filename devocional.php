@@ -113,7 +113,15 @@
                 </div>
 	            <div class="card-body">
 	              <p id="titulo_dev" class="card-text text-center"> <?php  echo  $titulo . "<br>" ; ?></p>
-	              <p id="resumo_dev" class="card-text"> <?php  echo  $resumo; ?></p>
+	              <p id="resumo_dev" class="card-text">	              	
+			    	<?php
+			    	// criar um parágrafo
+						echo "<p style=\"text-indent:40px\" class='texto_dev'>";
+						echo str_replace('++', '<br><p class="texto_dev" style="text-indent:40px;">', $resumo);
+						echo "</p></p>";				  
+					?>	
+	               	
+	               </p>
 	              <div class="d-flex justify-content-between align-items-center">
 	                <small id="data_dev"  class="card-text"><em> <?php  echo  $data; ?></em></small>
 	              </div>

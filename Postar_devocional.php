@@ -5,11 +5,13 @@
       <div class="text-right">
 				<a href="administrativo.php?link=6" ><button type="button" class="btn btn-sm btn-primary"> Listar </button></a>
       </div>
+    <h5 class="text-justify"><strong>Dica:  </strong> Para colocar um parágrafo no texto, basta inserir ++ no fim da linha.<br> <em>Exemplo: <br> Este é um texto de exemplo de parágrago.++<p>Continuo escrevendo o texto...</em></p>
+   </h5><br> 
 
 		<div id="formulario" >
   		<form action="proc_postar_devoc.php" method="post" enctype="multipart/form-data">
 
-  			<label >Título</label>
+  			<label>Título</label>
   			<input class="form-control" type="text" id="fname" name="titulo_dev" required autofocus>
 
   			<label for="subject">Resumo</label>
@@ -40,7 +42,7 @@
         <h4>Tamanho padrao da imagem:</h4><br>
         <img src="img/600x250.jpg" alt="tamanho da imagem">
       </div>
-  </div><br>
+  </div><br><br><br><br><br><br><br>
 
 
 

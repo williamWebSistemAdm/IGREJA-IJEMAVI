@@ -80,4 +80,4 @@
 </table>
 <div class="text-right">
 	<a href="administrativo.php?link=19" ><button type="button" class="btn btn-sm btn-warning">Editar</button></a>
-</div>
+</div><br><br><br><br><br><br><br>

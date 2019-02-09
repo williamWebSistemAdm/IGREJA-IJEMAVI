@@ -106,4 +106,4 @@ while($rowc = mysqli_fetch_assoc($result_tipocargo_obr))
 	    <tr><th scope="row">Complemento:</th><td><?php echo $complemento_end; ?></td></tr>
 	    <tr><th scope="row"></th><td></td></tr>
 	  </tbody>
-	</table>
+	</table><br><br><br><br><br><br><br>

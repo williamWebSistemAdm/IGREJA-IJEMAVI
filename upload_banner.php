@@ -28,4 +28,4 @@
       <div class="container text-center text-warning modelobanner">
         <h4>Tamanho padrao do Banner:</h4><br>
         <img src="img/1400x600.jpg" alt="Modelo do Banner">
-      </div><br>
+      </div><br><br><br><br><br><br><br><br>

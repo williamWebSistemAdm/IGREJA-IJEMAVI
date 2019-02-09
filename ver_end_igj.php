@@ -37,4 +37,4 @@
 	    <tr><th scope="row">Complemento:</th><td><?php echo $complemento_end_igj; ?></td></tr>
 	    <tr><th scope="row"></th><td></td></tr>
 	  </tbody>
-	</table>
+	</table><br><br><br><br><br><br><br>

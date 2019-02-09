@@ -37,11 +37,24 @@
 	    <tr><th scope="row">Id:</th><td><?php echo $id_dev ; ?></td></tr>
 	    <tr><th scope="row">Foto:</th><td><?php echo $foto_dev ; ?></td></tr>
 	    <tr><th scope="row">Título:</th><td><?php echo $titulo_dev ; ?></td></tr>
-			<tr><th scope="row">Resumo:</th><td><?php echo $resumo_dev ; ?></td></tr>
-	    <tr><th scope="row">Texto:</th><td><?php echo $texto_dev; ?></td></tr>
+			<tr><th scope="row">Resumo:</th><td>
+	    	<?php
+				echo "<p style=\"text-indent:40px\" >";
+				echo str_replace('++', '<br><p style="text-indent:40px;">', $resumo_dev);
+				echo "</p></p>";		    	 
+			?>
+		  </td></tr>
+	    <tr><th scope="row">Texto:</th><td>
+	    	<?php
+				echo "<p style=\"text-indent:40px\" >";
+				echo str_replace('++', '<br><p style="text-indent:40px;">', $texto_dev);
+				echo "</p></p>";		    	 
+			?>	      	
+	      </td></tr>
 	    <tr><th scope="row">Autor do devocional:</th><td><?php echo $autor_dev ; ?></td></tr>
 	    <tr><th scope="row">Data da postagem:</th><td><?php echo $data_dev; ?></td></tr>
 	    <tr><th scope="row">Postador:</th><td><?php echo $postador; ?></td></tr>
 	    <tr><th scope="row"></th><td></td></tr>
 	  </tbody>
-	</table>
+	</table><br><br><br><br><br><br><br>
+

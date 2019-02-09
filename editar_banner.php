@@ -243,4 +243,4 @@ $resultado_consulta = mysqli_fetch_assoc($result_consulta);
             <div >
             <button class="btn btn-primary" type="submit">Atualizar</button>
           </div>
-      </form>
+      </form><br><br><br><br><br><br><br>

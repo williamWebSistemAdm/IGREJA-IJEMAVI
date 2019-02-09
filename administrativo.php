@@ -29,11 +29,8 @@
 
 	<body>
 		<!-- Menu -->
-    <div class="bg_adm">
 		<?php	include 'menu_adm.inc.php'; ?>
-		<div class="container">
-
-
+		<div class="container bg_adm">
 
 	      <?php
           @$link = $_GET['link'];
@@ -78,23 +75,13 @@
 
             echo 	include 'msg_boas_vindas.inc.php';
           }
-          // else {
-          //   // Verifica se é administrador ou usuario comum
-          //   if (($_SESSION['tipocargo_obr'] == "adm_padrao") || ($_SESSION['tipocargo_obr'] == "pr_presidente")) {
-          //     header('Location: administrativo.php');
-          //   }
-            // else {
-              // header('Location: usuario_comum.php');
-            // }
 
         ?>
+    </div>
 
-
-		  <br>
-		  <!-- <a href="sair.inc.php">Sair</a> -->
-
-	  </div>
-	</div>
+    <div class="footerAdm">
+       <?php   include 'footer.admin.php'; ?>
+    </div>
 
     <script src="js/jquery-3.3.1.slim.min.js" ></script>
     <script src="js/bootstrap.min.js" ></script>

@@ -28,6 +28,7 @@
        $_SESSION['usuario_obr'] = $row['email_obr']; // O USUÁRIO É O EMAIL
        $_SESSION['email_obr'] = $row['email_obr'];
        $_SESSION['nome_obr'] = $row['nome_obr'];
+       $_SESSION['sobrenome_obr'] = $row['sobrenome_obr'];
        $_SESSION['tipocargo_obr'] = $row['tipocargo_obr'];
        $_SESSION['senha_obr'] = $row['senha_obr'];
 

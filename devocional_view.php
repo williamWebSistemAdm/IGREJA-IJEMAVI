@@ -133,7 +133,13 @@
 		  	<div class="text-center col-md-12 img_dev_width">
 				<img  src="<?php echo $img; ?> " alt="<?php echo $titulo; ?>" title="<?php echo $titulo; ?>"><br><br>
 			</div>
-		    	<p class="texto_dev"><?php  echo  $texto; ?></p>
+		    	<p>
+		    	<?php
+					echo "<p style=\"text-indent:40px\" class='texto_dev'>";
+					echo str_replace('++', '<br><p class="texto_dev" style="text-indent:40px;">', $texto);
+					echo "</p></p>";		    	 
+				?>		    	  	
+		    	</p>
             	<small id="data_dev"  class="card-text"><em>Postado em: <?php  echo  $data; ?></em></small><br>
             	<small id="data_dev"  class="card-text text-left"><em>Por: <?php  echo  $autor; ?></em></small>
   	    </div>

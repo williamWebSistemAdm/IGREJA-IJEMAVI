@@ -14,4 +14,4 @@
       </div> <!-- row -->
       <br>
 			<input class="btn btn-primary" type="submit" value="Adicionar">
-	</form>
+	</form><br><br><br><br><br><br><br>

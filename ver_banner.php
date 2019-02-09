@@ -39,4 +39,4 @@
 	    <tr><th scope="row">Data do evento:</th><td><?php echo $data_evento; ?></td></tr>
 	    <tr><th scope="row"></th><td></td></tr>
 	  </tbody>
-	</table>
+	</table><br><br><br><br><br><br><br>

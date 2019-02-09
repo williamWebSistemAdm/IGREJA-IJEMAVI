@@ -50,4 +50,4 @@ while($row = mysqli_fetch_assoc($result_dev))
         <input type="file"  name="foto_dev" class="form-control" > -->
 
   			<br> <input class="btn btn-success" type="submit" name="submit" value="Atualizar">
-  		</form>
+  		</form><br><br><br><br><br><br><br>

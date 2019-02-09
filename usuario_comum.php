@@ -25,9 +25,8 @@
 
 	<body>
 		<!-- Menu -->
-    <div class="bg_adm">
 		<?php	include 'menu_user_comum.php'; ?>
-		<div class="container">
+		<div class="container bg_adm">
 
 	      <?php
           @$link = $_GET['link'];
@@ -80,14 +79,13 @@
         ?>
 
 
-		  <br>
+		
 		  <!-- <a href="sair.inc.php">Sair</a> -->
 
 	  </div>
-	</div>
-  <div id="footer">
-  <?php include 'footer.inc.php'; ?>
-  </div>
+    <footer class="footerAdm">
+      <?php include 'footer.admin.php'; ?>
+    </footer>
     <script src="js/jquery-3.3.1.slim.min.js" ></script>
     <script src="js/bootstrap.min.js" ></script>
   </body>

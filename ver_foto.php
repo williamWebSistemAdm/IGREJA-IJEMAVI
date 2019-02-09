@@ -37,4 +37,4 @@
 	    <tr><th scope="row">Data da postagem:</th><td><?php echo $data_post_img; ?></td></tr>
 	    <tr><th scope="row"></th><td></td></tr>
 	  </tbody>
-	</table>
+	</table><br><br><br><br><br><br><br>
