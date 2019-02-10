@@ -28,8 +28,6 @@
 
 				?>
 
-
-
 				<td>
 				<div class="text-center">
 			    <a href="administrativo.php?link=2&id_obreiros=<?php echo $id; ?>" ><button type="button" class="btn btn-sm btn-info">Visualizar</button></a>
