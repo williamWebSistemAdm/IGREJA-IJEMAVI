@@ -182,6 +182,34 @@ body {
 	/* background-image: url("img/bgescuro.png"); */
 }
 
+/*imagem perfil obreiros*/
+.img_perfil_obr{
+	opacity: .7;
+	width: 40px;
+	border-radius: 5px;
+}
+
+.img_perfil_obr:hover{
+	transform: scale(2.3);
+    box-shadow: 4px 4px 10px 13px rgba(255,255,255,0.1);
+    position: absolute;
+    transition: 0.4s ease-in-out;
+	opacity: 1;
+	background-color: white;
+}
+
+.alterarfoto{
+	font-size: 13px;
+	text-decoration: none;
+	color: yellow;
+}
+
+.alterarfoto:hover{
+	transform: scale(2.3);box-shadow: 4px 4px 4px 10px rgba(255,255,255,0.1);
+	text-decoration: none;
+	color: pink;
+}
+
 /* Fundo area index */
 
 .bg_index {
@@ -244,7 +272,7 @@ input[type=text], select, optgroup, option, textarea {
 
 /* Cadastrar Devocional */
 
-
+/*
 .modelodev img{
 	max-width: 700px;
 	border-radius: 5px;
@@ -267,7 +295,7 @@ input[type=text], select, optgroup, option, textarea {
 	.modelodev img{
 		max-width: 200px;
 	}
-}
+}*/
 
 /* Devocional index*/
 

@@ -8,21 +8,29 @@
 		<table class="table table-striped table-sm table-dark table-hover">
 		<tr class="bg-primary">
 			<th>Id</th>
+			<th>foto</th>
 			<th>Perfil/Cargo</th>
 			<th>Nome</th>
 			<th class="text-center">Ações</th>
 		</tr>
 		<?php
 			// Selecionando obr
-		 $sql_obr = "SELECT * FROM obreiros, tipocargo_obr WHERE id_obreiros=id_tipocargo";
+		 $sql_obr = "SELECT * FROM obreiros, tipocargo_obr, img_perfil_obr WHERE id_obreiros=id_tipocargo and id_img = id_obreiros";
 		 $result_obr = $conexao->query($sql_obr);
 		 if($result_obr->num_rows > 0){
 			while($row = $result_obr->fetch_assoc())
 			{
 				$id = $row['id_obreiros'];
+				$nome_obr = $row['nome_obr'];
+
+				$id_foto = $row['id_img'];
+				$img = "img/img_perfil_obr/"."foto".$id_foto.".jpg";
 
 				echo "<tr>";
 				echo "<td>" . $row['id_obreiros'] . "</td>";
+
+				echo "<td>" . "<img class="."img_perfil_obr"." src=".$img." alt=".$nome_obr." title=".$nome_obr."><br><a class="."alterarfoto"." href=" . "administrativo.php?link=1" .">Alterar</a> " . "</td>";
+
 				echo "<td>" . $row['Perfil_cargo_obr'] . "</td>";
 				echo "<td>" . $row['nome_obr'] ." ". $row['sobrenome_obr'] .  "</td>";
 
