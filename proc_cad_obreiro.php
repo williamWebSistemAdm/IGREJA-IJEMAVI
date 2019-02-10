@@ -133,20 +133,19 @@
 
 
 // Enviar email com a senha
+  $para = $email_obr;
+  $assunto = "Senha de acesso ao Site da Igreja IJEMAVi";
+  $mensagem = "<strong>Esta é sua senha de acesso ao site da igreja IJEMAVI<br><br>Você precisará do Email e da senha para acessar o site.</strong><br><br><strong>Nome: </strong> $nome_obr $sobrenome_obr<br><strong>Usuário: </strong>É o seu próprio Email; $email_obr <br><strong>Senha de acesso: </strong> $senha_obr";
+  
 
-  // $para = "williamtec.inf.int@gmail.com";
-  // $para = "williampalmas2015@hotmail.com";
-  // $assunto = "Senha de acesso ao Site da Igreja IJEMAVi";
+  $headers = 'MIME-Version: 1.0'. "\r\n";
+  $headers .= 'Content-type: text/html; charset=iso-8859-1'. "\r\n";
+  $headers .= 'To: William <'.$para.'>'. "\r\n";
+  $headers .= 'From: <contato@igrejaijemavi.com.br>'. "\r\n";
+  $headers .= 'Reply-To: <contato@igrejaijemavi.com.br>'. "\r\n";
+ 
+  mail($para, $assunto, $mensagem, $headers );
 
-  // $corpo ="<strong>Esta é sua senha de acesso ao site da igreja IJEMAVI<br><br>Você precisará do Email e da senha para acessar o site.</strong>";
-  // $corpo .="<strong>Nome: </strong> $nome_obr $sobrenome_obr.";
-  // $corpo .="<strong>Usuário: </strong>É o seu próprio Email; $email_obr";
-  // $corpo .="<strong>Senha de acesso: </strong> $senha_obr";
-
-  // $header = "Content-type: text/html; charset = utf-8\n";
-  // $header .= "From: $email_obr Replay-to: $email_obr\n";
-
-  // @mail($para, $assunto, $corpo, $header);
 
   if($result_obr->num_rows > 0){
     echo "<script>alert('Usuário cadastrado com sucesso!.'); window.location.href='administrativo.php?link=1';</script>";

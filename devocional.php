@@ -116,7 +116,7 @@
 	              <p id="resumo_dev" class="card-text">	              	
 			    	<?php
 			    	// criar um parágrafo
-						echo "<p style=\"text-indent:40px\" class='texto_dev'>";
+						echo "<p style=\"text-indent:30px\" class='texto_dev'>";
 						echo str_replace('++', '<br><p class="texto_dev" style="text-indent:40px;">', $resumo);
 						echo "</p></p>";				  
 					?>	
