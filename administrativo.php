@@ -63,6 +63,7 @@
           $pag['20'] = 'ver_banner.php';
           $pag['21'] = 'ver_foto.php';
           $pag['22'] = 'ver_devocional.php';
+          $pag['23'] = 'reenviar_dados_email.php';
 
 
           // validar se apagina existe e redirecionar para ela

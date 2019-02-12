@@ -65,6 +65,9 @@ while($rowc = mysqli_fetch_assoc($result_tipocargo_obr))
 ?>
 	<div class="text-center "><h3>Perfil Obreiro(a)</h3></div><br>
 	<div class="text-right">
+
+		<a href="administrativo.php?link=23&id_obreiros=<?php echo $id; ?>" ><button type="button" class="btn btn-sm btn-info">Renviar dados de acesso ao Email</button></a>
+		
 		<a href="administrativo.php?link=1" ><button type="button" class="btn btn-sm btn-info">Listar</button></a>
 		<?php if (($id !=1)): ?>
 		<a href="administrativo.php?link=4&id_obreiros=<?php echo $id; ?>" ><button type="button" class="btn btn-sm btn-warning"> Editar </button></a>
