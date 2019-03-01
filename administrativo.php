@@ -39,7 +39,7 @@
           $pag['2'] = 'ver_perfil_obr.php';
           $pag['3'] = 'cad_obreiro.php';
           $pag['4'] = 'Editar_obreiro.php';
-          // $pag['5'] = 'excluir_obreiro.php';
+          $pag['5'] = 'upload_img_perfil_obr.php';
           // Devocional
           $pag['6'] = 'listar_devocional.php';
           $pag['7'] = 'postar_devocional.php';
@@ -59,11 +59,12 @@
           // Dia culto
           $pag['18'] = 'ver_diaculto.php';
           $pag['19'] = 'editar_dia_culto.php';
-
+          // Banner
           $pag['20'] = 'ver_banner.php';
           $pag['21'] = 'ver_foto.php';
           $pag['22'] = 'ver_devocional.php';
           $pag['23'] = 'reenviar_dados_email.php';
+          
 
 
           // validar se apagina existe e redirecionar para ela

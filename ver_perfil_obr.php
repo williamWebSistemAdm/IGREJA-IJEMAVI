@@ -49,10 +49,12 @@ while($rowt = mysqli_fetch_assoc($result_id_telefones))
 	}
 
 // Pegar o  tipocargo_obr
-$pegar_tipocargo_obr = "SELECT * FROM tipocargo_obr WHERE id_tipocargo='$id' limit 1";
+$pegar_tipocargo_obr = "SELECT * FROM tipocargo_obr, img_perfil_obr WHERE id_tipocargo='$id' and id_img = '$id' limit 1";
 $result_tipocargo_obr =  mysqli_query($conexao, $pegar_tipocargo_obr);
 while($rowc = mysqli_fetch_assoc($result_tipocargo_obr))
   	{
+		$img = "img/img_perfil_obr/"."foto".$id.".jpg";
+
   		$id_tipocargo_obr = $rowc['id_tipocargo'];
       $_SESSION['id_tipocargo'] = $id_tipocargo_obr;
   		$Perfil_cargo_obr = $rowc['Perfil_cargo_obr'];
@@ -79,6 +81,15 @@ while($rowc = mysqli_fetch_assoc($result_tipocargo_obr))
 	<!-- <div class="text-right">	<?php	echo "Dia: " . $dia . "Hora: ".$hora;	?>	</div> -->
 	<table class="table table-hover table-striped col-12">
 		<tbody>
+			<tr><th scope="row" class="text-center table-dark">Foto:</th><td class="table-dark"></td></tr>
+			<!-- Foto Perfil -->
+	    <tr><th scope="row" class="text-center"><?php echo
+
+	     "<img class="."img_perfil_obr1"." src=".$img." alt=".$nome_obr." title=".$nome_obr."><br><a class="."alterarfoto"." href=" . "administrativo.php?link=5&id_obreiros=".$id." " .">Alterar</a> "  ;
+
+
+	      ?></th><td></td></tr>
+
 			<tr><th scope="row" class="text-center table-dark">Função:</th><td class="table-dark"></td></tr>
 			<tr><th scope="row">Perfil/Cargo:</th><td><?php echo $Perfil_cargo_obr; ?></td></tr>
 		</tbody>

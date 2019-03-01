@@ -1,6 +1,6 @@
 <?php include 'seguranca.inc.php';//seguranca ?>
 <br>
-	<div class="text-center"><h3>Lista de Usuarios</h3></div>
+	<div class="text-center"><h3>Lista de Obreiros</h3></div>
 	<div class="text-right">
 		<a href="administrativo.php?link=3" ><button type="button" class="btn btn-sm btn-success">Novo</button></a>
 	</div>
@@ -29,7 +29,7 @@
 				echo "<tr>";
 				echo "<td>" . $row['id_obreiros'] . "</td>";
 
-				echo "<td>" . "<img class="."img_perfil_obr"." src=".$img." alt=".$nome_obr." title=".$nome_obr."><br><a class="."alterarfoto"." href=" . "administrativo.php?link=1" .">Alterar</a> " . "</td>";
+				echo "<td class='text-center'>" . "<img class="."img_perfil_obr1"." src=".$img." alt=".$nome_obr." title=".$nome_obr."><br><a class="."alterarfoto"." href=" . "administrativo.php?link=5&id_obreiros=".$id." >" ."Alterar</a> " . "</td>";
 
 				echo "<td>" . $row['Perfil_cargo_obr'] . "</td>";
 				echo "<td>" . $row['nome_obr'] ." ". $row['sobrenome_obr'] .  "</td>";
