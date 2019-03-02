@@ -47,18 +47,9 @@
 	//O arquivo passou em todas as verificações, hora de tentar move-lo para a pasta foto
 	else{
 
-	// Pegar o maior id do galeria
-	$pegar_id_img_prfl = "SELECT * FROM img_perfil_obr";
-	$pegar_id_img_perfil =  mysqli_query($conexao, $pegar_id_img_prfl);
-	 while($row = mysqli_fetch_row($pegar_id_img_perfil))
-	 {
-		 // $id_img_prfl	= $row['id_img'];
-	 }
 	// Cria um novo nome para o arquivo
 	$novo_nome = 'foto' . $id . '.jpg' ;
 
-
-	// Cria um novo nome para o arquivo
 	$sql_img_prfl = "SELECT * FROM img_perfil_obr";
 	$result_img_prfl = $conexao->query($sql_img_prfl);
 

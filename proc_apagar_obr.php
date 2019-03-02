@@ -14,8 +14,11 @@
 	  $sql_tipocargo_obr = "SELECT * FROM tipocargo_obr";
 	  $result_tipocargo_obr = $conexao->query($sql_tipocargo_obr);
 
-		$sql_obr = "SELECT * FROM obreiros";
-		$result_obr = $conexao->query($sql_obr);
+	  $sql_obr = "SELECT * FROM obreiros";
+	  $result_obr = $conexao->query($sql_obr);
+
+	  $sql_img_prfl = "SELECT * FROM img_perfil_obr";
+	  $result_img_prfl = $conexao->query($sql_img_prfl);
 
 
 	$id = filter_input(INPUT_GET, 'id_obreiros');
@@ -33,6 +36,8 @@
 		$result_usuario = "DELETE FROM obreiros WHERE id_obreiros='$id'";
 		$resultado_usuario = mysqli_query($conexao, $result_usuario);
 
+		$sql_img_prfl = "DELETE FROM img_perfil_obr WHERE id_img='$id'";
+		$result_img_prfl = $conexao->query($sql_img_prfl);
 
 
 	if(mysqli_affected_rows($conexao) != 0){

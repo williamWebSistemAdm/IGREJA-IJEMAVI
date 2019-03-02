@@ -49,6 +49,9 @@
   $sql_tipocargo_obr = "SELECT * FROM tipocargo_obr";
   $result_tipocargo_obr = $conexao->query($sql_tipocargo_obr);
 
+  $sql_img_prfl = "SELECT * FROM img_perfil_obr";
+  $result_img_prfl = $conexao->query($sql_img_prfl);
+
   // $usuario = addslashes($_POST['usuario']);
   // $usuario = trim($usuario);
   // $senha = addslashes($_POST['senha']);
@@ -131,13 +134,12 @@
 	$sql6 = "UPDATE tipocargo_obr SET	id_tipocargo_obr_fk='$id_tipocargo' WHERE id_tipocargo='$id_obreiros'";
 	$salvar6 = mysqli_query($conexao, $sql6);
 
-
+//----------------------------------------------------------------------
 // Enviar email com a senha
   $para = $email_obr;
   $assunto = "Senha de acesso ao Site da Igreja IJEMAVi";
   $mensagem = "<strong>Esta é sua senha de acesso ao site da igreja IJEMAVI<br><br>Você precisará do Email e da senha para acessar o site.</strong><br><br><strong>Nome: </strong> $nome_obr $sobrenome_obr<br><strong>Usuário: </strong>É o seu próprio Email; $email_obr <br><strong>Senha de acesso: </strong> $senha_obr";
   
-
   $headers = 'MIME-Version: 1.0'. "\r\n";
   $headers .= 'Content-type: text/html; charset=iso-8859-1'. "\r\n";
   $headers .= 'To: William <'.$para.'>'. "\r\n";
@@ -145,13 +147,33 @@
   $headers .= 'Reply-To: <contato@igrejaijemavi.com.br>'. "\r\n";
  
   mail($para, $assunto, $mensagem, $headers );
+// --------------------------------------------------------------
+
+// --------------------------------------------------------------
+  //Inserir FOTO PERFIL
+
+  // nome original do arquivo
+  $img_prfl = 'foto.jpg';
+
+  $sql_img_prfl = "INSERT INTO img_perfil_obr (nome_img, id_img_fk)
+  VALUES
+  ('$img_prfl','$id_obreiros')";
+
+  $grava_img_prfl = $conexao->query($sql_img_prfl);
+
+  // Upload efetuado com sucesso
+  // $query_img_prfl = mysqli_query($conexao, "UPDATE img_perfil_obr SET nome_img='$foto_prfl', id_img_fk='$id_obreiros' WHERE id_img='$id_obreiros'");
+ 
 
 
-  if($result_obr->num_rows > 0){
-    echo "<script>alert('Usuário cadastrado com sucesso!.'); window.location.href='administrativo.php?link=1';</script>";
-  }else {
-    echo "<script>alert('Erro ao cadastrar usuário.'); window.location.href='administrativo.php?link=1';</script>";
-  }
+
+// --------------------------------------------------------------
+
+    if($result_obr->num_rows > 0){
+      echo "<script>alert('Usuário cadastrado com sucesso!.'); window.location.href='administrativo.php?link=1';</script>";
+    }else {
+      echo "<script>alert('Erro ao cadastrar usuário.'); window.location.href='administrativo.php?link=1';</script>";
+    }
 
   } else {
     echo "<script>alert('Senha e Confirmação de senha estão Diferentes,precisam ser iguais!'); window.location.href='administrativo.php?link=1';</script>";
